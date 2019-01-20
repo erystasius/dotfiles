@@ -5,4 +5,8 @@
 	co = checkout	
 	ci = commit
 	st = status
-	lg = log
+	br = branch
+	sm = submodule
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	unst = reset HEAD
+	throw = reset --hard HEAD
