@@ -3,5 +3,8 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.emacs.d: emacs.d
-
+    ~/.vimrc: vimrc
+    ~/.vim: vim
+    ~/.bashrc: bashrc
+    ~/.bash_profile: bash_profile
 
