@@ -1,29 +1,26 @@
-" No compatible with vi
-set nocompatible
-" Enable line number
-set number
-set relativenumber
-set cursorline
+set nocompatible " No compatible with vi
+set number " Enable line number
+set relativenumber " Show relative line number
+set cursorline " Highlight cursor line
 
-set t_Co=256
+set t_Co=256 " 256 color
 
-" Encoding
 set encoding=utf-8
 
-" Syntax highlight
-syntax on
+syntax on " Syntax highlight
 colorscheme base16-eighties
 
-" Auto indent
-set autoindent
-" Tab size
-set tabstop=4
-" << >> size
-set shiftwidth=4
-" Use space instead of tab, eg. soft tab
-set expandtab
-" soft tab size
-set softtabstop=4    
+set autoindent " Auto indent
+set tabstop=4 " Tab size
+set shiftwidth=4 " << >> size
+set expandtab " Use space instead of tab, eg. soft tab
+set softtabstop=4 " soft tab size
 
 inoremap jj <ESC>
 
+let mapleader=" "
+map <leader>y "+y
+map <leader>p "+p
+
+set go-=T " disable munu bar
+set go-=r " disable right-hand scroll bar

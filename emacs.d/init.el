@@ -10,7 +10,7 @@
 (scroll-bar-mode -1)
 (global-linum-mode 1)
 (global-hl-line-mode t)
-(setq inhibit-splash-screen t)
+(setq inhibit-startup-screen t)
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 ;;(popwin-mode t)
 
@@ -83,6 +83,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(company-idle-delay 0.1)
  '(company-minimum-prefix-length 1)
  '(company-tooltip-idle-delay 0.1)
  '(custom-safe-themes
