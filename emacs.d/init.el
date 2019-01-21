@@ -3,16 +3,12 @@
 (require 'pallet)
 (pallet-mode t)
 
-;; ui
-(load-theme 'base16-eighties t)
-(set-frame-font "Microsoft Yahei Mono-11" nil t)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(global-linum-mode 1)
-(global-hl-line-mode t)
-(setq inhibit-startup-screen t)
-(setq initial-frame-alist (quote ((fullscreen . maximized))))
-;;(popwin-mode t)
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(require 'init-ui)
+
+(require 'popwin)
+(popwin-mode t)
+(global-auto-revert-mode 1)
 
 (global-evil-leader-mode 1)
 ;; modes
