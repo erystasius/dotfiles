@@ -35,7 +35,6 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
-(define-key evil-normal-state-map (kbd "/") 'swiper)
 (recentf-mode 1)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key 
@@ -56,8 +55,7 @@
   "h v" 'describe-variable
   "<SPC>" 'counsel-M-x)
 
-(global-set-key (kbd "<f6>") 'ivy-resume)
-(global-set-key (kbd "<f3>") 'projectile-command-map)
+(global-set-key "\C-s" 'swiper)
 
 (define-key ivy-mode-map (kbd "C-j") 'ivy-next-line)
 (define-key ivy-mode-map (kbd "C-k") 'ivy-previous-line)
