@@ -1,10 +1,16 @@
 alias ls="ls --color=always"
+alias la="ls -A"
+alias ll="ls -alF"
 alias df="df -h"
 alias du="du -h"
 alias hg="history | grep"
+alias grep="grep --color=auto"
 
 alias g="git"
 alias v="gvim"
 alias o="xdg-open"
 
-export PS1="\[\e[31m\][\[\e[m\]\[\e[31;40m\]\A\[\e[m\]\[\e[31m\]]\[\e[m\]\[\e[32;40m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32;40m\]\h\[\e[m\] \[\e[34m\]\W\[\e[m\] \\$ "
+HISTCONTROL=ignoredups:erasedups
+
+export PS1="\[$(tput bold)\][\[$(tput sgr0)\]\[\033[38;5;107m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\]] \[$(tput sgr0)\]\[\033[38;5;220m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;9m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;69m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\] \\$ \[$(tput sgr0)\]"
+

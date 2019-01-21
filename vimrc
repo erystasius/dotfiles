@@ -2,13 +2,14 @@ set nocompatible " No compatible with vi
 set number " Enable line number
 set relativenumber " Show relative line number
 set cursorline " Highlight cursor line
+"set hidden "dfaf
 
 set t_Co=256 " 256 color
 
 set encoding=utf-8
 
 syntax on " Syntax highlight
-colorscheme base16-eighties
+"colorscheme base16-eighties
 
 set autoindent " Auto indent
 set tabstop=4 " Tab size
