@@ -1,9 +1,9 @@
 alias ls="ls --color=always"
 alias la="ls -A"
-alias ll="ls -alF"
+alias ll="ls -ahlF"
 alias lg="ll | grep"
 alias df="df -h"
-alias du="du -h"
+alias du="du -h -d 1"
 alias hg="history | grep"
 alias grep="grep --color=auto"
 
