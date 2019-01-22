@@ -28,6 +28,12 @@
 (popwin-mode t)
 
 ;; Misc
+;;(which-key-mode 1)
 (projectile-global-mode 1)
+(counsel-projectile-mode 1)
+
+;; Major Mode
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
 
 (provide 'init-packages)

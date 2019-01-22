@@ -16,4 +16,3 @@
 (defun load-my-init-file()
   (interactive)
   (load-file erystasius/init-file))
-
