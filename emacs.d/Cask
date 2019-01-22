@@ -22,5 +22,4 @@
 (depends-on "s")
 (depends-on "shut-up")
 (depends-on "swiper")
-(depends-on "which-key")
 (depends-on "window-numbering")
