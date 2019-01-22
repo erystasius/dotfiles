@@ -1,15 +1,16 @@
 [user]
-	email = Felix.E.Huang@gmail.com
-	name = Erystasius
+    email = Felix.E.Huang@gmail.com
+    name = Erystasius
 [alias]
-	co = checkout	
-	ci = commit
-	st = status
-	br = branch
-	sm = submodule
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	unstage = reset HEAD
-	throw = reset --hard HEAD
+    co = checkout	
+    ci = commit
+    st = status
+    br = branch
+    sm = submodule
+    ac = commit -a -m
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    unstage = reset HEAD
+    throw = reset --hard HEAD
 [core]
     # see https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
     autocrlf = input

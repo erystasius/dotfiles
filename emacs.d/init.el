@@ -3,16 +3,12 @@
 (require 'pallet)
 (pallet-mode t)
 
-;; ui
-(load-theme 'base16-eighties t)
-(set-frame-font "Microsoft Yahei Mono-11" nil t)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(global-linum-mode 1)
-(global-hl-line-mode t)
-(setq inhibit-startup-screen t)
-(setq initial-frame-alist (quote ((fullscreen . maximized))))
-;;(popwin-mode t)
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(require 'init-ui)
+
+(require 'popwin)
+(popwin-mode t)
+(global-auto-revert-mode 1)
 
 (global-evil-leader-mode 1)
 ;; modes
@@ -34,7 +30,6 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
-(define-key evil-normal-state-map (kbd "/") 'swiper)
 (recentf-mode 1)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key 
@@ -70,8 +65,7 @@
   "p" 'projectile-command-map
   "<SPC>" 'counsel-M-x)
 
-(global-set-key (kbd "<f6>") 'ivy-resume)
-(global-set-key (kbd "<f3>") 'projectile-command-map)
+(global-set-key "\C-s" 'swiper)
 
 (define-key ivy-mode-map (kbd "C-j") 'ivy-next-line)
 (define-key ivy-mode-map (kbd "C-k") 'ivy-previous-line)
