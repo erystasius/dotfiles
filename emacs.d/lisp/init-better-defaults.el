@@ -1,9 +1,11 @@
-(global-hungry-delete-mode 1)
 (global-auto-revert-mode 1)
 (recentf-mode 1)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
+
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
 
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 

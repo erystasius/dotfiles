@@ -9,6 +9,7 @@
 (evil-escape-mode 1)
 (evil-mode 1)
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
+(define-key evil-insert-state-map (kbd "TAB") 'tab-to-tab-stop)
 (setq-default evil-escape-key-sequence "jj")
 (setq-default evil-escape-delay 0.3)
 
@@ -29,6 +30,7 @@
 
 ;; Misc
 ;;(which-key-mode 1)
+;;(hungry-delete-mode 1)
 (projectile-global-mode 1)
 (counsel-projectile-mode 1)
 
