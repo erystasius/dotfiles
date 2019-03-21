@@ -22,17 +22,29 @@ eval $(thefuck --alias)
 
 echo 1 | sudo tee /sys/module/bluetooth/parameters/disable_ertm &> /dev/null
 
+proxy="socks5://127.0.0.1:1873"
+
 function proxy-enable() {
-    export {http,https}_proxy="socks5://127.0.0.1:1873"
+    export {http,https}_proxy=$proxy
 }
 
 function proxy-disable() {
     unset {http,https}_proxy
 }
 
+function proxy-status() {
+    if [ ! -z $http_proxy ] && [ $proxy = $http_proxy ]; then
+        echo "http_proxy: on"
+    else
+        echo "http_proxy: off"
+    fi
+    if [ ! -z $https_proxy ] && [ $proxy = $https_proxy ]; then
+        echo "https_proxy: on"
+    else
+        echo "https_proxy: off"
+    fi
+}
+
 function get-public-ip() {
     curl ifconfig.co
 }
-
-export -f {enable,disable}-proxy
-export -f get-public-ip
