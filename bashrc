@@ -20,8 +20,6 @@ export PS1="\[$(tput bold)\][\[$(tput sgr0)\]\[\033[38;5;107m\]\A\[$(tput sgr0)\
 
 eval $(thefuck --alias)
 
-echo 1 | sudo tee /sys/module/bluetooth/parameters/disable_ertm &> /dev/null
-
 proxy="socks5://127.0.0.1:1873"
 
 function proxy-enable() {
