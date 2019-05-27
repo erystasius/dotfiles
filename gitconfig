@@ -12,8 +12,11 @@
     unstage = reset HEAD
     throw = reset --hard HEAD
 [core]
-    # see https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+    # See https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
     autocrlf = input
 [push]
     # Push the current branch to its upstream branch, but refuses to push if the upstream branch’s name is different from the local one.
     default = simple
+[fetch]
+    # Prune remote-tracking branches no longer on remote
+    prune = true
