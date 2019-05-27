@@ -9,4 +9,5 @@
     ~/.bash_profile: bash_profile
     ~/.inputrc: inputrc
     ~/.xprofile: xprofile
+    ~/.ideavimrc: ideavimrc
 
