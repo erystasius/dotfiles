@@ -22,11 +22,11 @@ eval $(thefuck --alias)
 
 proxy="socks5://127.0.0.1:1873"
 
-function proxy-enable() {
+function proxy-on() {
     export {http,https}_proxy=$proxy
 }
 
-function proxy-disable() {
+function proxy-off() {
     unset {http,https}_proxy
 }
 
