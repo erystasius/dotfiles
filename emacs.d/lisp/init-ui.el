@@ -14,8 +14,8 @@
 (global-hl-line-mode t)
 (setq inhibit-startup-screen t)
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
-
 (window-numbering-mode 1)
+(global-visual-line-mode t)
 
 ;; Provide feature
 (provide 'init-ui)
