@@ -10,4 +10,5 @@
     ~/.inputrc: inputrc
     ~/.xprofile: xprofile
     ~/.ideavimrc: ideavimrc
+    /etc/aria2/aria2.conf: aria2.conf
 
