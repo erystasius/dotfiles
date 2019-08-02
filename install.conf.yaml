@@ -10,5 +10,6 @@
     ~/.inputrc: inputrc
     ~/.xprofile: xprofile
     ~/.ideavimrc: ideavimrc
+    ~/.tmux.conf: tmux.conf
     /etc/aria2/aria2.conf: aria2.conf
 
