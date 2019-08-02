@@ -1,2 +1,2 @@
 :imap jj <Esc>
-:set clipboard=unnamed
+:set clipboard+=unnamed
