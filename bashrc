@@ -12,6 +12,8 @@ alias g="git"
 alias v="gvim"
 alias o="xdg-open"
 
+alias e="emacsclient -n"
+
 HISTCONTROL=ignoredups:erasedups
 HISTSIZE=1000
 HISTFILESIZE=1000

@@ -16,3 +16,9 @@
 (defun load-my-init-file()
   (interactive)
   (load-file erystasius/init-file))
+
+;; server
+(server-start)
+
+;; treemacs
+(treemacs)
