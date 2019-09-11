@@ -29,6 +29,8 @@
   "h f" 'describe-function
   "h k" 'describe-key
   "h v" 'describe-variable
+  ;; Treemacs
+  "t" 'treemacs
   ;; Misc
   "p" 'projectile-command-map
   "<SPC>" 'counsel-M-x)
