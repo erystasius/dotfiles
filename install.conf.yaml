@@ -13,4 +13,5 @@
     ~/.tmux.conf: tmux.conf
     /etc/aria2/aria2.conf: aria2.conf
     ~/.config/rofi/config: rofi.conf
+    ~/.config/i3/config: i3.conf
 
