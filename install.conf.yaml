@@ -1,17 +1,21 @@
 - clean: ['~']
 
 - link:
-    ~/.gitconfig: gitconfig
+    # folders
     ~/.emacs.d: emacs.d
-    ~/.vimrc: vimrc
     ~/.vim: vim
+    # files
+    ~/.gitconfig: gitconfig
+    ~/.vimrc: vimrc
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
     ~/.inputrc: inputrc
     ~/.xprofile: xprofile
     ~/.ideavimrc: ideavimrc
     ~/.tmux.conf: tmux.conf
-    /etc/aria2/aria2.conf: aria2.conf
+    #  .config
     ~/.config/rofi/config: rofi.conf
     ~/.config/i3/config: i3.conf
+    # /etc 
+    /etc/aria2/aria2.conf: aria2.conf   # for aria2-systemd
 
