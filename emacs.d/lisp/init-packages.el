@@ -28,6 +28,9 @@
 (require 'popwin)
 (popwin-mode t)
 
+;; Which key
+(which-key-mode t)
+
 ;; Misc
 ;;(which-key-mode 1)
 ;;(hungry-delete-mode 1)
