@@ -29,6 +29,7 @@
   "h f" 'describe-function
   "h k" 'describe-key
   "h v" 'describe-variable
+  "h o" 'describe-font
   ;; Treemacs
   "t" 'treemacs
   ;; Misc

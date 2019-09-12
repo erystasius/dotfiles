@@ -5,7 +5,8 @@
 (powerline-default-theme)
 
 ;; Font
-(set-frame-font "Microsoft Yahei Mono-11" nil t)
+;; (set-frame-font "Microsoft Yahei Mono-11" nil t)
+;; (set-frame-font "Source Code Pro-10" nil t)
 
 ;; Emacs Default
 (tool-bar-mode -1)
