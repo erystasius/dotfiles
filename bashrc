@@ -9,7 +9,7 @@ alias pg="ps aux | grep"
 alias grep="grep --color=auto"
 
 alias g="git"
-alias v="gvim"
+alias v="vim"
 alias o="xdg-open"
 
 alias e="emacsclient -n"
