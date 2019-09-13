@@ -1,0 +1,43 @@
+alias ls="ls --color=always"
+alias la="ls -A"
+alias ll="ls -ahlF"
+alias lg="ll | grep"
+alias df="df -h"
+alias du="du -h -d 1"
+alias hg="history | grep"
+alias pg="ps aux | grep"
+alias grep="grep --color=auto"
+
+alias g="git"
+alias v="vim"
+alias o="xdg-open"
+alias e="emacsclient -n"
+
+HISTCONTROL=ignoredups:erasedups
+HISTSIZE=1000
+HISTFILESIZE=1000
+
+proxy="socks5://127.0.0.1:17777"
+
+function proxy-on() {
+    export {http,https}_proxy=$proxy
+}
+
+function proxy-off() {
+    unset {http,https}_proxy
+}
+
+function proxy-status() {
+    ip=$(curl -sS ifconfig.co)
+    echo "current ip is: $ip"
+    if [ ! -z $http_proxy ] && [ $proxy = $http_proxy ]; then
+        echo "http_proxy: $http_proxy"
+    else
+        echo "http_proxy:"
+    fi
+    if [ ! -z $https_proxy ] && [ $proxy = $https_proxy ]; then
+        echo "https_proxy: $https_proxy"
+    else
+        echo "https_proxy:"
+    fi
+}
