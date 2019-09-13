@@ -22,7 +22,7 @@ export PS1="\[$(tput bold)\][\[$(tput sgr0)\]\[\033[38;5;107m\]\A\[$(tput sgr0)\
 
 eval $(thefuck --alias)
 
-proxy="socks5://127.0.0.1:1873"
+proxy="socks5://127.0.0.1:17777"
 
 function proxy-on() {
     export {http,https}_proxy=$proxy
