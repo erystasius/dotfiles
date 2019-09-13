@@ -7,6 +7,8 @@
     # files
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
+    ~/.shrc: shrc
+    ~/.zshrc: zshrc
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
     ~/.inputrc: inputrc
