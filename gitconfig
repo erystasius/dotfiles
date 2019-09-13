@@ -3,11 +3,12 @@
     name = Erystasius
 [alias]
     co = checkout	
-    ci = commit
+    ci = commit -m
     st = status
     br = branch
     sm = submodule
     ac = commit -a -m
+    dc = diff --cached
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     unstage = reset HEAD
     throw = reset --hard HEAD
