@@ -18,7 +18,7 @@ MiscHighlightUrls=TRUE
 ScrollingLines=999999
 BackgroundDarkness=0.700000
 ScrollingOnOutput=FALSE
-FontName=Microsoft YaHei Mono 11
+FontName=Noto Sans 11
 MiscBellUrgent=FALSE
 MiscMouseWheelZoom=TRUE
 MiscMiddleClickOpensUri=FALSE
@@ -40,4 +40,5 @@ ShortcutsNoMnemonics=TRUE
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
+FontUseSystem=TRUE
 
