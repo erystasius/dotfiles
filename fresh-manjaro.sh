@@ -1,17 +1,27 @@
 # Change pacman mirror 
-if [ $(pacman-mirrors -lc) != 'China' ]; then 
+if [[ $(pacman-mirrors -lc) != 'China' ]]; then 
     sudo pacman-mirrors -c China
+    echo "set pacman-mirrors -c China"
+else 
+    echo "pacman contry is China"
 fi
 
 # Install yay
 sudo pacman -S --needed --noconfirm yay
 
+# Change yay mirror
+yay --aururl "https://aur.tuna.tsinghua.edu.cn" --save
+
+# Exclude .xz extension for makepkg to accell aur package installation
+export PKGEXT='.pkg.tar'
+
 # Update system
-yay -Y --noconfirm
+yay -Syu --noconfirm
 
 # Install packages
 yay -S --needed --noconfirm vim
 yay -S --needed --noconfirm emacs
+yay -S --needed --noconfirm cask
 yay -S --needed --noconfirm i3-gaps
 yay -S --needed --noconfirm compton
 yay -S --needed --noconfirm zsh
@@ -24,7 +34,6 @@ yay -S --needed --noconfirm fcitx-im
 yay -S --needed --noconfirm fcitx-configtool 
 yay -S --needed --noconfirm shadowsocks
 yay -S --needed --noconfirm aria2
-yay -S --needed --noconfirm neofetch
 yay -S --needed --noconfirm screenfetch
 yay -S --needed --noconfirm lolcat
 yay -S --needed --noconfirm anki
@@ -33,11 +42,11 @@ yay -S --needed --noconfirm mcomix
 yay -S --needed --noconfirm ranger
 
 # Install AUR packages
-# yay -S --needed --noconfirm aria2-systemd
+yay -S --needed --noconfirm aria2-systemd
 yay -S --needed --noconfirm oh-my-zsh-git
 yay -S --needed --noconfirm google-chrome
 yay -S --needed --noconfirm dropbox
-yay -S --needed --noconfirm motrix
+yay -S --needed --noconfirm motrix-bin
 yay -S --needed --noconfirm teamviewer
 yay -S --needed --noconfirm intellij-idea-ultimate-edition
 yay -S --needed --noconfirm xmind
@@ -46,8 +55,8 @@ yay -S --needed --noconfirm nosqlbooster
 yay -S --needed --noconfirm wps-office
 
 # Change shell to zsh
-if [ $0 != 'zsh' ]; then
-    sudo chsh -s /usr/bin/zsh
+if [[ $0 != 'zsh' ]]; then
+    chsh -s /usr/bin/zsh
     echo "change default shell to zsh"
 else
     echo "default shell is zsh already"
