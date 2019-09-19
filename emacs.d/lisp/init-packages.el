@@ -1,5 +1,5 @@
 ;; Package Management: Cask & Pallet
-(require 'cask "~/.cask/cask.el")
+(require 'cask "/usr/share/cask/cask.el")
 (cask-initialize)
 (require 'pallet)
 (pallet-mode t)
