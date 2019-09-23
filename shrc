@@ -12,6 +12,7 @@ alias showoff="screenfetch|lolcat"
 
 alias g="git"
 alias v="vim"
+alias sv="sudo vim"
 alias o="xdg-open"
 alias e="emacsclient -n"
 
