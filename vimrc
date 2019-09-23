@@ -17,6 +17,7 @@ set expandtab       " Use space instead of tab, eg. soft tab
 set softtabstop=4   " soft tab size
 
 inoremap jj <ESC>
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 let mapleader=" "
 map <leader>y "+y

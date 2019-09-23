@@ -7,6 +7,8 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 
 ;; UTF-8 settings
