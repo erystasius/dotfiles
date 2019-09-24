@@ -22,6 +22,7 @@
   "4" 'select-window-4
   ;; File
   "f f" 'find-file
+  "f p" 'counsel-projectile
   "f r" 'counsel-recentf
   "f g" 'counsel-git
   ;; Help
