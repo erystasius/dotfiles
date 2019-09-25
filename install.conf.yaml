@@ -20,7 +20,7 @@
     ~/.config/rofi/config: rofi.conf
     ~/.config/i3/config: i3.conf
     ~/.config/xfce4/terminal/terminalrc: xfce4-terminalrc
+    ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml: xfce4-keyboard-shortcuts.xml
     ~/.config/polybar/config: polybar.conf
-    # /etc 
-    /etc/aria2/aria2.conf: aria2.conf   # for aria2-systemd
+    ~/.config/aria2/aria2.conf: aria2.conf
 
