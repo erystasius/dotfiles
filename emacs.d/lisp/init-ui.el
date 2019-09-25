@@ -4,9 +4,8 @@
 ;; Powerline
 (powerline-default-theme)
 
-;; Font
-(set-frame-font "Microsoft Yahei Mono-12" nil t)
-;; (set-frame-font "Source Code Pro-10" nil t)
+;; CNFonts
+(cnfonts-enable)
 
 ;; Emacs Default
 (tool-bar-mode -1)
@@ -21,6 +20,9 @@
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 (window-numbering-mode 1)
 (global-visual-line-mode t)
+
+;; Plugins
+(treemacs-resize-icons 18)
 
 ;; Provide feature
 (provide 'init-ui)

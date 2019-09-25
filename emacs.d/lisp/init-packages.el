@@ -45,9 +45,6 @@
 (winner-mode)
 (add-hook 'ediff-after-quit-hook-internal 'winner-undo)
 
-;; CNFonts
-(cnfonts-enable)
-
 ;; Misc
 ;;(hungry-delete-mode 1)
 (projectile-global-mode 1)
