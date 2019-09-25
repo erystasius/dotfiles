@@ -33,3 +33,4 @@
 (depends-on "treemacs-projectile")
 (depends-on "which-key")
 (depends-on "window-numbering")
+(depends-on "keyfreq")

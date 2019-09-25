@@ -31,8 +31,11 @@
 ;; Which key
 (which-key-mode t)
 
+;; Keyfreq
+(keyfreq-mode 1)
+(keyfreq-autosave-mode 1)
+
 ;; Misc
-;;(which-key-mode 1)
 ;;(hungry-delete-mode 1)
 (projectile-global-mode 1)
 (counsel-projectile-mode 1)

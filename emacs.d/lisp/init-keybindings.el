@@ -34,6 +34,7 @@
   ;; Treemacs
   "t" 'treemacs
   ;; Misc
+  "s t" 'open-xfce4-terminal
   "p" 'projectile-command-map
   "<SPC>" 'counsel-M-x)
 

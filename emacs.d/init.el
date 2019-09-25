@@ -17,6 +17,11 @@
   (interactive)
   (load-file erystasius/init-file))
 
+;; open terminal
+(defun open-xfce4-terminal ()
+  (interactive)
+  (shell-command "xfce4-terminal"))
+
 ;; server
 (server-start)
 
