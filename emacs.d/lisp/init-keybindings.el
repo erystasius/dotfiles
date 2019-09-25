@@ -11,7 +11,7 @@
   "b a" 'save-some-buffers
   "b k" 'kill-this-buffer
   ;; Window
-  "w d" 'delete-window
+  "w k" 'delete-window
   "w m" 'delete-other-windows
   "w h" 'split-window-below
   "w v" 'split-window-right
@@ -33,6 +33,8 @@
   "h o" 'describe-font
   ;; Treemacs
   "t" 'treemacs
+  ;; Org
+  "o l s" '(org-sort-list "n")
   ;; Misc
   "s t" 'open-xfce4-terminal
   "p" 'projectile-command-map

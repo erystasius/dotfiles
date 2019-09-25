@@ -34,3 +34,4 @@
 (depends-on "which-key")
 (depends-on "window-numbering")
 (depends-on "keyfreq")
+(depends-on "cnfonts")

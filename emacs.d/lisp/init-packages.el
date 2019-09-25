@@ -16,6 +16,7 @@
 ;; Ivy & Counsel
 (ivy-mode 1)
 (counsel-mode 1)
+(setq ivy-initial-inputs-alist nil) ;; no '^' symbol at start
 (define-key ivy-mode-map (kbd "C-j") 'ivy-next-line)
 (define-key ivy-mode-map (kbd "C-k") 'ivy-previous-line)
 
@@ -35,6 +36,18 @@
 (keyfreq-mode 1)
 (keyfreq-autosave-mode 1)
 
+;; Ediff
+;; don't start another frame
+(setq ediff-window-setup-function 'ediff-setup-windows-plain)
+;; put windows side by side
+(setq ediff-split-window-function (quote split-window-horizontally))
+;;revert windows on exit - needs winner mode
+(winner-mode)
+(add-hook 'ediff-after-quit-hook-internal 'winner-undo)
+
+;; CNFonts
+(cnfonts-enable)
+
 ;; Misc
 ;;(hungry-delete-mode 1)
 (projectile-global-mode 1)
@@ -43,5 +56,5 @@
 ;; Major Mode
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-
 (provide 'init-packages)
+
