@@ -40,4 +40,5 @@ ShortcutsNoMnemonics=TRUE
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
+FontUseSystem=TRUE
 
