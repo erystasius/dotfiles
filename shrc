@@ -1,3 +1,4 @@
+#!/bin/sh
 alias ls="ls --color=always"
 alias la="ls -A"
 alias ll="ls -ahlF"
@@ -14,7 +15,8 @@ alias g="git"
 alias v="vim"
 alias sv="sudo vim"
 alias o="xdg-open"
-alias e="emacsclient -n"
+alias e="emacsclient -n -c"
+alias et="emacsclient"
 
 HISTCONTROL=ignoredups:erasedups
 HISTSIZE=1000
