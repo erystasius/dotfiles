@@ -20,6 +20,7 @@
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 (window-numbering-mode 1)
 (global-visual-line-mode t)
+(setq initial-scratch-message nil)
 
 ;; Plugins
 (treemacs-resize-icons 18)

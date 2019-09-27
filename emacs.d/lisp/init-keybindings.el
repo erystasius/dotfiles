@@ -2,12 +2,13 @@
 (evil-leader/set-key 
   ;; Elisp
   "e e" 'eval-last-sexp
+  "e p" 'eval-print-last-sexp
   "e b" 'eval-buffer
   ;; Buffer
   "b l" 'list-buffers
   "b s" 'switch-to-buffer
   "b v" 'view-buffer-other-window
-  "b o" 'switch-to-buffer-other-window
+  "b o" 'switch-to-buffer-other-frame
   "b a" 'save-some-buffers
   "b k" 'kill-this-buffer
   ;; Window

@@ -23,5 +23,7 @@
   (shell-command "xfce4-terminal"))
 
 ;; server
-;; (server-start)
+(server-start)
 
+;; server
+(treemacs)
