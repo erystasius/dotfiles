@@ -7,7 +7,7 @@
     st = status
     br = branch
     sm = submodule
-    ac = commit -a -m
+    ac = commit -a -m update
     dc = diff --cached
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     unstage = reset HEAD

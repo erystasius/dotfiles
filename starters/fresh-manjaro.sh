@@ -15,7 +15,6 @@ sudo pacman -S --needed --noconfirm yay
 echo "Setting yay mirror..."
 yay --aururl "https://aur.tuna.tsinghua.edu.cn" --save
 
-
 echo "Excluding .xz extension for makepkg to accell aur package installation"
 export PKGEXT='.pkg.tar'
 
