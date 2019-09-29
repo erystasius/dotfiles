@@ -1,5 +1,12 @@
 ;; Theme
-(load-theme 'base16-eighties t)
+(load-theme 'base16-decaf-ery t)
+(global-linum-mode t)
+(fringe-mode '(8 . 0))
+(set-face-background 'fringe "#384157")
+(set-face-background 'linum "#384157")
+;; (load-theme 'base16-eighties t)
+;; (set-face-background 'fringe "#2d2d2d")
+;; (set-face-background 'linum "#2d2d2d")
 
 ;; Powerline
 (powerline-default-theme)
@@ -11,10 +18,6 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
-(global-linum-mode t)
-(fringe-mode '(8 . 0))
-(set-face-background 'fringe "#2d2d2d")
-(set-face-background 'linum "#2d2d2d")
 (global-hl-line-mode t)
 (setq inhibit-startup-screen t)
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
