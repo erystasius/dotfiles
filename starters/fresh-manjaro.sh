@@ -55,14 +55,3 @@ else
     echo "Default shell is zsh already"
 fi
 
-# Manual Stuff
-# - Shortcuts
-# - Remove xz from makepkg
-# - Config apps
-#   - Shadowsocks
-#   - Chrome
-#   - Dropbox
-#   - Emacs
-#   - Fcitx
-# - Xmodmap
-
