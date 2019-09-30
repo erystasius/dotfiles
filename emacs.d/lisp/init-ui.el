@@ -1,12 +1,18 @@
-;; Theme
+;; Function
+(defun ery-set-color(color)
+    (set-background-color color)
+    (set-face-background 'fringe color)
+    (set-face-background 'linum color))
+
+;; Load Theme
+(push (concat user-emacs-directory "lisp/themes/") custom-theme-load-path)
+(require 'base16-decaf-ery-theme)
+
+;; Set Theme
 (load-theme 'base16-decaf-ery t)
 (global-linum-mode t)
 (fringe-mode '(8 . 0))
-(set-face-background 'fringe "#384157")
-(set-face-background 'linum "#384157")
-;; (load-theme 'base16-eighties t)
-;; (set-face-background 'fringe "#2d2d2d")
-;; (set-face-background 'linum "#2d2d2d")
+(ery-set-color "#384157")
 
 ;; Powerline
 (powerline-default-theme)
@@ -15,12 +21,12 @@
 (cnfonts-enable)
 
 ;; Emacs Default
+(setq inhibit-startup-screen t)
+(setq initial-frame-alist (quote ((fullscreen . maximized))))
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
 (global-hl-line-mode t)
-(setq inhibit-startup-screen t)
-(setq initial-frame-alist (quote ((fullscreen . maximized))))
 (window-numbering-mode 1)
 (global-visual-line-mode t)
 (setq initial-scratch-message nil)

@@ -4,6 +4,7 @@
   "e e" 'eval-last-sexp
   "e p" 'eval-print-last-sexp
   "e b" 'eval-buffer
+  "e q" 'kill-emacs
   ;; Buffer
   "b l" 'list-buffers
   "b s" 'switch-to-buffer
@@ -37,8 +38,12 @@
   ;; Org
   "o l s" '(org-sort-list "n")
   ;; Misc
-  "s t" 'open-xfce4-terminal
+  "s t" 'ery-open-terminal
+  "s i" 'ery-open-init-file
+  "s l" 'ery-load-init-file
+  ;; Single Key
   "p" 'projectile-command-map
+  "l" 'load-theme
   "<SPC>" 'counsel-M-x)
 
 (global-set-key "\C-s" 'swiper)
