@@ -34,6 +34,10 @@ yay -S --needed --noconfirm anki
 yay -S --needed --noconfirm goldendict
 yay -S --needed --noconfirm mcomix
 yay -S --needed --noconfirm meld
+yay -S --needed --noconfirm deepin-file-manager
+yay -S --needed --noconfirm deepin-system-monitor
+yay -S --needed --noconfirm deepin-screenshot
+yay -S --needed --noconfirm deepin-picker
 
 echo "Installing AUR packages"
 yay -S --needed --noconfirm cask
@@ -41,6 +45,7 @@ yay -S --needed --noconfirm oh-my-zsh-git
 yay -S --needed --noconfirm aria2-systemd
 yay -S --needed --noconfirm google-chrome
 yay -S --needed --noconfirm dropbox
+yay -S --needed --noconfirm nutstore
 
 echo "Changing shell to zsh"
 if [[ $0 != 'zsh' ]]; then
