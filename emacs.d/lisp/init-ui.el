@@ -14,6 +14,9 @@
 (fringe-mode '(8 . 0))
 (ery-set-color "#384157")
 
+;; Transparency
+(set-frame-parameter (selected-frame) 'alpha '(95 . 90))
+
 ;; Powerline
 (powerline-default-theme)
 
