@@ -4,21 +4,22 @@
 
 - DE
     - XFCE
-    - KDE
 - WM
     - i3-gaps
     - xfwm
-    - kdwm
 - Shell
     - zsh
     - bash
+- Launcher
+    - Ulauncher
+- Panel
+    - Ulauncher
+    - polybar 
 - Terminal
     - xfce4-terminal
 - Editor
     - emacs
     - vim
-- Launcher
-    - rofi
 - SCM (Source Control Management)
     - git
 - Applications
@@ -27,19 +28,16 @@
     - steam
     - aria2
 - Tools
-    - polybar 
     - feh
     - compton
     - fcitx
 - Misc
     - neofetch
-    - screenfetch
     - lolcat
     - nyancat
 - AUR apps
     - chrome
     - dropbox
-    - xmind
     - xmind
     - teamviewer
     - intelli

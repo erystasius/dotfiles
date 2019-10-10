@@ -48,7 +48,6 @@
 | Screenshot     |                    | `yg`               | screenshot page within window              |
 | Screenshot     |                    | `yG`               | screenshot full page                       |
 
-
 ## Tryouts
 
 - `ZZ`,`ZR`,:list/create/delete/openSession
@@ -56,7 +55,6 @@
 - customize search
 - customize open
 - pin/unpin
-- `yg` - capture hpage
 - `cc` - open link in clipboard
 - `go` - open url in current tab
 - `Q` - open omni bar for word trans

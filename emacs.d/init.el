@@ -25,5 +25,6 @@
 ;; server
 (server-start)
 
-;; server
+;; treemacs
 (treemacs)
+(select-window-2)
