@@ -17,6 +17,7 @@ alias sv="sudo vim"
 alias o="xdg-open"
 alias e="emacsclient -n -c"
 alias et="emacsclient"
+alias hi="history"
 
 HISTCONTROL=ignoredups:erasedups
 HISTSIZE=1000
