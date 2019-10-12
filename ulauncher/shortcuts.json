@@ -1,0 +1,142 @@
+{
+    "8496549e-8ff9-4e9f-a441-dc61fe87d06f": {
+        "id": "8496549e-8ff9-4e9f-a441-dc61fe87d06f",
+        "name": "Emacs",
+        "keyword": "e",
+        "cmd": "#!/bin/sh\nemacs",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1570874484.298507
+    },
+    "eb774a3a-2f13-453f-8153-c7b8b1a1f0d1": {
+        "id": "eb774a3a-2f13-453f-8153-c7b8b1a1f0d1",
+        "name": "Chrome",
+        "keyword": "c",
+        "cmd": "#!/bin/sh\ngoogle-chrome",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1570874606.5255618
+    },
+    "e8f77ce2-2552-4003-8f3e-5dc54bf7f3d9": {
+        "id": "e8f77ce2-2552-4003-8f3e-5dc54bf7f3d9",
+        "name": "Terminal",
+        "keyword": "t",
+        "cmd": "#!/bin/sh\nxfce4-terminal",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1570874633.5502183
+    },
+    "33d0d0ae-c601-4d96-9993-82acbe883580": {
+        "id": "33d0d0ae-c601-4d96-9993-82acbe883580",
+        "name": "File Manager",
+        "keyword": "f",
+        "cmd": "#!/bin/sh\nxdg-open ~",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1570874697.6956651
+    },
+    "39231856-f568-4f3c-8214-b8e3413cc51b": {
+        "id": "39231856-f568-4f3c-8214-b8e3413cc51b",
+        "name": "Google Search",
+        "keyword": "gg",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570696224.7826123
+    },
+    "086f6691-38d7-4318-9301-6e01a7737e2c": {
+        "id": "086f6691-38d7-4318-9301-6e01a7737e2c",
+        "name": "DogeDoge",
+        "keyword": "do",
+        "cmd": "https://www.dogedoge.com/results?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1570874138.7139132
+    },
+    "0f9c0097-6370-45f8-95f1-223c17cfe44c": {
+        "id": "0f9c0097-6370-45f8-95f1-223c17cfe44c",
+        "name": "Baidu",
+        "keyword": "bd",
+        "cmd": "https://www.baidu.com/s?wd=%s",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570874870.6394591
+    },
+    "53406b3d-e805-4b3b-af61-36349e21f130": {
+        "id": "53406b3d-e805-4b3b-af61-36349e21f130",
+        "name": "DuckDuckGo",
+        "keyword": "dd",
+        "cmd": "https://duckduckgo.com/?q=%s",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570874931.0972528
+    },
+    "3f4ef60c-b4fc-4a05-89cd-bc4b29d246b0": {
+        "id": "3f4ef60c-b4fc-4a05-89cd-bc4b29d246b0",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "http://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570696224.7826824
+    },
+    "10028ac3-ba84-4532-ab98-934a4a05b0a0": {
+        "id": "10028ac3-ba84-4532-ab98-934a4a05b0a0",
+        "name": "Wikipedia",
+        "keyword": "wk",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570696224.7827291
+    },
+    "65d9a70a-9391-4167-84e9-6ed55c641ef5": {
+        "id": "65d9a70a-9391-4167-84e9-6ed55c641ef5",
+        "name": "Github",
+        "keyword": "gh",
+        "cmd": "https://github.com/search?q=%s",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570874181.3409839
+    },
+    "97846227-02bf-466a-982c-cc7606cb0a1e": {
+        "id": "97846227-02bf-466a-982c-cc7606cb0a1e",
+        "name": "Zhihu",
+        "keyword": "zh",
+        "cmd": "https://www.zhihu.com/search?type=content&q=%s",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570874240.4143214
+    },
+    "03a7ea78-bba8-4504-8b01-e1f0c31989a2": {
+        "id": "03a7ea78-bba8-4504-8b01-e1f0c31989a2",
+        "name": "BiliBili",
+        "keyword": "bb",
+        "cmd": "https://search.bilibili.com/all?keyword=%s",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570875030.9372551
+    },
+    "ebfd8fb1-9a6b-4d7e-a876-e86967030413": {
+        "id": "ebfd8fb1-9a6b-4d7e-a876-e86967030413",
+        "name": "Youtube",
+        "keyword": "yt",
+        "cmd": "https://www.youtube.com/results?search_query=%s",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1570875073.7783847
+    }
+}

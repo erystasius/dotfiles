@@ -1,6 +1,6 @@
 set nocompatible    " No compatible with vi
 set number          " Enable line number
-set relativenumber  " Show relative line number
+" set relativenumber  " Show relative line number
 set cursorline      " Highlight cursor line
 
 set t_Co=256        " 256 color

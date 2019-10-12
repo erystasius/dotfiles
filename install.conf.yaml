@@ -24,4 +24,5 @@
     ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml: xfce4-keyboard-shortcuts.xml
     ~/.config/polybar/config: polybar.conf
     ~/.config/aria2/aria2.conf: aria2.conf
+    ~/.config/ulauncher: ulauncher
 
