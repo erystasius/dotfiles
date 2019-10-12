@@ -40,6 +40,7 @@ yay -S --needed --noconfirm deepin-screenshot
 yay -S --needed --noconfirm deepin-picker
 
 echo "Installing AUR packages"
+yay -S --needed --noconfirm ulauncher
 yay -S --needed --noconfirm cask
 yay -S --needed --noconfirm oh-my-zsh-git
 yay -S --needed --noconfirm aria2-systemd
