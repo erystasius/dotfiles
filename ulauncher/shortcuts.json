@@ -13,7 +13,7 @@
         "id": "eb774a3a-2f13-453f-8153-c7b8b1a1f0d1",
         "name": "Chrome",
         "keyword": "c",
-        "cmd": "#!/bin/sh\ngoogle-chrome",
+        "cmd": "#!/bin/sh\ngoogle-chrome-stable",
         "icon": null,
         "is_default_search": false,
         "run_without_argument": true,
