@@ -26,10 +26,11 @@ xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>6 -t strin
 xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>7 -t string -s workspace_7_key
 
 # Move window to workspace
-xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>ampersand    -t string -s move_window_workspace_1_key
-xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>asciicircum  -t string -s move_window_workspace_2_key
-xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>percent      -t string -s move_window_workspace_3_key
+xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>exclam       -t string -s move_window_workspace_1_key
+xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>at           -t string -s move_window_workspace_2_key
+xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>numbersign   -t string -s move_window_workspace_3_key
 xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>dollar       -t string -s move_window_workspace_4_key
-xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>numbersign   -t string -s move_window_workspace_5_key
-xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>at           -t string -s move_window_workspace_6_key
-xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>exclam       -t string -s move_window_workspace_7_key
+xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>percent      -t string -s move_window_workspace_5_key
+xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>asciicircum  -t string -s move_window_workspace_6_key
+xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Shift\>\<Super\>ampersand    -t string -s move_window_workspace_7_key
+
