@@ -17,6 +17,7 @@
     ~/.ideavimrc: ideavimrc
     ~/.tmux.conf: tmux.conf
     #  .config
+    ~/.config/compton.conf: compton.conf
     ~/.config/fontconfig/fonts.conf: fonts.conf
     ~/.config/rofi/config: rofi.conf
     ~/.config/i3/config: i3.conf
