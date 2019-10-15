@@ -2,9 +2,15 @@
 
 # Basic
 xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>d -t string -s show_desktop_key
-xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>f -t string -s fullscreen_key
+xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>y -t string -s fullscreen_key
 xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>s -t string -s resize_window_key
 xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>q -t string -s close_window_key 
+
+# Application
+xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>e -t string -s emacs
+xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>w -t string -s "exo-open --launch WebBrowser"
+xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>f -t string -s "exo-open --launch FileManager"
+xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>t -t string -s "exo-open --launch TerminalEmulator"
 
 # Tiling
 xfconf-query -c xfce4-keyboard-shortcuts -n -p /xfwm4/custom/\<Super\>k -t string -s maximize_window_key
