@@ -1,5 +1,3 @@
-
-
 # Network
 yay -S --needed --noconfirm shadowsocks
 yay -S --needed --noconfirm v2ray
@@ -34,6 +32,7 @@ yay -S --needed --noconfirm xmind
 
 # Show off
 yay -S --needed --noconfirm lolcat
+yay -S --needed --noconfirm figlet
 
 # Programming
 yay -S --needed --noconfirm intellij-idea-ultimate-edition
