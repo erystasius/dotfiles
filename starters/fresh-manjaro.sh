@@ -20,33 +20,15 @@ export PKGEXT='.pkg.tar'
 
 echo "Installing packages"
 yay -S --needed --noconfirm vim
-yay -S --needed --noconfirm emacs
 yay -S --needed --noconfirm zsh
 yay -S --needed --noconfirm xfce4-terminal
 yay -S --needed --noconfirm git
-yay -S --needed --noconfirm fcitx-im 
-yay -S --needed --noconfirm fcitx-configtool 
-yay -S --needed --noconfirm shadowsocks
-yay -S --needed --noconfirm aria2
-yay -S --needed --noconfirm screenfetch
-yay -S --needed --noconfirm lolcat
-yay -S --needed --noconfirm anki
-yay -S --needed --noconfirm goldendict
-yay -S --needed --noconfirm mcomix
-yay -S --needed --noconfirm meld
-yay -S --needed --noconfirm deepin-file-manager
-yay -S --needed --noconfirm deepin-system-monitor
-yay -S --needed --noconfirm deepin-screenshot
-yay -S --needed --noconfirm deepin-picker
+yay -S --needed --noconfirm neofetch
 
 echo "Installing AUR packages"
 yay -S --needed --noconfirm ulauncher
-yay -S --needed --noconfirm cask
 yay -S --needed --noconfirm oh-my-zsh-git
-yay -S --needed --noconfirm aria2-systemd
 yay -S --needed --noconfirm google-chrome
-yay -S --needed --noconfirm dropbox
-yay -S --needed --noconfirm nutstore
 
 echo "Changing shell to zsh"
 if [[ $0 != 'zsh' ]]; then
