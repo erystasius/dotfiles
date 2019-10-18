@@ -24,6 +24,7 @@ yay -S --needed --noconfirm zsh
 yay -S --needed --noconfirm xfce4-terminal
 yay -S --needed --noconfirm git
 yay -S --needed --noconfirm neofetch
+yay -S --needed --noconfirm xfsettings
 
 echo "Installing AUR packages"
 yay -S --needed --noconfirm ulauncher
