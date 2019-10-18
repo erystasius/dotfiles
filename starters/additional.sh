@@ -1,3 +1,5 @@
+
+
 # Network
 yay -S --needed --noconfirm shadowsocks
 yay -S --needed --noconfirm v2ray
@@ -11,6 +13,9 @@ yay -S --needed --noconfirm dropbox
 yay -S --needed --noconfirm nutstore
 
 # Major Applications
+yay -S --needed --noconfirm chrome
+yay -S --needed --noconfirm oh-my-zsh-git
+yay -S --needed --noconfirm ulauncher
 yay -S --needed --noconfirm emacs
 yay -S --needed --noconfirm cask
 yay -S --needed --noconfirm aria2

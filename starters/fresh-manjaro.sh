@@ -25,11 +25,9 @@ yay -S --needed --noconfirm xfce4-terminal
 yay -S --needed --noconfirm git
 yay -S --needed --noconfirm neofetch
 yay -S --needed --noconfirm xfce4-settings
-
-echo "Installing AUR packages"
-yay -S --needed --noconfirm ulauncher
-yay -S --needed --noconfirm oh-my-zsh-git
-yay -S --needed --noconfirm google-chrome
+yay -S --needed --noconfirm dmenu
+yay -S --needed --noconfirm rofi
+yay -S --needed --noconfirm firefox
 
 echo "Changing shell to zsh"
 if [[ $0 != 'zsh' ]]; then
