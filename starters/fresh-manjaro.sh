@@ -30,7 +30,7 @@ yay -S --needed --noconfirm rofi
 yay -S --needed --noconfirm firefox
 
 echo "Changing shell to zsh"
-if [[ $0 != 'zsh' ]]; then
+if [[ $SHELL != 'zsh' ]]; then
     chsh -s /usr/bin/zsh
     echo "Default shell changed to zsh"
 else
