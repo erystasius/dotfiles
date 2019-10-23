@@ -9,7 +9,7 @@ xfconf-query -c xsettings -p /Net/IconThemeName -s "deepin"
 # xfconf-query -c xsettings -p /Net/IconThemeName -s "Tela-red-dark"
 
 # Font Setting
-yay -S --needed --noconfirm otf-san-francisco-pro
+yay -S --needed --noconfirm otf-san-francisco
 yay -S --needed --noconfirm ttf-meslo
 yay -S --needed --noconfirm ttf-monaco
 yay -S --needed --noconfirm wqy-microhei
