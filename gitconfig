@@ -21,3 +21,5 @@
 [fetch]
     # Prune remote-tracking branches no longer on remote
     prune = true
+[credential]
+	help = store

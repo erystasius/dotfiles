@@ -10,15 +10,18 @@ yay -S --needed --noconfirm fcitx-configtool
 yay -S --needed --noconfirm dropbox
 yay -S --needed --noconfirm nutstore
 
+# Emacs
+yay -S --needed --noconfirm emacs
+yay -S --needed --noconfirm cask
+
+# Aria2
+yay -S --needed --noconfirm aria2
+yay -S --needed --noconfirm aria2-systemd
+
 # Major Applications
 yay -S --needed --noconfirm chrome
 yay -S --needed --noconfirm oh-my-zsh-git
 yay -S --needed --noconfirm ulauncher
-yay -S --needed --noconfirm emacs
-yay -S --needed --noconfirm cask
-yay -S --needed --noconfirm aria2
-yay -S --needed --noconfirm aria2-systemd
-yay -S --needed --noconfirm deepin-file-manager
 yay -S --needed --noconfirm anki
 yay -S --needed --noconfirm goldendict
 yay -S --needed --noconfirm mcomix
@@ -34,8 +37,9 @@ yay -S --needed --noconfirm xmind
 yay -S --needed --noconfirm gtop
 yay -S --needed --noconfirm lolcat
 yay -S --needed --noconfirm figlet
+yay -S --needed --noconfirm pfetch
+yay -S --needed --noconfirm neofetch
 yay -S --needed --noconfirm tty-clock
-
 
 # Programming
 yay -S --needed --noconfirm intellij-idea-ultimate-edition
