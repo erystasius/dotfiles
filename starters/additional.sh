@@ -31,8 +31,11 @@ yay -S --needed --noconfirm teamviewer
 yay -S --needed --noconfirm xmind
 
 # Show off
+yay -S --needed --noconfirm gtop
 yay -S --needed --noconfirm lolcat
 yay -S --needed --noconfirm figlet
+yay -S --needed --noconfirm tty-clock
+
 
 # Programming
 yay -S --needed --noconfirm intellij-idea-ultimate-edition
