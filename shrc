@@ -9,8 +9,6 @@ alias hg="history | grep"
 alias pg="ps aux | grep"
 alias grep="grep --color=auto"
 
-alias showoff="screenfetch|lolcat"
-
 alias g="git"
 alias v="vim"
 alias sv="sudo vim"
@@ -18,6 +16,8 @@ alias o="xdg-open"
 alias e="emacsclient -n -c"
 alias et="emacsclient"
 alias hi="history"
+
+alias setwp="feh --bg-fill --randomize ~/Backgrounds"
 
 HISTCONTROL=ignoredups:erasedups
 HISTSIZE=1000
