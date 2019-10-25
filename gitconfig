@@ -10,6 +10,7 @@
     sm = submodule
     dc = diff --cached
     ac = !git add --all && git ci -m update
+    unstage = restore --staged :/
     throw = !git reset --hard HEAD && git clean -f
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [core]
