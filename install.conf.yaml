@@ -32,4 +32,5 @@
 
 - shell:
   - touch ~/.config/aria2/session.lock
+  - source ~/.shrc
 
