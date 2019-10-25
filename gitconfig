@@ -3,16 +3,17 @@
     name = Erystasius
 [alias]
     co = checkout	
-    ci = commit -m
+    ci = commit
     st = status
     br = branch
+    rb = rebase
     sm = submodule
-    ac = commit -a -m update
     dc = diff --cached
+    ac = !git add --all && git ci -m update
+    throw = !git reset --hard HEAD && git clean -f
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    unstage = reset HEAD
-    throw = reset --hard HEAD
 [core]
+    editor = vim
     # See https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
     autocrlf = input
 [push]
