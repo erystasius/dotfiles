@@ -27,7 +27,7 @@ yay -S --needed --noconfirm goldendict
 yay -S --needed --noconfirm mcomix
 yay -S --needed --noconfirm wps-office
 yay -S --needed --noconfirm font-manager
-yay -S --needed --noconfirm baidunetdisk-bin
+yay -S --needed --noconfirm baidunetdisk
 yay -S --needed --noconfirm deepin-wine-wechat
 yay -S --needed --noconfirm dingtalk
 yay -S --needed --noconfirm teamviewer
@@ -51,4 +51,5 @@ yay -S --needed --noconfirm meld
 yay -S --needed --noconfirm deepin-system-monitor
 yay -S --needed --noconfirm deepin-screenshot
 yay -S --needed --noconfirm deepin-picker
+yay -S --needed --noconfirm imagewriter
 
