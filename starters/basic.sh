@@ -26,6 +26,7 @@ yay -S --needed --noconfirm rofi
 yay -S --needed --noconfirm dmenu
 yay -S --needed --noconfirm pcmanfm
 yay -S --needed --noconfirm firefox
+yay -S --needed --noconfirm xfce4-notifyd
 yay -S --needed --noconfirm xfce4-terminal
 yay -S --needed --noconfirm xfce4-settings
 

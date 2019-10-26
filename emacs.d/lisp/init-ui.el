@@ -15,7 +15,7 @@
 (ery-set-color "#384157")
 
 ;; Transparency
-(set-frame-parameter (selected-frame) 'alpha '(95 . 85))
+(set-frame-parameter (selected-frame) 'alpha '(95 . 95))
 
 ;; Powerline
 (powerline-default-theme)

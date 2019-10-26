@@ -17,7 +17,7 @@ alias e="emacsclient -n -c"
 alias et="emacsclient"
 alias hi="history"
 
-alias setwp="feh --bg-fill --randomize ~/Backgrounds"
+alias setwp="feh --bg-fill --randomize ~/Wallpapers"
 
 HISTCONTROL=ignoredups:erasedups
 HISTSIZE=1000
