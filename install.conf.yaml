@@ -21,6 +21,7 @@
     ~/.ideavimrc: ideavimrc
     ~/.tmux.conf: tmux.conf
     #  .config
+
     ~/.config/compton.conf: compton.conf
     ~/.config/xfce4/terminal/terminalrc: xfce4-terminalrc
     ~/.config/polybar/config: polybar.conf
@@ -29,6 +30,8 @@
     ~/.config/rofi/config: rofi.conf
     ~/.config/i3/config: i3.conf
     ~/.config/aria2/aria2.conf: aria2.conf
+    ~/.config/bspwm/bspwmrc: bspwmrc
+    ~/.config/sxhkd/sxhkdrc: sxhkdrc
 
 - shell:
   - touch ~/.config/aria2/session.lock
