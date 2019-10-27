@@ -1,3 +1,7 @@
+# Enhancement
+yay -S --needed --noconfirm autotiling
+yay -S --needed --noconfirm oh-my-zsh-git
+
 # Network
 yay -S --needed --noconfirm v2ray
 yay -S --needed --noconfirm shadowsocks
@@ -32,7 +36,6 @@ yay -S --needed --noconfirm wps-office
 yay -S --needed --noconfirm teamviewer
 yay -S --needed --noconfirm font-manager
 yay -S --needed --noconfirm deepin-wine-wechat
-yay -S --needed --noconfirm oh-my-zsh-git
 
 # Show off
 yay -S --needed --noconfirm gtop
