@@ -2,7 +2,7 @@
     "com.github.henriqueutsch.exec-terminal": {
         "id": "com.github.henriqueutsch.exec-terminal",
         "url": "https://github.com/henriqueutsch/exec-terminal",
-        "updated_at": "2019-10-24T16:50:02.993549",
+        "updated_at": "2019-10-28T23:43:40.701346",
         "last_commit": "5351367a348953568f917255964a303ad8a2f677",
         "last_commit_time": "2019-10-04T13:28:08"
     },
@@ -23,7 +23,7 @@
     "com.github.luispabon.ulauncher-virtualbox": {
         "id": "com.github.luispabon.ulauncher-virtualbox",
         "url": "https://github.com/luispabon/ulauncher-virtualbox",
-        "updated_at": "2019-10-24T16:50:16.870505",
+        "updated_at": "2019-10-28T23:43:48.462893",
         "last_commit": "940f775b4893670b95a94d78b0d1394e763642e8",
         "last_commit_time": "2019-09-24T18:46:46"
     }

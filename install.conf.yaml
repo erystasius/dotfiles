@@ -21,8 +21,8 @@
     ~/.ideavimrc: ideavimrc
     ~/.tmux.conf: tmux.conf
     #  .config
-
     ~/.config/compton.conf: compton.conf
+    ~/.config/libinput-gestures.conf: libinput-gestures.conf
     ~/.config/xfce4/terminal/terminalrc: xfce4-terminalrc
     ~/.config/polybar/config: polybar.conf
     ~/.config/ulauncher: ulauncher
