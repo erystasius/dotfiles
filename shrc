@@ -17,6 +17,9 @@ alias e="emacsclient -n -c"
 alias et="emacsclient"
 alias hi="history"
 
+alias yaya="yay --aur"
+alias yayr="yay --repo"
+
 alias cdot="cd ~/dotfiles"
 alias setwp="feh --bg-fill --randomize ~/Wallpapers"
 
