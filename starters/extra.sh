@@ -1,10 +1,3 @@
-# Hardware
-yay -S --needed --noconfirm gestures
-yay -S --needed --noconfirm blueberry
-yay -S --needed --noconfirm pulseaudio
-yay -S --needed --noconfirm pavucontrol
-yay -S --needed --noconfirm network-manager-applet
-
 # Enhancement
 yay -S --needed --noconfirm google-chrome
 yay -S --needed --noconfirm ulauncher

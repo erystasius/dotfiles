@@ -18,6 +18,14 @@ yay --aururl "https://aur.tuna.tsinghua.edu.cn" --save
 echo "Excluding .xz extension for makepkg to accell aur package installation"
 export PKGEXT='.pkg.tar'
 
+echo "Installing hardware packages"
+yay -S --needed --noconfirm gestures
+yay -S --needed --noconfirm blueberry
+yay -S --needed --noconfirm pulseaudio
+yay -S --needed --noconfirm pavucontrol
+yay -S --needed --noconfirm gnome-keyring
+yay -S --needed --noconfirm network-manager-applet
+
 echo "Installing packages"
 yay -S --needed --noconfirm zsh
 yay -S --needed --noconfirm git
@@ -29,6 +37,7 @@ yay -S --needed --noconfirm firefox
 yay -S --needed --noconfirm xfce4-notifyd
 yay -S --needed --noconfirm xfce4-terminal
 yay -S --needed --noconfirm xfce4-settings
+
 
 echo "Changing shell to zsh"
 if [[ $SHELL != '/usr/bin/zsh' ]]; then
