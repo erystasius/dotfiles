@@ -2,10 +2,8 @@
 
 ## List of Softwares
 
-- DE
+- DE/WM
     - xfce
-- WM
-    - xfwm
     - i3-gaps
     - bspwm
 - Compositor
@@ -29,34 +27,15 @@
     - fcitx
 - Download
     - aria2
-- Applications
-    - anki
-    - goldendict
-    - steam
-    - chrome
-    - dropbox
-    - xmind
-    - teamviewer
-    - intelli
-- Tools
-    - htop
-    - feh
-    - deepin-picker
     - deepin-screenshot
-- Showoff
-    - neofetch
-    - lolcat
-    - nyancat
-    - gotop
 
-## Workspace Usage
+## Bar info
 
-1. Todoist + Emacs
-2. Work related
-3. Goldendict + Anki
-4. Dingtalk
-5.
-6.
-7. Entertainment
-8. Showoff
-9. System monitoring
+- Workspace
+- Time
+- CPU
+- RAM
+- Disk
+- Network: ip
+- Backlight
+- Buttery
