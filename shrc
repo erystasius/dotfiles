@@ -1,4 +1,8 @@
 #!/bin/sh
+
+export VISUAL=vim
+export EDITOR=vim
+
 alias ls="ls --color=always"
 alias la="ls -A"
 alias ll="ls -ahlF"
