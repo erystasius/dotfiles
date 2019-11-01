@@ -19,12 +19,20 @@ echo "Excluding .xz extension for makepkg to accell aur package installation"
 export PKGEXT='.pkg.tar'
 
 echo "Installing hardware packages"
-yay -S --needed --noconfirm gestures
-yay -S --needed --noconfirm blueberry
+# network
+yay -S --needed --noconfirm networkmanager
+yay -S --needed --noconfirm network-manager-applet
+yay -S --needed --noconfirm gnome-keyring
+# audio
 yay -S --needed --noconfirm pulseaudio
 yay -S --needed --noconfirm pavucontrol
-yay -S --needed --noconfirm gnome-keyring
-yay -S --needed --noconfirm network-manager-applet
+yay -S --needed --noconfirm pa-applet
+# bluetooth
+yay -S --needed --noconfirm bluez
+yay -S --needed --noconfirm blueberry
+# trackpad
+yay -S --needed --noconfirm libinput-gestures
+yay -S --needed --noconfirm gestures
 
 echo "Installing packages"
 yay -S --needed --noconfirm zsh
@@ -37,7 +45,6 @@ yay -S --needed --noconfirm firefox
 yay -S --needed --noconfirm xfce4-notifyd
 yay -S --needed --noconfirm xfce4-terminal
 yay -S --needed --noconfirm xfce4-settings
-
 
 echo "Changing shell to zsh"
 if [[ $SHELL != '/usr/bin/zsh' ]]; then

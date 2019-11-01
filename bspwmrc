@@ -1,8 +1,9 @@
 #! /bin/sh
 
 xfsettingsd &
-sxhkd &
 nm-applet &
+pa-applet &
+sxhkd &
 compton &
 polybar ery &
 fcitx &
