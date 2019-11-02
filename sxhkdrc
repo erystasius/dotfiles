@@ -3,7 +3,7 @@
 #########################
 
 # quit/restart/hotkey
-super + shift + {q,r,c}
+super + shift + {e,r,c}
 	{bspc quit,bspc wm -r,pkill -USR1 -x sxhkd}
 
 ########################

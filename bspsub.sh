@@ -3,8 +3,8 @@ bspc subscribe desktop_layout | \
 while read -r line
 do
     if [[ $line == *"monocle"* ]]; then
-        polybar test &
+        polybar bsptab &
     else
-        pkill -f polybar\ test
+        pkill -f polybar\ bsptab
     fi
 done

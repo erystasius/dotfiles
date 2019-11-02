@@ -20,6 +20,11 @@ yay -S --needed --noconfirm emacs
 yay -S --needed --noconfirm aria2
 yay -S --needed --noconfirm aria2-systemd
 
+# Archive
+yay -S --needed --noconfirm zip
+yay -S --needed --noconfirm unzip
+yay -S --needed --noconfirm xarchiver
+
 # File Sync
 # yay -S --needed --noconfirm dropbox
 yay -S --needed --noconfirm nutstore
