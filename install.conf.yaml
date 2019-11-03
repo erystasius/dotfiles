@@ -21,6 +21,7 @@
     ~/.ideavimrc: ideavimrc
     ~/.tmux.conf: tmux.conf
     #  .config
+    ~/.config/htop/htoprc: htoprc
     ~/.config/compton.conf: compton.conf
     ~/.config/redshift.conf: redshift.conf
     ~/.config/libinput-gestures.conf: libinput-gestures.conf
