@@ -11,8 +11,8 @@ super + shift + {e,r,c}
 ########################
 
 # application shortcuts
-super + {Return,e,r,d}
-	{xfce4-terminal,emacs,ulauncher,rofi -show combi}
+super + {Return,e,r,u}
+	{xfce4-terminal,emacs,rofi -show-icons -show combi,ulauncher}
 
 # exo launch
 super + {w,y}

@@ -16,7 +16,6 @@ MiscTabCloseMiddleClick=TRUE
 MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 ScrollingLines=999999
-BackgroundDarkness=0.900000
 ScrollingOnOutput=FALSE
 FontName=Monaco 10
 MiscBellUrgent=FALSE
