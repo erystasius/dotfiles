@@ -11,8 +11,8 @@ xfconf-query -c xsettings -p /Net/IconThemeName -s "deepin"
 # Basic Font
 yay -S --needed --noconfirm ttf-dejavu
 yay -S --needed --noconfirm wqy-microhei
-yay -S --needed --noconfirm ttf-nerd-fonts-symbols
 yay -S --needed --noconfirm unicode-emoji
+yay -S --needed --noconfirm noto-fonts-emoji
 
 # AUR Font
 yay -S --needed --noconfirm otf-san-francisco
