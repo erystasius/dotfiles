@@ -1,7 +1,7 @@
 .cache/
-auto-save-list/
-recentf
-projectile-bookmarks.eld
-projectile.cache
-elpa/
-session.*
+/elpa/
+/auto-save-list/
+/recentf
+/projectile-bookmarks.eld
+/projectile.cache
+/session.*
