@@ -52,6 +52,8 @@ yay -S --needed --noconfirm nutstore
 # yay -S --needed --noconfirm tty-clock
 # 
 # # Programming
+# yay -S --needed --noconfirm perf
+# yay -S --needed --noconfirm cloc
 # yay -S --needed --noconfirm meld
 # yay -S --needed --noconfirm postman
 # yay -S --needed --noconfirm nosqlbooster
