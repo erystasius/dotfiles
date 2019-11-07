@@ -39,3 +39,17 @@
 - Network: ip
 - Backlight
 - Buttery
+
+## Manual steps
+
+- keyboard
+    - cp dotfiles/ery to /usr/share/X11/xkb/symbols/ery
+    - cp .Xkbmap 
+- special font
+    - PingFang SC
+- ss/v2ray config
+- systemd enable services
+- wallpapers
+
+
+
