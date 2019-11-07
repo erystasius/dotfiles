@@ -18,6 +18,10 @@ super + {Return,e,r,u}
 super + {w,y}
     exo-open --launch {WebBrowser,FileManager}
 
+# screen rotation
+super + o; {h,j,k,l}
+    xrandr --orientation {left,inverted,normal,right}
+
 ##################
 ###   Window   ### 
 ##################
@@ -35,29 +39,25 @@ super + q
 #####################
 
 # preselect the direction
-super + ctrl + {h,j,k,l}
+super + p; {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # preselect the ratio
-super + ctrl + {1-9}
+super + p; {1-9}
 	bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
-super + ctrl + space
+super + p; q
 	bspc node -p cancel
 
 ################
 ###   Mode   ###   
 ################
 
-# alternate between the tiled and monocle layout
-super + m
+# toggle modes
+super + d
 	bspc desktop -l next
-
-# set the window state
-# super + {t,s,f}
-# 	bspc node -t {tiled,floating,fullscreen}
-super + {p,s,f}
+super + {g,s,f}
     state={pseudo_tiled,floating,fullscreen}; \
     bspc query -N -n "focused.$\{state\}" && state=tiled; \
     bspc node -t "$state"
