@@ -54,6 +54,7 @@ yay -S --needed --noconfirm xfce4-terminal
 yay -S --needed --noconfirm xfce4-settings
 
 # Network
+yay -S --needed --noconfirm nmap
 yay -S --needed --noconfirm v2ray
 yay -S --needed --noconfirm shadowsocks
 
