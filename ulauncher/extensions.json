@@ -2,28 +2,28 @@
     "com.github.henriqueutsch.exec-terminal": {
         "id": "com.github.henriqueutsch.exec-terminal",
         "url": "https://github.com/henriqueutsch/exec-terminal",
-        "updated_at": "2019-10-28T23:43:40.701346",
+        "updated_at": "2019-11-08T10:31:00.546849",
         "last_commit": "5351367a348953568f917255964a303ad8a2f677",
         "last_commit_time": "2019-10-04T13:28:08"
     },
     "com.github.isacikgoz.ukill": {
         "id": "com.github.isacikgoz.ukill",
         "url": "https://github.com/isacikgoz/ukill",
-        "updated_at": "2019-10-29T18:43:28.963929",
+        "updated_at": "2019-11-08T10:31:03.682848",
         "last_commit": "bc50d9f41d46b6813a5aeebddd15734dcdb9d8db",
         "last_commit_time": "2019-05-28T18:30:00"
     },
     "com.github.iboyperson.ulauncher-system": {
         "id": "com.github.iboyperson.ulauncher-system",
         "url": "https://github.com/iboyperson/ulauncher-system",
-        "updated_at": "2019-10-29T18:43:32.321811",
+        "updated_at": "2019-11-08T10:31:06.382233",
         "last_commit": "34a4776fcdf8be9b22d524b98631298efe668fb9",
         "last_commit_time": "2019-09-17T20:03:39"
     },
     "com.github.luispabon.ulauncher-virtualbox": {
         "id": "com.github.luispabon.ulauncher-virtualbox",
         "url": "https://github.com/luispabon/ulauncher-virtualbox",
-        "updated_at": "2019-10-28T23:43:48.462893",
+        "updated_at": "2019-11-08T10:31:18.508697",
         "last_commit": "940f775b4893670b95a94d78b0d1394e763642e8",
         "last_commit_time": "2019-09-24T18:46:46"
     }

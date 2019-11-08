@@ -32,7 +32,7 @@ HISTCONTROL=ignoredups:erasedups
 HISTSIZE=1000
 HISTFILESIZE=1000
 
-proxy="socks5://127.0.0.1:17777"
+proxy="socks5://127.0.0.1:16666"
 
 function proxy-on() {
     export {http,https}_proxy=$proxy

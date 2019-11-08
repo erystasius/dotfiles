@@ -47,9 +47,17 @@
     - cp .Xkbmap 
 - special font
     - PingFang SC
-- ss/v2ray config
 - systemd enable services
 - wallpapers
-
+- ss/v2ray config
+- proxy-on
+- google-chrome-stable --proxy-server="socks5://localhost:16666"
+- signin
+- 1 password
+- Nutstore
+- pcmanfm bookmarks
+- font
+    - sudo cp /home/erystasius/dotfiles/resources/*.ttf /usr/share/fonts/TTF
+    - fc-cahce -f
 
 
