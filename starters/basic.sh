@@ -29,17 +29,20 @@ yay -S --needed --noconfirm pavucontrol
 yay -S --needed --noconfirm pa-applet
 # bluetooth
 yay -S --needed --noconfirm bluez
+yay -S --needed --noconfirm rfkill
 yay -S --needed --noconfirm blueberry
 # trackpad
 yay -S --needed --noconfirm libinput-gestures
 yay -S --needed --noconfirm gestures
 
 echo "Installing packages"
+yay -S --needed --noconfirm fd
 yay -S --needed --noconfirm zsh
 yay -S --needed --noconfirm git
 yay -S --needed --noconfirm feh
 yay -S --needed --noconfirm gvim
 yay -S --needed --noconfirm rofi
+yay -S --needed --noconfirm tree
 yay -S --needed --noconfirm htop
 yay -S --needed --noconfirm dmenu
 yay -S --needed --noconfirm bspwm
@@ -49,9 +52,13 @@ yay -S --needed --noconfirm pcmanfm
 yay -S --needed --noconfirm polybar
 yay -S --needed --noconfirm compton
 yay -S --needed --noconfirm firefox
+yay -S --needed --noconfirm viewnior
 yay -S --needed --noconfirm xfce4-notifyd
 yay -S --needed --noconfirm xfce4-terminal
 yay -S --needed --noconfirm xfce4-settings
+
+# X
+yay -S --needed --noconfirm xtitle
 
 # Network
 yay -S --needed --noconfirm nmap
@@ -73,13 +80,15 @@ yay -S --needed --noconfirm wqy-microhei
 yay -S --needed --noconfirm unicode-emoji
 yay -S --needed --noconfirm noto-fonts-emoji
 
-# GTK/Font Theme
+# GTK/Icon/Cursor Theme
 yay -S --needed --noconfirm deepin-gtk-theme
 yay -S --needed --noconfirm deepin-icon-theme
+yay -S --needed --noconfirm xcursor-breeze
 
 # Theming
 xfconf-query -c xsettings -p /Net/ThemeName -s "deepin"
 xfconf-query -c xsettings -p /Net/IconThemeName -s "deepin"
+xfconf-query -c xsettings -p /Gtk/CursorThemeName -s "xcursor-breeze"
 
 echo "Changing shell to zsh"
 if [[ $SHELL != '/usr/bin/zsh' ]]; then

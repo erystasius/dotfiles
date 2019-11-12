@@ -10,6 +10,6 @@ yay -S --needed --noconfirm compton-tryone-git
 # xfconf-query -c xsettings -p /Net/IconThemeName -s "Tela-red-dark"
 
 # AUR Font
-yay -S --needed --noconfirm otf-san-francisco
-yay -S --needed --noconfirm ttf-monaco
-yay -S --needed --noconfirm ttf-meslo
+# yay -S --needed --noconfirm otf-san-francisco
+# yay -S --needed --noconfirm ttf-monaco
+# yay -S --needed --noconfirm ttf-meslo

@@ -32,27 +32,56 @@ HISTCONTROL=ignoredups:erasedups
 HISTSIZE=1000
 HISTFILESIZE=1000
 
-proxy="socks5://127.0.0.1:16666"
-
-function proxy-on() {
-    export {http,https}_proxy=$proxy
-}
-
-function proxy-off() {
-    unset {http,https}_proxy
-}
-
 function proxy-status() {
     ip=$(curl -sS ifconfig.co)
     echo "current ip is: $ip"
-    if [ ! -z $http_proxy ] && [ $proxy = $http_proxy ]; then
+
+    echo '\n'
+
+    if [ ! -z $proxy_default ] ; then
+        echo "proxy_default: $proxy_default"
+    else
+        echo "proxy_default:"
+    fi
+    if [ ! -z $proxy ] ; then
+        echo "proxy: $proxy"
+    else
+        echo "proxy:"
+    fi
+
+    echo '\n'
+
+    if [ ! -z $http_proxy ] ; then
         echo "http_proxy: $http_proxy"
     else
         echo "http_proxy:"
     fi
-    if [ ! -z $https_proxy ] && [ $proxy = $https_proxy ]; then
+    if [ ! -z $https_proxy ] ; then
         echo "https_proxy: $https_proxy"
     else
         echo "https_proxy:"
     fi
 }
+
+function proxy-set() {
+    export proxy=$1
+    proxy-status
+}
+
+function proxy-reset() {
+    export proxy=$proxy_default
+    proxy-status
+}
+
+function proxy-on() {
+    export {http,https}_proxy=$proxy
+    proxy-status
+}
+
+function proxy-off() {
+    unset {http,https}_proxy
+    proxy-status
+}
+
+export proxy_default="socks5://127.0.0.1:16666"
+export proxy="socks5://127.0.0.1:16666"
