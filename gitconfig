@@ -2,6 +2,8 @@
     email = Felix.E.Huang@gmail.com
     name = Erystasius
 [alias]
+    ps = push
+    pl = pull
     ci = commit
     st = status
     br = branch

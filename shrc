@@ -12,6 +12,7 @@ alias du="du -h -d 1"
 alias hg="history | grep"
 alias pg="pgrep -f -a"
 alias pk="pkill -f"
+alias kp="kill -9"
 alias grep="grep -i --color=auto"
 
 alias g="git"
