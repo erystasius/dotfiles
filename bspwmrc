@@ -36,3 +36,8 @@ bspc config borderless_monocle      true
 bspc rule -a Emacs state=tiled
 bspc rule -a Anki desktop=10
 bspc rule -a GoldenDict desktop=10
+
+# sticky app
+bspc rule -a \*:crx_oihmkpogbcncclhnjdcnbhpgmidhcoed sticky=on state=floating hidden=on rectangle=1200x700+680+-30
+/opt/google/chrome/google-chrome --profile-directory=Default --app-i    d=oihmkpogbcncclhnjdcnbhpgmidhcoed &
+

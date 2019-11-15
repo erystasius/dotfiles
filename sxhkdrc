@@ -89,3 +89,10 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+###################
+###   Testing   ###
+###################
+super + t
+    id=$(xwininfo -children -root|grep Todoist|grep crx_oihmkpogbcncclhnjdcnbhpgmidhcoed|xargs|sed 's/ /\n/g'|head -n 1);notify-send $id;bspc node $id --flag hidden;bspc node $id -f
+
