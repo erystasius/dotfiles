@@ -75,7 +75,8 @@ yay -S --needed --noconfirm fcitx-configtool
 # Archive
 yay -S --needed --noconfirm zip
 yay -S --needed --noconfirm unzip
-yay -S --needed --noconfirm xarchiver
+yay -S --needed --noconfirm unarchiver
+yay -S --needed --noconfirm file-roller
 
 # Font
 yay -S --needed --noconfirm ttf-dejavu
