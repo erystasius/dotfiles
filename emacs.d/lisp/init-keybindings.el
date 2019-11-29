@@ -37,6 +37,8 @@
   "t" 'treemacs
   ;; Org
   "o l s" '(org-sort-list "n")
+  "o l r" 'org-list-repair
+  "o t a" 'org-table-align
   ;; Misc
   "s t" 'ery-open-terminal
   "s i" 'ery-open-init-file
