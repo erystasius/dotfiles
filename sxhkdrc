@@ -20,7 +20,7 @@ super + {w,y}
 
 # screen rotation
 super + o; {h,j,k,l}
-    xrandr --orientation {left,inverted,normal,right}
+    xrandr --orientation {left,normal,inverted,right}
 
 ##################
 ###   Window   ### 
