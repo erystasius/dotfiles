@@ -6,6 +6,9 @@ else
     echo "Pacman is using China mirrors"
 fi
 
+echo "Setting pacman color output"
+sudo set -i "s/^#Color$/Color/" /etc/pacman.conf
+
 echo "Updateing system"
 sudo pacman -Syu --noconfirm
 
@@ -39,7 +42,6 @@ echo "Installing packages"
 yay -S --needed --noconfirm fd
 yay -S --needed --noconfirm zsh
 yay -S --needed --noconfirm git
-yay -S --needed --noconfirm feh
 yay -S --needed --noconfirm gvim
 yay -S --needed --noconfirm rofi
 yay -S --needed --noconfirm tree
@@ -48,11 +50,12 @@ yay -S --needed --noconfirm dmenu
 yay -S --needed --noconfirm bspwm
 yay -S --needed --noconfirm sxhkd
 yay -S --needed --noconfirm dmenu
-yay -S --needed --noconfirm pcmanfm
 yay -S --needed --noconfirm polybar
 yay -S --needed --noconfirm compton
 yay -S --needed --noconfirm firefox
+yay -S --needed --noconfirm nitrogen
 yay -S --needed --noconfirm viewnior
+yay -S --needed --noconfirm pcmanfm-gtk3
 yay -S --needed --noconfirm xfce4-notifyd
 yay -S --needed --noconfirm xfce4-terminal
 yay -S --needed --noconfirm xfce4-settings
@@ -72,7 +75,8 @@ yay -S --needed --noconfirm fcitx-configtool
 # Archive
 yay -S --needed --noconfirm zip
 yay -S --needed --noconfirm unzip
-yay -S --needed --noconfirm xarchiver
+yay -S --needed --noconfirm unarchiver
+yay -S --needed --noconfirm file-roller
 
 # Font
 yay -S --needed --noconfirm ttf-dejavu

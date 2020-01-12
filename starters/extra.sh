@@ -37,6 +37,7 @@ yay -S --needed --noconfirm perf
 # yay -S --needed --noconfirm cloc
 # yay -S --needed --noconfirm meld
 yay -S --needed --noconfirm postman
+yay -S --needed --noconfirm eclipse-mat
 yay -S --needed --noconfirm nosqlbooster-mongodb
 yay -S --needed --noconfirm intellij-idea-ultimate-edition-jre
  
