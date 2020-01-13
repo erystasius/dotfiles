@@ -8,6 +8,7 @@ nm-applet &
 pa-applet &
 sxhkd &
 compton &
+udiskie &
 polybar -r main &
 fcitx &
 nitrogen --restore &

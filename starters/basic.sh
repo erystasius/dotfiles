@@ -50,6 +50,7 @@ yay -S --needed --noconfirm dmenu
 yay -S --needed --noconfirm bspwm
 yay -S --needed --noconfirm sxhkd
 yay -S --needed --noconfirm dmenu
+yay -S --needed --noconfirm udiskie
 yay -S --needed --noconfirm polybar
 yay -S --needed --noconfirm compton
 yay -S --needed --noconfirm firefox
