@@ -34,7 +34,11 @@
   "h v" 'describe-variable
   "h o" 'describe-font
   ;; Treemacs
-  "t" 'treemacs
+  "t t" 'treemacs
+  "t a" 'treemacs-add-project-to-workspace
+  "t r" 'treemacs-remove-project-from-workspace
+  "t u" 'treemacs-move-project-up
+  "t d" 'treemacs-move-project-down
   ;; Org
   "o l s" '(org-sort-list "n")
   "o l r" 'org-list-repair
@@ -56,6 +60,7 @@
 (which-key-declare-prefixes "SPC w" "window-map")
 (which-key-declare-prefixes "SPC f" "file-map")
 (which-key-declare-prefixes "SPC h" "help-map")
+(which-key-declare-prefixes "SPC t" "treemacs-map")
 (which-key-declare-prefixes "SPC o" "org-map")
 (which-key-declare-prefixes "SPC s" "misc-map")
 

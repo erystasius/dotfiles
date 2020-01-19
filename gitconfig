@@ -2,6 +2,7 @@
     email = Felix.E.Huang@gmail.com
     name = Erystasius
 [alias]
+    di = diff
     ps = push
     pl = pull
     ci = commit
