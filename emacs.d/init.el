@@ -28,3 +28,5 @@
 ;; treemacs
 (treemacs)
 (select-window-2)
+
+;; todos

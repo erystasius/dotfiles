@@ -39,6 +39,9 @@
   "o l s" '(org-sort-list "n")
   "o l r" 'org-list-repair
   "o t a" 'org-table-align
+  "o t c" 'org-table-create-or-convert-from-region
+  "o t o h" 'org-table-move-column-left
+  "o t o l" 'org-table-move-column-right
   ;; Misc
   "s t" 'ery-open-terminal
   "s i" 'ery-open-init-file
@@ -47,6 +50,14 @@
   "p" 'projectile-command-map
   "l" 'load-theme
   "<SPC>" 'counsel-M-x)
+
+(which-key-declare-prefixes "SPC e" "emacs-and-elisp-map")
+(which-key-declare-prefixes "SPC b" "buffer-map")
+(which-key-declare-prefixes "SPC w" "window-map")
+(which-key-declare-prefixes "SPC f" "file-map")
+(which-key-declare-prefixes "SPC h" "help-map")
+(which-key-declare-prefixes "SPC o" "org-map")
+(which-key-declare-prefixes "SPC s" "misc-map")
 
 (global-set-key "\C-s" 'swiper)
 
