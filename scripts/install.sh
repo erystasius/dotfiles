@@ -7,7 +7,7 @@ else
 fi
 
 echo "Setting pacman color output"
-sudo set -i "s/^#Color$/Color/" /etc/pacman.conf
+sudo sed -i "s/^#Color$/Color/" /etc/pacman.conf
 
 echo "Updateing system"
 sudo pacman -Syu --noconfirm
@@ -52,7 +52,6 @@ yay -S --needed --noconfirm sxhkd
 yay -S --needed --noconfirm dmenu
 yay -S --needed --noconfirm udiskie
 yay -S --needed --noconfirm polybar
-yay -S --needed --noconfirm compton
 yay -S --needed --noconfirm firefox
 yay -S --needed --noconfirm nitrogen
 yay -S --needed --noconfirm viewnior
