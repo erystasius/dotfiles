@@ -40,4 +40,5 @@ ScrollingBar=TERMINAL_SCROLLBAR_NONE
 ColorCursor=x
 ColorPalette=#384157;#ff7f7b;#beda78;#ffd67c;#90bee1;#efb3f7;#bed6ff;#c4c8cf;#8c929f;#ff7f7b;#beda78;#ffd67c;#90bee1;#efb3f7;#bed6ff;#ffffff
 ColorBoldIsBright=FALSE
+FontUseSystem=TRUE
 
