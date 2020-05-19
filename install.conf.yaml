@@ -23,7 +23,7 @@
     ~/.tmux.conf: tmux.conf
     #  .config
     ~/.config/htop/htoprc: htoprc
-    ~/.config/compton.conf: compton.conf
+    ~/.config/picom/picom.conf: picom.conf
     ~/.config/redshift.conf: redshift.conf
     ~/.config/libinput-gestures.conf: libinput-gestures.conf
     ~/.config/xfce4/terminal/terminalrc: xfce4-terminalrc

@@ -7,7 +7,7 @@ xfsettingsd &
 nm-applet &
 pa-applet &
 sxhkd &
-compton &
+picom --experimental-backends &
 udiskie &
 polybar -r main &
 fcitx &
