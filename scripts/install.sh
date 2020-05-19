@@ -55,9 +55,9 @@ yay -S --needed --noconfirm polybar
 yay -S --needed --noconfirm firefox
 yay -S --needed --noconfirm nitrogen
 yay -S --needed --noconfirm viewnior
+yay -S --needed --noconfirm alacritty
 yay -S --needed --noconfirm pcmanfm-gtk3
 yay -S --needed --noconfirm xfce4-notifyd
-yay -S --needed --noconfirm xfce4-terminal
 yay -S --needed --noconfirm xfce4-settings
 
 # X
