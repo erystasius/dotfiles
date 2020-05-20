@@ -1,8 +1,7 @@
 # Enhancement
-yay -S --needed --noconfirm google-chrome
 yay -S --needed --noconfirm oh-my-zsh-git
 #yay -S --needed --noconfirm ulauncher
-yay -S --needed --noconfirm compton-tryone-git
+yay -S --needed --noconfirm picom-tryone-git
 
 # Aur Theme
 # yay -S --needed --noconfirm tela-icon-theme-git

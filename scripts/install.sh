@@ -53,6 +53,7 @@ yay -S --needed --noconfirm dmenu
 yay -S --needed --noconfirm udiskie
 yay -S --needed --noconfirm polybar
 yay -S --needed --noconfirm firefox
+yay -S --needed --noconfirm chromium
 yay -S --needed --noconfirm nitrogen
 yay -S --needed --noconfirm viewnior
 yay -S --needed --noconfirm alacritty
