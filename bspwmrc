@@ -9,7 +9,7 @@ pa-applet &
 sxhkd &
 picom --experimental-backends &
 udiskie &
-polybar -r main &
+polybar -r 4k &
 fcitx &
 nitrogen --restore &
 
@@ -22,7 +22,7 @@ bspc config focus_follows_pointer   true
 
 # appearance
 bspc config window_gap              10
-bspc config top_padding             25
+bspc config top_padding             50
 bspc config border_width            2
 bspc config normal_border_color     \#384157
 bspc config active_border_color     \#6c99bb
