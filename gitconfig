@@ -32,3 +32,7 @@
     prune = true
 
 # vim:ft=dosini
+[http]
+	proxy = socks5://127.0.0.1:7891
+[https]
+	proxy = socks5://127.0.0.1:7891
