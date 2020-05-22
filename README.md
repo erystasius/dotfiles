@@ -57,7 +57,7 @@
 - Nutstore
 - pcmanfm bookmarks
 - font
-    - sudo cp /home/erystasius/dotfiles/resources/*.ttf /usr/share/fonts/TTF
+    - sudo cp /home/erystasius/dotfiles/fonts/*.ttf /usr/share/fonts/TTF
     - fc-cahce -f
 
 
