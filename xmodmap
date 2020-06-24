@@ -1,8 +1,0 @@
-!
-! Caps_Lock is also a Control
-!
-clear Lock
-keysym Caps_Lock = Control_L 
-add Control = Control_L
-
-

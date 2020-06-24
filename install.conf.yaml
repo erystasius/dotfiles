@@ -3,7 +3,12 @@
         create: true
         relink: true
 
-- clean: ['~']
+- clean: 
+    ~/:
+        force: true
+    ~/.config:
+        force: true
+        recursive: true
 
 - link:
     # folders
@@ -18,7 +23,6 @@
     ~/.bash_profile: bash_profile
     ~/.inputrc: inputrc
     ~/.xprofile: xprofile
-    ~/.Xmodmap: xmodmap
     ~/.ideavimrc: ideavimrc
     ~/.tmux.conf: tmux.conf
     #  .config
@@ -26,12 +30,9 @@
     ~/.config/picom/picom.conf: picom.conf
     ~/.config/redshift.conf: redshift.conf
     ~/.config/libinput-gestures.conf: libinput-gestures.conf
-    ~/.config/xfce4/terminal/terminalrc: xfce4-terminalrc
     ~/.config/polybar/config: polybar.conf
-    ~/.config/ulauncher: ulauncher
     ~/.config/fontconfig/fonts.conf: fonts.conf
     ~/.config/rofi/config: rofi.conf
-    ~/.config/i3/config: i3.conf
     ~/.config/aria2/aria2.conf: aria2.conf
     ~/.config/bspwm/bspwmrc: bspwmrc
     ~/.config/sxhkd/sxhkdrc: sxhkdrc
