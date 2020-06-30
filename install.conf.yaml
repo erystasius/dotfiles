@@ -36,6 +36,7 @@
     ~/.config/bspwm/bspwmrc: config/bspwmrc
     ~/.config/sxhkd/sxhkdrc: config/sxhkdrc
     ~/.config/alacritty/alacritty.yml: config/alacritty.yml
+    ~/.config/nitrogen/nitrogen.cfg: config/nitrogen.cfg
 
 - shell:
   - touch ~/.config/aria2/session.lock

@@ -50,9 +50,9 @@ yay -S --needed --noconfirm dmenu
 yay -S --needed --noconfirm bspwm
 yay -S --needed --noconfirm sxhkd
 yay -S --needed --noconfirm dmenu
+yay -S --needed --noconfirm clash
 yay -S --needed --noconfirm udiskie
 yay -S --needed --noconfirm polybar
-yay -S --needed --noconfirm firefox
 yay -S --needed --noconfirm chromium
 yay -S --needed --noconfirm nitrogen
 yay -S --needed --noconfirm viewnior
@@ -103,3 +103,5 @@ else
     echo "Default shell is zsh already"
 fi
 
+# Systemd
+systemctl --user enable clash.service
