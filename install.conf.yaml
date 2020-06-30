@@ -12,29 +12,30 @@
 
 - link:
     # folders
-    ~/.emacs.d: emacs.d
-    ~/.vim: vim
+    ~/.emacs.d: config/emacs.d
+    ~/.vim: config/vim
     # files
-    ~/.gitconfig: gitconfig
-    ~/.vimrc: vimrc
-    ~/.shrc: shrc
-    ~/.zshrc: zshrc
-    ~/.bashrc: bashrc
-    ~/.bash_profile: bash_profile
-    ~/.inputrc: inputrc
-    ~/.xprofile: xprofile
-    ~/.ideavimrc: ideavimrc
+    ~/.gitconfig: config/gitconfig
+    ~/.vimrc: config/vimrc
+    ~/.shrc: config/shrc
+    ~/.zshrc: config/zshrc
+    ~/.bashrc: config/bashrc
+    ~/.bash_profile: config/bash_profile
+    ~/.inputrc: config/inputrc
+    ~/.xprofile: config/xprofile
+    ~/.ideavimrc: config/ideavimrc
     #  .config
-    ~/.config/htop/htoprc: htoprc
-    ~/.config/picom/picom.conf: picom.conf
-    ~/.config/redshift.conf: redshift.conf
-    ~/.config/libinput-gestures.conf: libinput-gestures.conf
-    ~/.config/polybar/config: polybar.conf
-    ~/.config/fontconfig/fonts.conf: fonts.conf
-    ~/.config/rofi/config: rofi.conf
-    ~/.config/aria2/aria2.conf: aria2.conf
-    ~/.config/bspwm/bspwmrc: bspwmrc
-    ~/.config/sxhkd/sxhkdrc: sxhkdrc
+    ~/.config/htop/htoprc: config/htoprc
+    ~/.config/picom/picom.conf: config/picom.conf
+    ~/.config/redshift.conf: config/redshift.conf
+    ~/.config/libinput-gestures.conf: config/libinput-gestures.conf
+    ~/.config/polybar/config: config/polybar.conf
+    ~/.config/fontconfig/fonts.conf: config/fonts.conf
+    ~/.config/rofi/config: config/rofi.conf
+    ~/.config/aria2/aria2.conf: config/aria2.conf
+    ~/.config/bspwm/bspwmrc: config/bspwmrc
+    ~/.config/sxhkd/sxhkdrc: config/sxhkdrc
+    ~/.config/alacritty/alacritty.yml: config/alacritty.yml
 
 - shell:
   - touch ~/.config/aria2/session.lock
