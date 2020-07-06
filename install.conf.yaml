@@ -2,6 +2,8 @@
     link:
         create: true
         relink: true
+        force: true
+        glob: true
 
 - clean: 
     ~/:
@@ -37,6 +39,8 @@
     ~/.config/sxhkd/sxhkdrc: config/sxhkdrc
     ~/.config/alacritty/alacritty.yml: config/alacritty.yml
     ~/.config/nitrogen/nitrogen.cfg: config/nitrogen.cfg
+    # fonts
+    ~/.local/share/fonts: fonts/*
 
 - shell:
   - touch ~/.config/aria2/session.lock
