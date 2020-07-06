@@ -39,6 +39,8 @@
     ~/.config/sxhkd/sxhkdrc: config/sxhkdrc
     ~/.config/alacritty/alacritty.yml: config/alacritty.yml
     ~/.config/nitrogen/nitrogen.cfg: config/nitrogen.cfg
+    ~/.config/fcitx/config: config/fcitx.conf
+    ~/.config/fcitx/conf: config/fcitx
     # fonts
     ~/.local/share/fonts: fonts/*
 
