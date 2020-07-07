@@ -51,7 +51,7 @@
 - wallpapers
 - ss/v2ray config
 - proxy-on
-- google-chrome-stable --proxy-server="socks5://localhost:16666"
+- chromium --proxy-server="socks5://localhost:16666"
 - signin
 - 1 password
 - Nutstore

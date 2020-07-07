@@ -1,3 +1,9 @@
+# select-to-copy & right-click-to-paste
+selection:
+  save_to_clipboard: true
+mouse_bindings:
+  - { mouse: Right, action: PasteSelection }
+
 # Base16 Decaf 256 - alacritty color config
 # Alex Mirrington (https://github.com/alexmirrington)
 colors:
