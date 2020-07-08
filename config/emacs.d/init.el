@@ -20,10 +20,7 @@
   (load-file erystasius/init-file))
 (defun ery-open-terminal ()
   (interactive)
-  (shell-command "xfce4-terminal"))
-
-;; server
-(server-start)
+  (shell-command "alacritty"))
 
 ;; treemacs
 (treemacs)

@@ -3,6 +3,7 @@
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
+(auto-save-visited-mode 1)
 
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
