@@ -1,20 +1,20 @@
 #! /bin/sh
 
 export _JAVA_AWT_WM_NONREPARENTING=1
-# sh ~/dotfiles/bspsub.sh &
-nutstore &
-xfsettingsd &
+sxhkd &
+nitrogen --restore &
 nm-applet &
 pa-applet &
-sxhkd &
-picom --experimental-backends &
+picom &
 udiskie &
-polybar -r 1080p &
+polybar -r fhd-hdmi-1 & 
+polybar -r fhd-dvi-d-1 &
 fcitx &
-nitrogen --restore &
+nutstore &
 
 # desktop names
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor HDMI-1 -d I II III IV V VI VII
+bspc monitor DVI-D-1 -d VIII IX X
 
 # basic config
 bspc config split_ratio             0.5
@@ -32,13 +32,3 @@ bspc config focused_border_color    \#6c99bb
 bspc config top_monocle_padding     25
 bspc config borderless_monocle      true
 ;bspc config gapless_monocle         true
-
-# rules 
-bspc rule -a Emacs state=tiled
-bspc rule -a Anki desktop=10
-bspc rule -a GoldenDict desktop=10
-
-# sticky app
-bspc rule -a \*:crx_oihmkpogbcncclhnjdcnbhpgmidhcoed sticky=on state=floating hidden=on rectangle=1200x700+680+-30
-/opt/google/chrome/google-chrome --profile-directory=Default --app-i    d=oihmkpogbcncclhnjdcnbhpgmidhcoed &
-

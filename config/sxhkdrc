@@ -3,7 +3,7 @@
 #########################
 
 # quit/restart/hotkey
-super + shift + {e,r,c}
+super + shift + {e,r,k}
 	{bspc quit,bspc wm -r,pkill -USR1 -x sxhkd}
 
 ########################
@@ -11,8 +11,8 @@ super + shift + {e,r,c}
 ########################
 
 # application shortcuts
-super + {Return,e,r,u}
-	{alacritty,emacs,rofi -show-icons -show combi,ulauncher}
+super + {Return,w,e,r,y}
+	{alacritty,chromium,emacs,rofi -show-icons -show combi,pcmanfm}
 
 # exo launch
 super + {w,y}
@@ -26,7 +26,7 @@ super + o; {h,j,k,l}
 ###   Window   ### 
 ##################
 
-# focus the node in the given direction
+# focus/swap the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
@@ -83,16 +83,13 @@ super + alt + {h,j,k,l}
 	bspc node -z {right -20 0,bottom 0 20,bottom 0 -20,right 20 0}
 
 # resize at left top conner
-super + alt + shift + {h,j,k,l}
+super + alt + {y,u,i,o}
 	bspc node -z {left -20 0,top 0 20,top 0 -20,left 20 0}
 
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-###################
-###   Testing   ###
-###################
-super + t
-    id=$(xwininfo -children -root|grep Todoist|grep crx_oihmkpogbcncclhnjdcnbhpgmidhcoed|xargs|sed 's/ /\n/g'|head -n 1);notify-send $id;bspc node $id --flag hidden;bspc node $id -f
-
+###########################
+###   Experienmenting   ###
+###########################

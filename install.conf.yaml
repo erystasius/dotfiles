@@ -41,8 +41,8 @@
     ~/.config/nitrogen/nitrogen.cfg: config/nitrogen.cfg
     ~/.config/fcitx/config: config/fcitx.conf
     ~/.config/fcitx/conf: config/fcitx
-    # fonts
-    ~/.local/share/fonts: fonts/*
+    # shares: fonts, apps, icons
+    ~/.local/share: share/*
 
 - shell:
   - touch ~/.config/aria2/session.lock

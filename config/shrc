@@ -27,7 +27,9 @@ alias yaya="yay --aur"
 alias yayr="yay --repo"
 
 alias cdot="cd ~/dotfiles"
-alias setwp="feh --bg-fill --randomize ~/Wallpapers"
+alias cc="cd ~/dotfiles/config"
+alias cs="cd ~/dotfiles/share"
+
 
 HISTCONTROL=ignoredups:erasedups
 HISTSIZE=1000
@@ -84,5 +86,5 @@ function proxy-off() {
     proxy-status
 }
 
-export proxy_default="socks5://127.0.0.1:16666"
-export proxy="socks5://127.0.0.1:16666"
+export proxy_default="socks5://localhost:7890"
+export proxy="socks5://localhost:7890"
