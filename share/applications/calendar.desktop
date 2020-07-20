@@ -3,7 +3,7 @@
 Version=1.0
 Terminal=false
 Type=Application
-Name=Outlook
-Exec=/usr/bin/chromium --app=https://outlook.live.com/
+Name=Calendar
+Exec=/usr/bin/chromium --app=https://outlook.live.com/calendar
 Icon=chrome-eigpmdhekjlgjgcppnanaanbdmnlnagl-Default
 StartupWMClass=crx_eigpmdhekjlgjgcppnanaanbdmnlnagl

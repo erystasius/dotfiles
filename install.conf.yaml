@@ -39,6 +39,7 @@
     ~/.config/sxhkd/sxhkdrc: config/sxhkdrc
     ~/.config/alacritty/alacritty.yml: config/alacritty.yml
     ~/.config/nitrogen/nitrogen.cfg: config/nitrogen.cfg
+    ~/.config/zathura/zathurarc: config/zathurarc
     ~/.config/fcitx/config: config/fcitx.conf
     ~/.config/fcitx/conf: config/fcitx
     # shares: fonts, apps, icons
