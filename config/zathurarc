@@ -1,2 +1,21 @@
-map u navigate previous
-map d navigate next
+# Page up/down
+# map u navigate previous
+# map d navigate next
+map u scroll half-up
+map d scroll half-down
+
+# Toggle single/dual page mode
+map D toggle_page_mode
+
+# Adjust to fit width/height
+# a -> fit window
+# s -> fit width
+
+# Table of Contents
+# tab -> index mode
+
+# Zoom
+# - -> zoom out
+# + -> zoom in
+# = -> zoom original
+# <percent>= -> zoom to percent%

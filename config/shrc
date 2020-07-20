@@ -17,9 +17,11 @@ alias grep="grep -i --color=auto"
 
 alias g="git"
 alias v="vim"
-alias sv="sudo vim"
 alias o="xdg-open"
 alias e="emacsclient"
+alias z="zathura --fork"
+alias gd="goldendict"
+alias sv="sudo vim"
 alias ec="emacsclient -n -c"
 alias hi="history"
 
