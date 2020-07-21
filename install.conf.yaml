@@ -42,6 +42,7 @@
     ~/.config/zathura/zathurarc: config/zathurarc
     ~/.config/fcitx/config: config/fcitx.conf
     ~/.config/fcitx/conf: config/fcitx
+    ~/.config/gtk-3.0/settings.ini: config/gtk-3.0.ini
     # shares: fonts, apps, icons
     ~/.local/share: share/*
 
