@@ -1,2 +1,19 @@
-:imap jj <Esc>
-:set clipboard+=unnamed
+set clipboard+=unnamed
+
+let mapleader = " "
+
+map <leader>s :source ~/.ideavimrc
+map <leader>rf :action ReformatCode<CR>
+map <leader>o :action OptimizeImports<CR>
+
+map J :action Forward<CR>
+map K :action Back<CR>
+
+map H :action PreviousTab<CR>
+map L :action NextTab<CR>
+
+imap jf <Esc>
+imap jj <Esc>
+vmap jj <Esc>
+
+
