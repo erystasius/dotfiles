@@ -25,13 +25,11 @@ alias sv="sudo vim"
 alias ec="emacsclient -n -c"
 alias hi="history"
 
+alias yay="yay --noconfirm"
 alias yaya="yay --aur"
 alias yayr="yay --repo"
 
-alias cdot="cd ~/dotfiles"
-alias cc="cd ~/dotfiles/config"
-alias cs="cd ~/dotfiles/share"
-
+alias cdot="cd ~/dotfiles/config"
 
 HISTCONTROL=ignoredups:erasedups
 HISTSIZE=1000

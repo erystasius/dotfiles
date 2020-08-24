@@ -44,6 +44,9 @@
     ~/.config/fcitx/config: config/fcitx.conf
     ~/.config/fcitx/conf: config/fcitx
     ~/.config/gtk-3.0/settings.ini: config/gtk-3.0.ini
+    ~/.config/yay/config.json: config/yay.json
+    ~/.config/yay/pacman.conf: config/pacman.conf
+    ~/.config/yay/makepkg.conf: config/makepkg.conf
     # shares: fonts, apps, icons
     ~/.local/share: share/*
 

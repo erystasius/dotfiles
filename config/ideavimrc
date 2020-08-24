@@ -1,19 +1,25 @@
+" Use system clipboard.
 set clipboard+=unnamed
 
+" Set space as leader key.
 let mapleader = " "
 
-map <leader>s :source ~/.ideavimrc
-map <leader>rf :action ReformatCode<CR>
-map <leader>o :action OptimizeImports<CR>
+" Use J/K to go back/forward.
+nmap J :action Forward<CR>
+nmap K :action Back<CR>
 
-map J :action Forward<CR>
-map K :action Back<CR>
+" Use H/L to navigate tab.
+nmap H :action PreviousTab<CR>
+nmap L :action NextTab<CR>
 
-map H :action PreviousTab<CR>
-map L :action NextTab<CR>
+" Leader key shortcuts.
+nmap <leader>s  :source ~/.ideavimrc
+nmap <leader>l  :action SelectIn<CR><CR>
+nmap <leader>rf :action ReformatCode<CR>
+nmap <leader>o  :action OptimizeImports<CR>
 
+nnoremap <leader>j J
+
+" Insert mode keymap.
 imap jf <Esc>
 imap jj <Esc>
-vmap jj <Esc>
-
-
