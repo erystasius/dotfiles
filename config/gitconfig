@@ -5,6 +5,7 @@
     di = diff
     ps = push
     pl = pull
+    cl = clone
     ci = commit
     st = status
     br = branch

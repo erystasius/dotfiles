@@ -13,10 +13,9 @@
         recursive: true
 
 - link:
-    # folders
-    ~/.emacs.d: config/emacs.d
+    # ~
+    # ~/.emacs.d: config/emacs.d
     ~/.vim: config/vim
-    # files
     ~/.gitconfig: config/gitconfig
     ~/.vimrc: config/vimrc
     ~/.shrc: config/shrc
@@ -27,7 +26,7 @@
     ~/.xprofile: config/xprofile
     ~/.ideavimrc: config/ideavimrc
     ~/.gtkrc-2.0: config/gtkrc-2.0
-    #  .config
+    # ~/.config
     ~/.config/htop/htoprc: config/htoprc
     ~/.config/picom/picom.conf: config/picom.conf
     ~/.config/redshift.conf: config/redshift.conf
@@ -47,6 +46,7 @@
     ~/.config/yay/config.json: config/yay.json
     ~/.config/yay/pacman.conf: config/pacman.conf
     ~/.config/yay/makepkg.conf: config/makepkg.conf
+    ~/.config/doom: config/doom
     # shares: fonts, apps, icons
     ~/.local/share: share/*
 
