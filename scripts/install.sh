@@ -70,8 +70,8 @@ yay -S --needed --noconfirm v2ray
 yay -S --needed --noconfirm shadowsocks
 
 # Fcitx
-yay -S --needed --noconfirm fcitx-im
-yay -S --needed --noconfirm fcitx-configtool
+yay -S --needed --noconfirm fcitx5-im
+yay -S --needed --noconfirm fcitx5-material-color
 
 # Archive
 yay -S --needed --noconfirm zip
