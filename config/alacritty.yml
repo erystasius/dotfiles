@@ -47,4 +47,11 @@ colors:
     - { index: 20, color: '0xb4b7b4' }
     - { index: 21, color: '0xe0e0e0' }
 
+# Transparency
 background_opacity: 0.5
+
+# Font
+
+#font:
+#  normal: 
+#    family: erystasius

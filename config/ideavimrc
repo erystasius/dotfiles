@@ -1,3 +1,8 @@
+" IdeaVimExtension 提供
+" 切回 normal 模式自动切换英文
+" [no]keep-english-in-normal[-and-restore-in-insert]
+set keep-english-in-normal-and-restore-in-insert
+
 " Use system clipboard.
 set clipboard+=unnamed
 
@@ -5,21 +10,49 @@ set clipboard+=unnamed
 let mapleader = " "
 
 " Use J/K to go back/forward.
-nmap J :action Forward<CR>
-nmap K :action Back<CR>
+nmap J :action Forward<cr>
+nmap K :action Back<cr>
 
 " Use H/L to navigate tab.
-nmap H :action PreviousTab<CR>
-nmap L :action NextTab<CR>
+nmap H :action PreviousTab<cr>
+nmap L :action NextTab<cr>
 
 " Leader key shortcuts.
-nmap <leader>s  :source ~/.ideavimrc
-nmap <leader>l  :action SelectIn<CR><CR>
-nmap <leader>rf :action ReformatCode<CR>
-nmap <leader>o  :action OptimizeImports<CR>
+nmap    <leader>me  :edit   ~/.ideavimrc<cr>
+nmap    <leader>ms  :source ~/.ideavimrc
+nmap    <leader>mm  :action MainMenu<cr>
+nmap    <leader>mf  :action ReformatCode<cr>
+nmap    <leader>mo  :action OptimizeImports<cr>
+nmap    <leader>oP  :action SelectIn<cr><cr>
 
-nnoremap <leader>j J
+" Window
+nmap    <leader>wk  <c-w>c
+nmap    <leader>ww  <c-w>w
+nmap    <leader>wh  <c-w>h
+nmap    <leader>wj  <c-w>j
+nmap    <leader>wk  <c-w>k
+nmap    <leader>wl  <c-w>l
+
+" Tool Window
+nmap    <leader>tha :action HideAllWindows<cr>
+nmap    <leader>ths :action HideSideWindows<cr>
+nmap    <leader>thl :action HideActiveWindow<cr>
+
+nmap    <leader>tp  :action ActivateProjectToolWindow<cr>
+nmap    <leader>ts  :action ActivateStructureToolWindow<cr>
+nmap    <leader>tc  :action ActivateCommitToolWindow<cr>
+nmap    <leader>tg  :action ActivateVersionControlToolWindow<cr>
+nmap    <leader>tm  :action ActivateMavenToolWindow<cr>
+nmap    <leader>tt  :action ActivateTerminalToolWindow<cr>
+nmap    <leader>tr  :action ActivateRunToolWindow<cr>
+nmap    <leader>td  :action ActivateDebugToolWindow<cr>
+nmap    <leader>ta  :action ActivateDatabaseToolWindow<cr>
+nmap    <leader>te  :action ActivateEndpointsToolWindow<cr>
+nmap    <leader>tP  :action ActivateProblemsToolWindow<cr>
+nmap    <leader>tT  :action ActivateTODOToolWindow<cr>
+nmap    <leader>tS  :action ActivateSpringToolWindow<cr>
+
+nmap <leader>bk :action CloseActiveTab<cr>
 
 " Insert mode keymap.
-imap jf <Esc>
 imap jj <Esc>

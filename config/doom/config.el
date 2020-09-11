@@ -53,7 +53,6 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-
 ;;; Erystasius's personal config
 
 ;; Use "jj" to escape insert mode.
@@ -69,3 +68,7 @@
 (add-hook 'markdown-mode-hook #'valign-mode)
 (setq valign-fancy-bar t)
 (setq valign-separator-row-style 'single-column)
+
+(map! :map 'org-mode-map
+      :localleader
+      :desc "org-emphasize-bold" "B" (cmd!(org-emphasize ?*)))
