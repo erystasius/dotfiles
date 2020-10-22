@@ -46,11 +46,11 @@ yay -S --needed --noconfirm gvim
 yay -S --needed --noconfirm rofi
 yay -S --needed --noconfirm tree
 yay -S --needed --noconfirm htop
-yay -S --needed --noconfirm dmenu
 yay -S --needed --noconfirm bspwm
 yay -S --needed --noconfirm sxhkd
 yay -S --needed --noconfirm dmenu
 yay -S --needed --noconfirm clash
+yay -S --needed --noconfirm zenity
 yay -S --needed --noconfirm udiskie
 yay -S --needed --noconfirm polybar
 yay -S --needed --noconfirm chromium
@@ -66,8 +66,6 @@ yay -S --needed --noconfirm xtitle
 
 # Network
 yay -S --needed --noconfirm nmap
-yay -S --needed --noconfirm v2ray
-yay -S --needed --noconfirm shadowsocks
 
 # Fcitx
 yay -S --needed --noconfirm fcitx5-im
@@ -89,11 +87,6 @@ yay -S --needed --noconfirm noto-fonts-emoji
 yay -S --needed --noconfirm deepin-gtk-theme
 yay -S --needed --noconfirm deepin-icon-theme
 yay -S --needed --noconfirm xcursor-breeze
-
-# Theming
-xfconf-query -c xsettings -p /Net/ThemeName -s "deepin"
-xfconf-query -c xsettings -p /Net/IconThemeName -s "deepin"
-xfconf-query -c xsettings -p /Gtk/CursorThemeName -s "xcursor-breeze"
 
 echo "Changing shell to zsh"
 if [[ $SHELL != '/usr/bin/zsh' ]]; then

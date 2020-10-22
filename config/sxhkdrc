@@ -1,3 +1,6 @@
+super + {u,i}
+    ~/.bin/{search.sh,wudao.sh}
+
 #########################
 ###   Bspwm hotkeys   ###
 #########################
@@ -13,10 +16,6 @@ super + shift + {e,r,m}
 # application shortcuts
 super + {Return,w,e,r,y}
 	{alacritty,chromium,emacs,rofi -show-icons -show combi,pcmanfm}
-
-# exo launch
-super + {w,y}
-    exo-open --launch {WebBrowser,FileManager}
 
 # screen rotation
 super + o; {h,j,k,l}

@@ -48,6 +48,8 @@
     ~/.config/fcitx5: config/fcitx5
     # shares: fonts, apps, icons
     ~/.local/share: share/*
+    # bin: scripts
+    ~/.bin: bin
 
 - shell:
   - touch ~/.config/aria2/session.lock
