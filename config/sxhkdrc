@@ -1,93 +1,84 @@
-super + {u,i}
-    ~/.bin/{search.sh,wudao.sh}
-
 #########################
 ###   Bspwm hotkeys   ###
 #########################
 
 # quit/restart/hotkey
 super + shift + {e,r,m}
-	{bspc quit,bspc wm -r,pkill -USR1 -x sxhkd}
+    {bspc quit,bspc wm -r,pkill -USR1 -x sxhkd}
 
 ########################
 ###   Applications   ###
 ########################
 
-# application shortcuts
 super + {Return,w,e,r,y}
-	{alacritty,chromium,emacs,rofi -show-icons -show combi,pcmanfm}
+    {alacritty,chromium,emacs,rofi -show-icons -show combi,pcmanfm}
 
-# screen rotation
+###################
+###   Scripts   ###
+###################
+super + {u,i}
+    ~/.bin/{search.sh,wudao.sh}
+
+##################
+###   Screen   ###
+##################
+
 super + o; {h,j,k,l}
     xrandr --orientation {left,normal,inverted,right}
 
-##################
-###   Window   ### 
-##################
-
-# focus/swap the node in the given direction
-super + {_,shift + }{h,j,k,l}
-	bspc node -{f,s} {west,south,north,east}
-
-# close and kill
-super + q
-	bspc node -c
-
-#####################
-###   Preselect   ###
-#####################
-
-# preselect the direction
-super + p; {h,j,k,l}
-	bspc node -p {west,south,north,east}
-
-# preselect the ratio
-super + p; {1-9}
-	bspc node -o 0.{1-9}
-
-# cancel the preselection for the focused node
-super + p; q
-	bspc node -p cancel
-
 ################
-###   Mode   ###   
+###   Node   ###
 ################
 
-# toggle modes
-super + d
-	bspc desktop -l next
-super + {g,s,f}
-    state={pseudo_tiled,floating,fullscreen}; \
+# focus the node in the given direction
+super + {h,j,k,l}
+    bspc node --focus {west,south,north,east}
+
+# swap the node in the given direction
+super + shift + {h,j,k,l}
+    bspc node --swap {west,south,north,east}
+
+# send current node to the given desktop
+super + shift + {1-9,0}
+    bspc node -d '^{1-9,10}'
+
+# toggle floating/fullscreen mode
+super + {d,f}
+    state={floating,fullscreen}; \
     bspc query -N -n "focused.$\{state\}" && state=tiled; \
     bspc node -t "$state"
 
+# close and kill
+super + q
+    bspc node -c
+
 ###################
 ###   Desktop   ###
-###################
+####################
 
 # focus the next/previous desktop in the current monitor
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+super + {c,v}
+    bspc desktop -f {prev,next}.local
 
-# focus or send to the given desktop
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+# focus to the given desktop
+super + {1-9,0}
+    bspc desktop -f '^{1-9,10}'
 
 ########################
 ###   Mmove/resize   ###
 ########################
 
-# resize at right bottom conner
+# expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
-	bspc node -z {right -20 0,bottom 0 20,bottom 0 -20,right 20 0}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
-# resize at left top conner
-super + alt + {y,u,i,o}
-	bspc node -z {left -20 0,top 0 20,top 0 -20,left 20 0}
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+    bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window
 super + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
+    bspc node -v {-20 0,0 20,0 -20,20 0}
 
 ###########################
 ###   Experienmenting   ###
