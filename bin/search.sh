@@ -13,10 +13,15 @@ declare -A options=(
     [bilibili]='chromium https://search.bilibili.com/all?keyword=$word'
     [youtube]='chromium https://youtube.com/results?search_query=$word'
     [wudao]='alacritty --hold -e wd $word'
+    [smzdm]='chromium https://search.smzdm.com?s=$word'
+    [douban]='chromium https://douban.com/search?q=$word'
+    [docker]='chromium https://hub.docker.com/search?type=image\&q=$word'
 )
 
 word=$(zenity --entry --text "Type the word you want to search:" --width 500)
 
 action=$(printf '%s\n' "${!options[@]}" | rofi -dmenu -p "Search \"$word\" on")
+
+word=$(echo $word | sed "s/\s/%20/")
 
 eval ${options[$action]}
