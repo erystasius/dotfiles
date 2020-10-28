@@ -1,0 +1,1 @@
+[{"method":"saveStyle","name":"wechat","enabled":true,"sections":[{"urls":[],"urlPrefixes":[],"domains":["wx2.qq.com"],"regexps":[],"code":".main {\n    padding-top: 0;\n    height:100%;\n}\n.main_inner {\n    max-width: none;\n}"}],"updateUrl":null,"md5Url":null,"url":null,"originalMd5":null,"id":2}]
