@@ -72,3 +72,6 @@ nmap    <leader>rd  :action Stop<cr>
 " Misc
 nmap    <leader>oP  :action SelectIn<cr><cr>
 nmap    <leader>bk  :action CloseActiveTab<cr>
+nmap    <leader>fr  :action RecentFiles<cr>
+nmap    <leader>bb  :action RecentFiles<cr>
+
