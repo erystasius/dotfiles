@@ -30,8 +30,8 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (after! org
-  (setq org-directory "~/Nutstore Files/Org/"
-        org-agenda-files '("~/Nutstore Files/Org/0-agenda")
+  (setq org-directory "~/Org/"
+        org-agenda-files '("~/Org/0-agenda")
         org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "FUTURE(f)" "|" "DONE(d)"))))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
