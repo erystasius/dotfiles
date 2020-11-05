@@ -28,3 +28,6 @@ bspc config border_width            2
 bspc config normal_border_color     \#384157
 bspc config active_border_color     \#6c99bb
 bspc config focused_border_color    \#6c99bb
+
+# rules
+bspc rule -a Emacs state=tiled

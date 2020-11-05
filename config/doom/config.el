@@ -34,6 +34,20 @@
         org-agenda-files '("~/Org/0-agenda")
         org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "FUTURE(f)" "|" "DONE(d)"))))
 
+  (defun ery-projectile-safe-add-project (path)
+    (when (file-exists-p path)
+      (projectile-add-known-project path)))
+  (defun ery-projectile-safe-add-projects (paths)
+    (cond
+     ((null paths) nil)
+     (t (progn
+          (ery-projectile-safe-add-project (car paths))
+          (ery-projectile-safe-add-projects (cdr paths))))))
+  (setq ery-projectile-custom-search-path '("~/Org" "~/dotfiles"))
+;; Projectile
+(after! projectile
+  (ery-projectile-safe-add-projects ery-projectile-custom-search-path))
+
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
