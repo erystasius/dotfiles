@@ -44,6 +44,7 @@
     ~/.config/yay/config.json: config/yay.json
     ~/.config/yay/pacman.conf: config/pacman.conf
     ~/.config/yay/makepkg.conf: config/makepkg.conf
+    ~/.config/fish/config.fish: config/config.fish
     ~/.config/doom: config/doom
     ~/.config/fcitx5: config/fcitx5
     # shares: fonts, apps, icons
