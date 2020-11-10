@@ -1,3 +1,7 @@
+# Use system clipboard
+set selection-clipboard clipboard
+set increamental-search
+
 # Page up/down
 # map u navigate previous
 # map d navigate next
