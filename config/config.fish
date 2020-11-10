@@ -32,6 +32,8 @@ abbr -a yay "yay --noconfirm"
 abbr -a yaya "yay --aur"
 abbr -a yayr "yay --repo"
 abbr -a cdot "cd ~/dotfiles/config"
+abbr -a ns "netstat -tulnp"
+abbr -a ng "netstat -tulnp | grep"
 
 ### PROMPT ###
 # This was the 'sashimi' prompt from oh-my-fish.

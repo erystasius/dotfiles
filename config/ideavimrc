@@ -22,12 +22,13 @@ let mapleader = " "
 
 " Misc
 nmap    <leader>me  :edit   ~/.ideavimrc<cr>
-nmap    <leader>ms  :source ~/.ideavimrc
+nmap    <leader>mr  :source ~/.ideavimrc<cr>
 nmap    <leader>mm  :action MainMenu<cr>
 nmap    <leader>mf  :action ReformatCode<cr>
 nmap    <leader>mo  :action OptimizeImports<cr>
 nmap    <leader>mc  :action WelcomeScreen.Settings<cr>
 nmap    <leader>mp  :action WelcomeScreen.Plugins<cr>
+nmap    <leader>ms  :action ShowSettings<cr>
 
 
 FileChooser.LightEditGotoOpenedFile
