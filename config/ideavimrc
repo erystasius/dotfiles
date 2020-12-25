@@ -66,13 +66,14 @@ nmap    <leader>rr  :action Run<cr>
 nmap    <leader>rl  :action ChooseRunConfiguration<cr>
 nmap    <leader>re  :action editRunConfigurations<cr>
 nmap    <leader>rt  :action RunClass<cr>
-nmap    <leader>rb  :action Debug<cr>
+nmap    <leader>rd  :action Debug<cr>
 nmap    <leader>rc  :action Coverage<cr>
-nmap    <leader>rd  :action Stop<cr>
+nmap    <leader>rs  :action Stop<cr>
 
 " Misc
 nmap    <leader>oP  :action SelectIn<cr><cr>
 nmap    <leader>bk  :action CloseActiveTab<cr>
 nmap    <leader>fr  :action RecentFiles<cr>
 nmap    <leader>bb  :action RecentFiles<cr>
+nmap    <leader>cr  :action CopyReference<cr>
 

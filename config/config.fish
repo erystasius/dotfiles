@@ -1,15 +1,18 @@
-# Basic settings
+#Basic settings
 set fish_greeting                      # Supresses fish's intro message
-set TERM "xterm-256color"              # Sets the terminal type
-set EDITOR "emacsclient -t -a ''"      # $EDITOR use Emacs in terminal
-set VISUAL "emacsclient -c -a emacs"   # $VISUAL use Emacs in GUI mode
+set -x TERM "xterm-256color"              # Sets the terminal type
+set -x EDITOR "emacsclient -t -a ''"      # $EDITOR use Emacs in terminal
+set -x VISUAL "emacsclient -c -a emacs"   # $VISUAL use Emacs in GUI mode
+set -x JAVA_HOME /usr/lib/jvm/java-8-openjdk
+set -x PATH $PATH ~/.emacs.d/bin
+set -x PATH $PATH /opt/liquibase
 fish_vi_key_bindings
 
 # Abbrs
 abbr -a ls "ls --color=always"
 abbr -a la "ls -A"
 abbr -a ll "ls -ahlF"
-abbr -a lg "ll | grep"
+abbr -a lg "ls -ahlF | grep -i"
 abbr -a df "df -h"
 abbr -a du "du -h -d 1"
 abbr -a hg "history | grep"
@@ -31,9 +34,14 @@ abbr -a hi "history"
 abbr -a yay "yay --noconfirm"
 abbr -a yaya "yay --aur"
 abbr -a yayr "yay --repo"
+abbr -a yaysyu "yay --noconfirm -Syu"
 abbr -a cdot "cd ~/dotfiles/config"
 abbr -a ns "netstat -tulnp"
 abbr -a ng "netstat -tulnp | grep"
+abbr -a sc "systemctl"
+abbr -a scu "systemctl --user"
+abbr -a jc "journalctl"
+abbr -a jcu "journalctl --user"
 
 ### PROMPT ###
 # This was the 'sashimi' prompt from oh-my-fish.
@@ -135,3 +143,5 @@ function fish_mode_prompt
 end
 ### END OF PROMPT ###
 
+
+thefuck --alias | source

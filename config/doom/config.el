@@ -78,10 +78,10 @@
 (setq doom-font (font-spec :family "Monaco" :size 16))
 
 ;; Config valign
-(add-hook 'org-mode-hook #'valign-mode)
-(add-hook 'markdown-mode-hook #'valign-mode)
-(setq valign-fancy-bar t)
-(setq valign-separator-row-style 'single-column)
+;(add-hook 'org-mode-hook #'valign-mode)
+;(add-hook 'markdown-mode-hook #'valign-mode)
+;(setq valign-fancy-bar t)
+;(setq valign-separator-row-style 'single-column)
 
 (map! :map 'org-mode-map
       :localleader

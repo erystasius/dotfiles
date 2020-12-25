@@ -18,6 +18,9 @@ declare -A options=(
     [docker]='chromium https://hub.docker.com/search?type=image\&q=$word'
     [maven]='chromium https://mvnrepository.com/search?q=$word'
     [forvo]='chromium https://zh.forvo.com/search/$word/'
+    [wikipedia]='chromium https://en.wikipedia.org/wiki/Special:Search/$word'
+    [wikipedia_zh]='chromium https://zh.wikipedia.org/wiki/Special:Search/$word'
+    [ruanyifeng]='chromium https://duckduckgo.com/?q=site%3Aruanyifeng.com+$word'
 )
 
 word=$(zenity --entry --text "Type the word you want to search:" --width 500)
