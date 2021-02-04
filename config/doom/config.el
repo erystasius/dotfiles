@@ -25,26 +25,74 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+;(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-material)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
+
+(setq erystasius/org-agenda-directory "~/Org/0-agenda")
+
 (after! org
-  (setq org-directory "~/Org/"
-        org-agenda-files '("~/Org/0-agenda")
-        org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "FUTURE(f)" "|" "DONE(d)"))))
+  (setq org-directory "~/Org/"                                  ;; directory for all org files.
+        org-agenda-files `(,erystasius/org-agenda-directory)    ;; directory for org agenda files.
+        org-agenda-start-with-follow-mode t                     ;; follow mode
+        org-agenda-start-day "-7d"
+        org-agenda-span 21
+        org-agenda-use-time-grid t
+        org-agenda-time-grid (quote (((daily today require-timed)
+                                      (900 1200 1500 1800 2100 2400)
+                                      "......" "----------------")))
+        org-todo-keywords
+        '((sequence
+           "NEXT(n)"
+           "TODO(t)"
+           "WAIT(w)"
+           "PROJ(p)"
+           "FUTURE(f)"
+           "|"
+           "DONE(d)"))))
+
+(add-hook! 'org-after-todo-state-change-hook 'erystasius/redo-all-agenda-buffers)
+(add-hook! 'after-save-hook 'erystasius/redo-all-agenda-buffers)
+
+(defun erystasius/redo-all-agenda-buffers ()
+  (interactive)
+  (dolist (buffer (buffer-list))
+    (with-current-buffer buffer
+      (when (derived-mode-p 'org-agenda-mode)
+        (org-agenda-redo t)))))
+
+(defun erystasius/counsel-org-agenda-files ()
+  "Jump to an org agenda file."
+  (interactive)
+  (ivy-read "Goto agenda file:"
+            (mapcar (lambda (f)
+                      (file-name-nondirectory f))
+                    (org-agenda-files))
+            :action (lambda (f) (with-ivy-window
+                             (find-file
+                              (concat erystasius/org-agenda-directory "/" f))))))
+
+(map! :map 'org-mode-map
+      :localleader
+      :desc "org-emphasize-bold" "B" (cmd! (org-emphasize ?*)))
+
+(map! :leader
+      (:prefix-map ("a" . "agenda")
+       "l" 'org-agenda-list
+       "t" 'org-todo-list
+       "p" 'org-agenda
+       "f" 'erystasius/counsel-org-agenda-files))
+
+
 
 ;; Projectile
-(setq ery-projectile-custom-search-path '("~/Org" "~/dotfiles"))
-(defun ery-projectile-safe-add-project (path)
-  (when (file-exists-p path)
-    (projectile-add-known-project path)))
-(defun ery-projectile-safe-add-projects (paths)
-  (unless (null paths)
-    (ery-projectile-safe-add-project (car paths))
-    (ery-projectile-safe-add-projects (cdr paths))))
+(setq erystasius/projectile-custom-search-path '("~/Org" "~/dotfiles"))
+
 (after! projectile
-  (ery-projectile-safe-add-projects ery-projectile-custom-search-path))
+  (dolist (path (seq-filter 'file-exists-p erystasius/projectile-custom-search-path))
+    (projectile-add-known-project path)))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -83,6 +131,6 @@
 ;(setq valign-fancy-bar t)
 ;(setq valign-separator-row-style 'single-column)
 
-(map! :map 'org-mode-map
-      :localleader
-      :desc "org-emphasize-bold" "B" (cmd!(org-emphasize ?*)))
+;; cnfonts
+(cnfonts-enable)
+(cnfonts-set-spacemacs-fallback-fonts)

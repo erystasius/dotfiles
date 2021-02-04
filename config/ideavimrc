@@ -29,9 +29,24 @@ nmap    <leader>mo  :action OptimizeImports<cr>
 nmap    <leader>mc  :action WelcomeScreen.Settings<cr>
 nmap    <leader>mp  :action WelcomeScreen.Plugins<cr>
 nmap    <leader>ms  :action ShowSettings<cr>
+nmap    <leader>md  :action SafeDelete<cr>
+nmap    <leader>mi  :action Generate<cr>
+nmap    <leader>mn  :action Inline<cr>
 
+" Refactoring
+nmap    <leader>xm :action ExtractMethod<cr>
+nmap    <leader>xv :action IntroduceVariable<cr>
+nmap    <leader>xc :action IntroduceConstant<cr>
+nmap    <leader>xf :action IntroduceField<cr>
+nmap    <leader>xp :action IntroduceParameter<cr>
+nmap    <leader>xr :action RenameElement<cr>
 
-FileChooser.LightEditGotoOpenedFile
+" Refactoring - Visual Mode
+vmap    <leader>xm :action ExtractMethod<cr>
+vmap    <leader>xv :action IntroduceVariable<cr>
+vmap    <leader>xc :action IntroduceConstant<cr>
+vmap    <leader>xf :action IntroduceField<cr>
+vmap    <leader>xp :action IntroduceParameter<cr>
 
 " Window
 nmap    <leader>wk  <c-w>c
@@ -76,4 +91,5 @@ nmap    <leader>bk  :action CloseActiveTab<cr>
 nmap    <leader>fr  :action RecentFiles<cr>
 nmap    <leader>bb  :action RecentFiles<cr>
 nmap    <leader>cr  :action CopyReference<cr>
+nmap    <leader>pf  :action GotoFile<cr>
 

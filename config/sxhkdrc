@@ -10,8 +10,14 @@ super + shift + {e,r,m}
 ###   Applications   ###
 ########################
 
-super + {Return,w,e,r,y}
-    {alacritty,chromium,emacs,rofi -show-icons -show combi,pcmanfm}
+super + {Return,w,r,y}
+    {alacritty,chromium,rofi -show-icons -show combi,pcmanfm}
+
+super + e
+    emacsclient -c
+
+super + a
+    emacsclient -c --eval '(org-agenda-list)'
 
 ###################
 ###   Scripts   ###
@@ -43,10 +49,8 @@ super + shift + {1-9,0}
     bspc node -d '^{1-9,10}'
 
 # toggle floating/fullscreen mode
-super + {d,f}
-    state={floating,fullscreen}; \
-    bspc query -N -n "focused.$\{state\}" && state=tiled; \
-    bspc node -t "$state"
+super + {d, f}
+    bspc node --state ~{floating,fullscreen}
 
 # close and kill
 super + q

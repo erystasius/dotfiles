@@ -42,6 +42,8 @@ abbr -a sc "systemctl"
 abbr -a scu "systemctl --user"
 abbr -a jc "journalctl"
 abbr -a jcu "journalctl --user"
+abbr -a rmd "rmdir"
+abbr -a sshnc "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
 
 ### PROMPT ###
 # This was the 'sashimi' prompt from oh-my-fish.
