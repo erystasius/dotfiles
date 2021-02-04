@@ -47,8 +47,9 @@
     ~/.config/fish/config.fish: config/config.fish
     ~/.config/doom: config/doom
     ~/.config/fcitx5: config/fcitx5
+    ~/.config/systemd: config/systemd
     # shares: fonts, apps, icons
-    ~/.local/share: share/*
+    #~/.local/share: share/*
     # bin: scripts
     ~/.bin: bin
 

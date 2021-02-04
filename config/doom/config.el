@@ -8,7 +8,6 @@
 ;; clients, file templates and snippets.
 (setq user-full-name "Erystasius.com"
       user-mail-address "Felix.E.Huang@gamil.com")
-
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
 ;;
@@ -35,23 +34,23 @@
 
 (after! org
   (setq org-directory "~/Org/"                                  ;; directory for all org files.
+        org-archive-location "archive/%s_archive::"
         org-agenda-files `(,erystasius/org-agenda-directory)    ;; directory for org agenda files.
         org-agenda-start-with-follow-mode t                     ;; follow mode
         org-agenda-start-day "-7d"
         org-agenda-span 21
         org-agenda-use-time-grid t
-        org-agenda-time-grid (quote (((daily today require-timed)
-                                      (900 1200 1500 1800 2100 2400)
-                                      "......" "----------------")))
-        org-todo-keywords
-        '((sequence
-           "NEXT(n)"
-           "TODO(t)"
-           "WAIT(w)"
-           "PROJ(p)"
-           "FUTURE(f)"
-           "|"
-           "DONE(d)"))))
+        org-agenda-time-grid '((daily today)
+                              (900 1200 1500 1800 2100 2400)
+                              "......" "----------------")
+        org-todo-keywords '((sequence
+                             "NEXT(n)"
+                             "TODO(t)"
+                             "WAIT(w)"
+                             "PROJ(p)"
+                             "FUTURE(f)"
+                             "|"
+                             "DONE(d)"))))
 
 (add-hook! 'org-after-todo-state-change-hook 'erystasius/redo-all-agenda-buffers)
 (add-hook! 'after-save-hook 'erystasius/redo-all-agenda-buffers)
@@ -84,8 +83,6 @@
        "t" 'org-todo-list
        "p" 'org-agenda
        "f" 'erystasius/counsel-org-agenda-files))
-
-
 
 ;; Projectile
 (setq erystasius/projectile-custom-search-path '("~/Org" "~/dotfiles"))
@@ -134,3 +131,5 @@
 ;; cnfonts
 (cnfonts-enable)
 (cnfonts-set-spacemacs-fallback-fonts)
+
+(treemacs-follow-mode t)
