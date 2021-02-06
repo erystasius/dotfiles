@@ -52,15 +52,16 @@
                              "|"
                              "DONE(d)"))))
 
-(add-hook! 'org-after-todo-state-change-hook 'erystasius/redo-all-agenda-buffers)
-(add-hook! 'after-save-hook 'erystasius/redo-all-agenda-buffers)
-
-(defun erystasius/redo-all-agenda-buffers ()
-  (interactive)
-  (dolist (buffer (buffer-list))
-    (with-current-buffer buffer
-      (when (derived-mode-p 'org-agenda-mode)
-        (org-agenda-redo t)))))
+;;(add-hook! 'org-after-todo-state-change-hook 'erystasius/redo-all-agenda-buffers)
+;;(add-hook! 'after-save-hook 'erystasius/redo-all-agenda-buffers)
+;;
+;;
+;;(defun erystasius/redo-all-agenda-buffers ()
+;;  (interactive)
+;;  (dolist (buffer (buffer-list))
+;;    (with-current-buffer buffer
+;;      (when (derived-mode-p 'org-agenda-mode)
+;;        (org-agenda-redo)))))
 
 (defun erystasius/counsel-org-agenda-files ()
   "Jump to an org agenda file."
