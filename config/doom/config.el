@@ -44,8 +44,8 @@
                               (900 1200 1500 1800 2100 2400)
                               "......" "----------------")
         org-todo-keywords '((sequence
-                             "NEXT(n)"
                              "TODO(t)"
+                             "NEXT(n)"
                              "WAIT(w)"
                              "PROJ(p)"
                              "FUTURE(f)"
@@ -131,5 +131,3 @@
 ;; cnfonts
 (cnfonts-enable)
 (cnfonts-set-spacemacs-fallback-fonts)
-
-(treemacs-follow-mode t)

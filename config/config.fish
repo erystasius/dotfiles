@@ -1,14 +1,17 @@
-#Basic settings
+# Basic
 set fish_greeting                      # Supresses fish's intro message
+fish_vi_key_bindings
+
+# Env
 set -x TERM "xterm-256color"              # Sets the terminal type
 set -x EDITOR "emacsclient -t -a ''"      # $EDITOR use Emacs in terminal
 set -x VISUAL "emacsclient -c -a emacs"   # $VISUAL use Emacs in GUI mode
 set -x JAVA_HOME /usr/lib/jvm/java-8-openjdk
 set -x PATH $PATH ~/.emacs.d/bin
 set -x PATH $PATH /opt/liquibase
-fish_vi_key_bindings
 
-# Abbrs
+# Abbr
+abbr -a less "most"
 abbr -a ls "ls --color=always"
 abbr -a la "ls -A"
 abbr -a ll "ls -ahlF"
