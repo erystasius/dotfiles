@@ -10,9 +10,6 @@ picom &
 udiskie &
 polybar -r fhd-hdmi-1 & 
 polybar -r fhd-dvi-d-1 &
-fcitx5 &
-nutstore &
-emacs --daemon &
 
 # desktop names
 bspc monitor HDMI-0 -d I II III IV V 

@@ -132,3 +132,7 @@
 ;; cnfonts
 (cnfonts-enable)
 (cnfonts-set-spacemacs-fallback-fonts)
+
+
+;; treemacs
+(treemacs-follow-mode t)

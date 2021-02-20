@@ -62,6 +62,7 @@ yay -S --needed --noconfirm xfce4-notifyd
 yay -S --needed --noconfirm xfce4-settings
 
 # X
+yay -S --needed --noconfirm xclip
 yay -S --needed --noconfirm xtitle
 
 # Network
