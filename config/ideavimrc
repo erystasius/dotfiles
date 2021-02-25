@@ -22,24 +22,25 @@ let mapleader = " "
 
 " Misc
 nmap    <leader>me  :edit   ~/.ideavimrc<cr>
-nmap    <leader>mr  :source ~/.ideavimrc<cr>
+nmap    <leader>mr  :source ~/.ideavimrc
 nmap    <leader>mm  :action MainMenu<cr>
 nmap    <leader>mf  :action ReformatCode<cr>
 nmap    <leader>mo  :action OptimizeImports<cr>
 nmap    <leader>mc  :action WelcomeScreen.Settings<cr>
 nmap    <leader>mp  :action WelcomeScreen.Plugins<cr>
 nmap    <leader>ms  :action ShowSettings<cr>
-nmap    <leader>md  :action SafeDelete<cr>
-nmap    <leader>mi  :action Generate<cr>
-nmap    <leader>mn  :action Inline<cr>
 
 " Refactoring
-nmap    <leader>xm :action ExtractMethod<cr>
-nmap    <leader>xv :action IntroduceVariable<cr>
-nmap    <leader>xc :action IntroduceConstant<cr>
-nmap    <leader>xf :action IntroduceField<cr>
-nmap    <leader>xp :action IntroduceParameter<cr>
-nmap    <leader>xr :action RenameElement<cr>
+nmap    <leader>xg  :action Generate<cr>
+nmap    <leader>xr  :action RenameElement<cr>
+nmap    <leader>xd  :action SafeDelete<cr>
+nmap    <leader>xi  :action Inline<cr>
+"
+nmap    <leader>xm  :action ExtractMethod<cr>
+nmap    <leader>xv  :action IntroduceVariable<cr>
+nmap    <leader>xc  :action IntroduceConstant<cr>
+nmap    <leader>xf  :action IntroduceField<cr>
+nmap    <leader>xp  :action IntroduceParameter<cr>
 
 " Refactoring - Visual Mode
 vmap    <leader>xm :action ExtractMethod<cr>
