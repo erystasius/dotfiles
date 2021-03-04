@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=MPS
+Icon=/home/erystasius/.local/share/JetBrains/Toolbox/apps/MPS/ch-0/.icon.svg
+StartupWMClass=jetbrains-mps
+Comment=Create your own domain-specific language
+Exec="/home/erystasius/.local/share/JetBrains/Toolbox/apps/MPS/ch-0/203.5981.1014/bin/mps.sh" %f
+Version=1.0
+Type=Application
+Categories=Development;IDE;
+Terminal=false
+StartupNotify=true
