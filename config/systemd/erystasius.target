@@ -6,6 +6,7 @@ Wants=app-pa\x2dapplet-autostart.service
 Wants=syncthing.service
 Wants=emacs.service
 Wants=clash.service
+Wants=pacsyu.service
 
 [Install]
 WantedBy=default.target

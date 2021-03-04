@@ -4,10 +4,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 xsetroot -cursor_name left_ptr
 sxhkd &
 nitrogen --restore &
-nm-applet &
-pa-applet &
 picom &
-udiskie &
+diskie &
 polybar -r fhd-hdmi-1 & 
 polybar -r fhd-dvi-d-1 &
 

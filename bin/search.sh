@@ -21,6 +21,7 @@ declare -A options=(
     [wikipedia]='chromium https://en.wikipedia.org/wiki/Special:Search/$word'
     [wikipedia_zh]='chromium https://zh.wikipedia.org/wiki/Special:Search/$word'
     [ruanyifeng]='chromium https://duckduckgo.com/?q=site%3Aruanyifeng.com+$word'
+    [amap]='chromium https://amap.com/search?query=$word'
 )
 
 word=$(zenity --entry --text "Type the word you want to search:" --width 500)

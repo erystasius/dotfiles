@@ -30,6 +30,10 @@ nmap    <leader>mc  :action WelcomeScreen.Settings<cr>
 nmap    <leader>mp  :action WelcomeScreen.Plugins<cr>
 nmap    <leader>ms  :action ShowSettings<cr>
 
+"
+nmap    <leader>ve  :action Maven.ExecuteGoal<cr>
+nmap    <leader>vi  :action Maven.Reimport<cr>
+
 " Refactoring
 nmap    <leader>xg  :action Generate<cr>
 nmap    <leader>xr  :action RenameElement<cr>
