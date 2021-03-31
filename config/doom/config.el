@@ -43,6 +43,10 @@
         org-agenda-time-grid '((daily today)
                               (900 1200 1500 1800 2100 2400)
                               "......" "----------------")
+        org-agenda-prefix-format '((agenda  . " %i %-12:c%?-12t% s %? e") ;; add effort in calendar view
+                                   (todo  . " %i %-12:c")
+                                   (tags  . " %i %-12:c")
+                                   (search . " %i %-12:c"))
         org-todo-keywords '((sequence
                              "TODO(t)"
                              "NEXT(n)"
@@ -132,6 +136,3 @@
 ;; cnfonts
 (cnfonts-enable)
 (cnfonts-set-spacemacs-fallback-fonts)
-
-;; treemacs
-(treemacs-follow-mode 1)

@@ -16,6 +16,8 @@
     sm = submodule
     ua = restore --staged
     um = restore
+    prs = stash
+    pop = stash pop
     discard = restore --staged :/
     throw = !git reset --hard HEAD && git clean -df
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

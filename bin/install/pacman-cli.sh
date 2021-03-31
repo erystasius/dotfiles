@@ -15,6 +15,7 @@ yay -S --needed --noconfirm bat
 yay -S --needed --noconfirm git
 yay -S --needed --noconfirm exa
 yay -S --needed --noconfirm zip
+yay -S --needed --noconfirm less
 yay -S --needed --noconfirm wget
 yay -S --needed --noconfirm curl
 yay -S --needed --noconfirm tree

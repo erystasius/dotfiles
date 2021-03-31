@@ -1,65 +1,75 @@
-# Basic
+####### Fish
 set fish_greeting                      # Supresses fish's intro message
 fish_vi_key_bindings
 
-# Env
-set -x TERM "xterm-256color"              # Sets the terminal type
+######## Env
+set -x TERM "xterm-256color"              # Set terminal type
+set -x PAGER "less"                       # Set pager
 set -x EDITOR "emacsclient -t -a ''"      # $EDITOR use Emacs in terminal
 set -x VISUAL "emacsclient -c -a emacs"   # $VISUAL use Emacs in GUI mode
-set -x JAVA_HOME /usr/lib/jvm/java-8-openjdk
 set -x PATH $PATH ~/.emacs.d/bin
 set -x PATH $PATH /opt/liquibase
 
-# Abbr
-abbr -a less "most"
+####### Abbr
+# ls
 abbr -a ls "ls --color=always"
 abbr -a la "ls -A"
 abbr -a ll "ls -ahlF"
 abbr -a lg "ls -ahlF | grep -i"
+# df & du
 abbr -a df "df -h"
 abbr -a du "du -h -d 1"
+# history
+abbr -a hi "history"
 abbr -a hg "history | grep"
-abbr -a pg "pgrep -f -a"
-abbr -a pk "pkill -f"
-abbr -a kp "kill -9"
-abbr -a grep "grep -i --color=auto"
+# git & vim & emacs  
 abbr -a g "git"
 abbr -a v "vim"
-abbr -a o "xdg-open"
-abbr -a e "emacsclient"
-abbr -a z "zathura --fork"
+abbr -a e "devour emacsclient --create-frame"
+abbr -a sv "sudo vim"
+abbr -a se "sudo devour emacsclient --create-frame"
+# docker
 abbr -a dk "sudo docker"
 abbr -a dc "sudo docker-compose"
-abbr -a gd "goldendict"
-abbr -a sv "sudo vim"
-abbr -a ec "emacsclient -n -c"
-abbr -a hi "history"
-abbr -a yay "yay --noconfirm"
-abbr -a yaya "yay --aur"
-abbr -a yayr "yay --repo"
-abbr -a pacsyu "sudo pacman --noconfirm -Syyu"
-abbr -a yaysyu "yay --noconfirm -Syyu"
-abbr -a cdot "cd ~/dotfiles"
-abbr -a conf "cd ~/dotfiles/config"
-abbr -a cbin "cd ~/dotfiles/bin"
-abbr -a edot "vim ~/dotfiles/install.conf.yaml"
-abbr -a gdot "sh ~/dotfiles/install"
-abbr -a ns "netstat -tulnp"
-abbr -a ng "netstat -tulnp | grep"
+# yay
+abbr -a yay "yay --repo --noconfirm"
+abbr -a yaa "yay --aur --noconfirm"
+abbr -a yaysyu "yay --repo --noconfirm -Syyu"
+abbr -a yaasyu "yay --aur --noconfirm -Syyu"
+# systemd
 abbr -a sc "systemctl"
 abbr -a scu "systemctl --user"
 abbr -a jc "journalctl"
 abbr -a jcu "journalctl --user"
-abbr -a rmd "rmdir"
-abbr -a sshnc "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+# clip
 abbr clipc "xclip -selection c"
 abbr clipv "xclip -selection c -o"
 abbr cclip "xclip -selection c"
 abbr vclip "xclip -selection c -o"
 abbr clip "xclip -selection c"
 abbr vlip "xclip -selection c -o"
+# dotfiles
+abbr -a dot "cd ~/dotfiles"
+abbr -a cdot "cd ~/dotfiles/config"
+abbr -a bdot "cd ~/dotfiles/bin"
+abbr -a edot "vim ~/dotfiles/install.conf.yaml"
+abbr -a rundot"sh ~/dotfiles/install"
+# application
+abbr -a o "xdg-open"
+abbr -a z "zathura --fork"
+abbr -a gd "goldendict"
+# process
+abbr -a pg "pgrep -f -a"
+abbr -a pk "pkill -f"
+abbr -a kp "kill -9"
+# net
+abbr -a ns "netstat -tulnp"
+abbr -a ng "netstat -tulnp | grep"
+# shorten
+abbr -a gp "grep -i --color=auto"
+abbr -a rmd "rmdir"
 
-### PROMPT ###
+####### Prompt 
 # This was the 'sashimi' prompt from oh-my-fish.
 function fish_prompt
   set -l last_status $status
@@ -158,6 +168,3 @@ function fish_mode_prompt
   set_color normal
 end
 ### END OF PROMPT ###
-
-
-thefuck --alias | source

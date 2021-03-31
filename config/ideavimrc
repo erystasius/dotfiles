@@ -10,8 +10,8 @@ set clipboard+=unnamed
 imap jj <Esc>
 
 " Use J/K to go back/forward.
-nmap J :action Forward<cr>
-nmap K :action Back<cr>
+" nmap J :action Forward<cr>
+" nmap K :action Back<cr>
 
 " Use H/L to navigate tab.
 nmap H :action PreviousTab<cr>
@@ -97,4 +97,5 @@ nmap    <leader>fr  :action RecentFiles<cr>
 nmap    <leader>bb  :action RecentFiles<cr>
 nmap    <leader>cr  :action CopyReference<cr>
 nmap    <leader>pf  :action GotoFile<cr>
+nmap    <leader>ff  :action GotoFile<cr>
 
