@@ -8,7 +8,6 @@ set -x PAGER "less"                       # Set pager
 set -x EDITOR "emacsclient -t -a ''"      # $EDITOR use Emacs in terminal
 set -x VISUAL "emacsclient -c -a emacs"   # $VISUAL use Emacs in GUI mode
 set -x PATH $PATH ~/.emacs.d/bin
-set -x PATH $PATH /opt/liquibase
 
 ####### Abbr
 # ls
@@ -50,7 +49,7 @@ abbr -a dot "cd ~/dotfiles"
 abbr -a cdot "cd ~/dotfiles/config"
 abbr -a bdot "cd ~/dotfiles/bin"
 abbr -a edot "vim ~/dotfiles/install.conf.yaml"
-abbr -a install-dotfiles "sh ~/dotfiles/install"
+abbr -a dot-install "sh ~/dotfiles/install"
 # application
 abbr -a o "xdg-open"
 abbr -a z "zathura --fork"

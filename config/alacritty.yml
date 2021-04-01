@@ -52,6 +52,7 @@ colors:
 
 # Font
 
-#font:
-#  normal: 
-#    family: erystasius
+font:
+  normal: 
+    family: Monaco
+  size: 9

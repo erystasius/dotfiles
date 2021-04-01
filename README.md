@@ -29,7 +29,7 @@
     - aria2
     - deepin-screenshot
 
-## Bar info
+## Bar
 
 - Workspace
 - Time
@@ -39,25 +39,3 @@
 - Network: ip
 - Backlight
 - Buttery
-
-## Manual steps
-
-- keyboard
-    - cp dotfiles/ery to /usr/share/X11/xkb/symbols/ery
-    - cp .Xkbmap 
-- special font
-    - PingFang SC
-- systemd enable services
-- wallpapers
-- ss/v2ray config
-- proxy-on
-- chromium --proxy-server="socks5://localhost:16666"
-- signin
-- 1 password
-- Nutstore
-- pcmanfm bookmarks
-- font
-    - sudo cp /home/erystasius/dotfiles/fonts/*.ttf /usr/share/fonts/TTF
-    - fc-cahce -f
-
-

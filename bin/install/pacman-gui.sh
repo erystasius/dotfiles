@@ -13,6 +13,8 @@ echo "Installing x packages"
 yay -S --needed --noconfirm xtitle
 yay -S --needed --noconfirm xclip
 yay -S --needed --noconfirm xorg-xkill
+yay -S --needed --noconfirm xorg-xinput
+yay -S --needed --noconfirm xorg-xsetroot
 
 echo "Installing input packages"
 yay -S --needed --noconfirm fcitx5-im

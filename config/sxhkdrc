@@ -11,7 +11,7 @@ super + shift + {e,r,m}
 ########################
 
 super + {Return,w,r,y}
-    {alacritty,chromium,rofi -show-icons -show combi,pcmanfm}
+    {alacritty,google-chrome-stable,rofi -show-icons -show combi,pcmanfm}
 
 super + e
     emacsclient -c

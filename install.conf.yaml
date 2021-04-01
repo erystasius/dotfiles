@@ -14,7 +14,6 @@
 
 - link:
     # ~
-    # ~/.emacs.d: config/emacs.d
     ~/.vim: config/vim
     ~/.gitconfig: config/gitconfig
     ~/.vimrc: config/vimrc
@@ -23,7 +22,6 @@
     ~/.bashrc: config/bashrc
     ~/.bash_profile: config/bash_profile
     ~/.inputrc: config/inputrc
-    ~/.xprofile: config/xprofile
     ~/.ideavimrc: config/ideavimrc
     ~/.gtkrc-2.0: config/gtkrc-2.0
     # ~/.config
@@ -49,11 +47,12 @@
     ~/.config/fcitx5: config/fcitx5
     ~/.config/systemd/user: config/systemd
     # shares: fonts, apps, icons
-    #~/.local/share: share/*
+    ~/.local/share/fonts: share/fonts
     # bin: scripts
     ~/.bin: bin
 
 - shell:
   - touch ~/.config/aria2/session.lock
   - source ~/.shrc
+  - sudo cp config/smoothy.xkb /usr/share/X11/xkb/symbols/smoothy
 

@@ -1,15 +1,15 @@
 #! /bin/sh
 
-export _JAVA_AWT_WM_NONREPARENTING=1
-xsetroot -cursor_name left_ptr
+# autostart
 sxhkd &
-nitrogen --restore &
 picom &
-diskie &
+nitrogen --restore &
+xsetroot -cursor_name left_ptr
+# diskie &
+
+# monitor and bar
 polybar -r fhd-hdmi-1 & 
 polybar -r fhd-dvi-d-1 &
-
-# desktop names
 bspc monitor HDMI-0 -d I II III IV V 
 bspc monitor DVI-D-0 -d VI VII VIII IX X
 
