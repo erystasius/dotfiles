@@ -68,6 +68,8 @@ abbr -a ng "netstat -tulnp | grep"
 # shorten
 abbr -a gp "grep -i --color=auto"
 abbr -a rmd "rmdir"
+abbr -a git-clone-dotfiles "git clone https://github.com/erystasius/dotfiles ~/dotfiles"
+abbr -a git-clone-doom "git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d"
 
 ####### Prompt 
 # This was the 'sashimi' prompt from oh-my-fish.
