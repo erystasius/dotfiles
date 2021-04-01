@@ -49,7 +49,7 @@
     # shares: fonts, apps, icons
     ~/.local/share/fonts: share/fonts
     # bin: scripts
-    ~/.bin: bin
+    ~/.local/bin: bin
 
 - shell:
   - touch ~/.config/aria2/session.lock
