@@ -33,6 +33,7 @@ yay -S --needed --noconfirm \
     viewnior \
     chromium \
     alacritty \
+    syncthing \
     file-roller \
     pcmanfm-gtk3 \
     xfce4-notifyd \

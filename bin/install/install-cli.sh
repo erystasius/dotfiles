@@ -18,11 +18,13 @@ yay -S --needed --noconfirm \
     git \
     exa \
     zip \
+    fzf \
     less \
     wget \
     curl \
     tree \
     htop \
+    tldr \
     aria2 \
     unzip \
     procs \
