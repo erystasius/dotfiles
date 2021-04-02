@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Dev tools
-yay -S --needed --noconfirm base-devel
+echo "Installing dev tools"
+yay -S --needed --noconfirm \
+    base-devel \
 
-# Aur packages
-yay -S --needed --noconfirm devour
-yay -S --needed --noconfirm google-chrome
-yay -S --needed --noconfirm oh-my-zsh-git
-yay -S --needed --noconfirm wudao-dict-git
+echo "Installing aur packages"
+yay -S --needed --noconfirm \
+    devour \
+    google-chrome \
+    oh-my-zsh-git \
+    wudao-dict-git \
