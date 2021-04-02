@@ -8,6 +8,8 @@ set -x PAGER "less"                       # Set pager
 set -x EDITOR "emacsclient -t -a ''"      # $EDITOR use Emacs in terminal
 set -x VISUAL "emacsclient -c -a emacs"   # $VISUAL use Emacs in GUI mode
 set -x PATH $PATH ~/.emacs.d/bin
+set -x PATH $PATH ~/.local/bin/install
+set -x PATH $PATH ~/.local/bin/setup
 
 ####### Abbr
 # ls
