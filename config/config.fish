@@ -77,8 +77,36 @@ abbr -a ng "netstat -tulnp | grep"
 # shorten
 abbr -a gp "grep -i --color=auto"
 abbr -a rmd "rmdir"
-abbr -a get-my-ip "curl ipinfo.io"
+abbr -a getip "curl ipinfo.io"
 abbr -a git-clone-doom "git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d"
+
+####### Proxy
+function pxyst
+    echo "http_proxy=$http_proxy"
+    echo "https_proxy=$https_proxy"
+end
+
+function pxyon
+    export http_proxy="localhost:7890"
+    export https_proxy="localhost:7890"
+end
+
+function pxyoff
+    export http_proxy=
+    export https_proxy=
+end
+
+function pxydo
+    http_proxy="localhost:7890" \
+    https_proxy="localhost:7890" \
+    eval $argv
+end
+
+function pxytst
+    http_proxy="localhost:7890" \
+    https_proxy="localhost:7890" \
+    curl ipinfo.io
+end
 
 ####### Functions
 # Function for printing a column (splits input on whitespace)
