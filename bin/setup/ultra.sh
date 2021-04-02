@@ -2,6 +2,7 @@
 
 # xrandr
 xrandr --output eDP1 --scale 0.5x0.5
+nitrogen --restore
 
 # polybar 
 pkill polybar

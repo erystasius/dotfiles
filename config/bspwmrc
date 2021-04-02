@@ -3,9 +3,11 @@
 # autostart
 sxhkd &
 picom &
-nitrogen --restore &
-xsetroot -cursor_name left_ptr
 # diskie &
+
+# autoconfig
+nitrogen --restore
+xsetroot -cursor_name left_ptr
 
 # monitor and bar
 polybar -r fhd-hdmi-1 & 
