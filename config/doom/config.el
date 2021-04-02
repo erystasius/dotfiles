@@ -30,11 +30,11 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 
-(setq erystasius/org-agenda-directory "~/Org/0-agenda")
+(setq erystasius/org-agenda-directory "~/space/Org/0-agenda/plans")
 
 (after! org
-  (setq org-directory "~/Org/"                                  ;; directory for all org files.
-        org-archive-location "archive/%s_archive::"
+  (setq org-directory "~/space/Org/"                                  ;; directory for all org files.
+        org-archive-location "~/space/Org/0-agenda/archive/%s_archive::"
         org-agenda-files `(,erystasius/org-agenda-directory)    ;; directory for org agenda files.
         org-agenda-start-with-follow-mode t                     ;; follow mode
         org-agenda-start-day "-7d"
@@ -90,7 +90,7 @@
        "f" 'erystasius/counsel-org-agenda-files))
 
 ;; Projectile
-(setq erystasius/projectile-custom-search-path '("~/Org" "~/dotfiles"))
+(setq erystasius/projectile-custom-search-path '("~/space/Org" "~/dotfiles"))
 
 (after! projectile
   (dolist (path (seq-filter 'file-exists-p erystasius/projectile-custom-search-path))
