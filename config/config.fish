@@ -12,11 +12,20 @@ set -x PATH $PATH ~/.local/bin/install
 set -x PATH $PATH ~/.local/bin/setup
 
 ####### Abbr
+# cd
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
 # ls
-abbr -a ls "ls --color=always"
-abbr -a la "ls -A"
-abbr -a ll "ls -ahlF"
-abbr -a lg "ls -ahlF | grep -i"
+# -g --grid -l --long -x --across -F --classify
+abbr -a ls "exa -aGxF --color=always --group-directories-first"
+abbr -a la "exa -aGxF --color=always --group-directories-first"
+abbr -a ll "exa -algF --color=always --group-directories-first --time-style=long-iso --git"
+abbr -a lg "exa -algF --color=always --group-directories-first --time-style=long-iso --git | grep -i"
+# cat
+abbr -a cat "bat"
 # df & du
 abbr -a df "df -h"
 abbr -a du "du -h -d 1"
@@ -37,11 +46,13 @@ abbr -a yay "yay --repo --noconfirm"
 abbr -a yaa "yay --aur --noconfirm"
 abbr -a yaysyu "yay --repo --noconfirm -Syyu"
 abbr -a yaasyu "yay --aur --noconfirm -Syyu"
+abbr -a yayclr "yay --noconfirm -Rns (yay -Qtdq)"
 # systemd
 abbr -a sc "systemctl"
 abbr -a scu "systemctl --user"
 abbr -a jc "journalctl"
 abbr -a jcu "journalctl --user"
+abbr -a jcerr "journalctl --boot --catalog --priority=3"
 # clip
 abbr -a clip "xclip -selection c"
 abbr -a clipc "xclip -selection c"
@@ -68,6 +79,23 @@ abbr -a gp "grep -i --color=auto"
 abbr -a rmd "rmdir"
 abbr -a git-clone-dotfiles "git clone https://github.com/erystasius/dotfiles ~/dotfiles"
 abbr -a git-clone-doom "git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d"
+
+####### Functions
+# Function for printing a column (splits input on whitespace)
+# ex: echo 1 2 3 | coln 3
+# output: 3
+function coln
+    while read -l input
+        echo $input | awk '{print $'$argv[1]'}'
+    end
+end
+
+# Function for printing a row
+# ex: seq 3 | rown 3
+# output: 3
+function rown --argument index
+    sed -n "$index p"
+end
 
 ####### Prompt 
 # This was the 'sashimi' prompt from oh-my-fish.
