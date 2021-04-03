@@ -1,6 +1,9 @@
 ####### Fish
 set fish_greeting                      # Supresses fish's intro message
+
+####### vi mode
 fish_vi_key_bindings
+bind -M insert -m default jj backward-char force-repaint 
 
 ######## Env
 set -x TERM "xterm-256color"              # Set terminal type
@@ -26,6 +29,8 @@ abbr -a ll "exa -algF --color=always --group-directories-first --time-style=long
 abbr -a lg "exa -algF --color=always --group-directories-first --time-style=long-iso --git | grep -i"
 # cat
 abbr -a cat "bat"
+# mkdir
+abbr -a mkdir "mkdir --parents"
 # df & du
 abbr -a df "df -h"
 abbr -a du "du -h -d 1"
