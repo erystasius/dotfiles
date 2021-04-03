@@ -1,12 +1,11 @@
 #! /bin/sh
 
-# autostart
-sxhkd &
-picom &
-
 # autoconfig
 nitrogen --restore
 xsetroot -cursor_name left_ptr
+
+# systemd
+systemctl --user start bspwm.target
 
 # monitor and bar
 polybar -r fhd-hdmi-1 & 

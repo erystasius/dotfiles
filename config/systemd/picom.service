@@ -1,0 +1,6 @@
+[Unit]
+Description=Start picom the compositor.
+
+[Service]
+ExecStart=/usr/bin/picom
+

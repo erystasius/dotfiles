@@ -37,6 +37,8 @@ abbr -a ll "exa -algF --color=always --group-directories-first --time-style=long
 abbr -a lg "exa -algF --color=always --group-directories-first --time-style=long-iso --git | grep -i"
 # cat
 abbr -a cat "bat"
+# cp
+abbr -a cp "cp -r"
 # mkdir
 abbr -a mkdir "mkdir --parents"
 # df & du
