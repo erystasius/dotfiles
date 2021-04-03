@@ -1,0 +1,6 @@
+[Unit]
+Description=Start polybar.
+
+[Service]
+ExecStart=/usr/bin/polybar -r %i
+

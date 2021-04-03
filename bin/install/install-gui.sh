@@ -29,6 +29,7 @@ yay -S --needed --noconfirm \
     clash \
     zenity \
     udiskie \
+    redshift \
     nitrogen \
     viewnior \
     chromium \
@@ -36,8 +37,6 @@ yay -S --needed --noconfirm \
     syncthing \
     file-roller \
     pcmanfm-gtk3 \
-    xfce4-notifyd \
-    xfce4-settings \
 
 echo "Installing theme packages"
 yay -S --needed --noconfirm \
