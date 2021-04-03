@@ -1,0 +1,7 @@
+[Unit]
+Description=Fix cursor shape.
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xsetroot -cursor_name left_ptr
+

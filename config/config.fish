@@ -68,6 +68,7 @@ abbr -a scu "systemctl --user"
 abbr -a jc "journalctl"
 abbr -a jcu "journalctl --user"
 abbr -a jcerr "journalctl --boot --catalog --priority=3"
+abbr -a sysd-verify "systemd-analyze verify"
 # clip
 abbr -a clip "xclip -selection c"
 abbr -a clipc "xclip -selection c"

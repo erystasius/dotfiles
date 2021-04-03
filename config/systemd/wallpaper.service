@@ -1,0 +1,7 @@
+[Unit]
+Description=Reset wallpaper with nitrogen.
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/nitrogen --restore
+
