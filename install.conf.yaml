@@ -47,6 +47,8 @@
     ~/.config/fcitx5: config/fcitx5
     ~/.config/systemd/user: config/systemd
     # shares: fonts, apps, icons
+    ~/.local/share/applications: share/applications
+    ~/.local/share/icons: share/icons
     ~/.local/share/fonts: share/fonts
     # bin: scripts
     ~/.local/bin: bin

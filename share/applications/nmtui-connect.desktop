@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Categories=Utility;
+
+Name=NMTui Connect
+GenericName=nmtui-connect
+Comment=NetworkManager tui frontend
+Keywords=nmtui;network;manager
+
+TryExec=nmtui-connect
+Exec=alacritty --command nmtui-connect
+
+Icon=
