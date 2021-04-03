@@ -1,8 +1,0 @@
-[Unit]
-Description=Start my favorite services.
-
-Wants=syncthing.service
-Wants=clash.service
-
-[Install]
-WantedBy=default.target
