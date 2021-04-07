@@ -1,0 +1,9 @@
+[Unit]
+Description=Configuring for different machine.
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+ExecStart=/usr/bin/whoami
+
