@@ -17,6 +17,9 @@
     rs = restore
     co = checkout	
     sm = submodule
+    # Stash commands
+    shp = stash pop
+    shli = stash list
     # Restore commands
     rss = restore --staged
     rssa = restore --staged :/
