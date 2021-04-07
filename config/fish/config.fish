@@ -75,6 +75,7 @@ abbr -a clipc "xclip -selection c"
 abbr -a clipv "xclip -selection c -o"
 # dotfiles
 abbr -a dot "cd ~/dotfiles"
+abbr -a pdot "cd ~/pdotfiles"
 abbr -a bdot "cd ~/dotfiles/bin"
 abbr -a sdot "cd ~/dotfiles/share"
 abbr -a cdot "cd ~/dotfiles/config"
