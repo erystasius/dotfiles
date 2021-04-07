@@ -29,6 +29,10 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
+alias cs='cd ~/space'
+alias ubin='cd ~/.local/bin'
+alias ushare='cd ~/.local/share'
+alias uconfig='cd ~/.config'
 # ls
 # -g --grid -l --long -x --across -F --classify
 abbr -a ls "exa -aGxF --color=always --group-directories-first"
