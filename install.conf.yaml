@@ -19,13 +19,13 @@
     ~/.vimrc: config/vimrc
     ~/.shrc: config/shrc
     ~/.zshrc: config/zshrc
-    ~/.bashrc: config/bashrc
-    ~/.bash_profile: config/bash_profile
     ~/.inputrc: config/inputrc
     ~/.ideavimrc: config/ideavimrc
     ~/.gtkrc-2.0: config/gtkrc-2.0
     # 
     ~/.xprofile: config/xorg/xprofile
+    ~/.bashrc: config/bash/bashrc
+    ~/.bash_profile: config/bash/bash_profile
     # ~/.config
     ~/.config/yay: config/yay
     ~/.config/htop: config/htop
