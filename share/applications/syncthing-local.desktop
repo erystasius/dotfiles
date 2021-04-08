@@ -1,0 +1,5 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Syncthing Local Dashboard
+Exec=/usr/bin/google-chrome-stable --app=http://localhost:8384/
