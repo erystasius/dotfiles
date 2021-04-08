@@ -1,0 +1,32 @@
+[Desktop Entry]
+Type=Application
+Name=JetBrains Toolbox (1)
+Exec=/home/erystasius/Applications/jetbrains-toolbox_6dc202850633c31291d6270bcaad57d3
+Icon=appimagekit_0bcf10a146fc0fa8b0022ce2819d07e5_jetbrains-toolbox
+StartupNotify=false
+Terminal=false
+MimeType=x-scheme-handler/jetbrains;
+
+TryExec=/home/erystasius/Applications/jetbrains-toolbox_6dc202850633c31291d6270bcaad57d3
+X-AppImage-Old-Icon=jetbrains-toolbox
+X-AppImage-Identifier=0bcf10a146fc0fa8b0022ce2819d07e5
+Actions=Remove;
+X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2020-12-16 18:35:16 UTC
+
+[Desktop Action Remove]
+Name=Remove AppImage from system
+Icon=AppImageLauncher
+Exec=/usr/lib/appimagelauncher/remove "/home/erystasius/Applications/jetbrains-toolbox_6dc202850633c31291d6270bcaad57d3"
+Name[ast]=Desaniciar AppImage del sistema
+Name[cs]=Odebrat AppImage ze systému
+Name[de]=AppImage vom System entfernen
+Name[en]=Remove AppImage from system
+Name[es]=Eliminar Appimage del Sistema
+Name[fr]=Supprimer l'AppImage du système
+Name[it]=Rimuovi AppImage dal sistema
+Name[nl]=AppImage deïnstalleren
+Name[pl]=Usuń AppImage z systemu
+Name[pt]=Remover AppImage do sistema
+Name[pt_PT]=Remover AppImage do sistema
+Name[ru]=Удалить AppImage из системы
+Name[zh_Hans]=从系统中移除 AppImage

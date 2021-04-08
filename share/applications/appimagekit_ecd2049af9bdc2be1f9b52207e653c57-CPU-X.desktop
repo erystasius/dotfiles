@@ -1,0 +1,58 @@
+[Desktop Entry]
+Name=CPU-X (v4.0.1)
+Comment=Gathers information on CPU, motherboard and more
+Comment[cs_CZ]=Shromažďuje informace o procesoru, základní desce a další
+Comment[fr]=Récolte des informations sur le CPU, la carte-mère et plus
+Comment[pt_BR]=Coleta informações sobre sua CPU, placa-mãe and mais
+Comment[ru]=Сбор информации о процессоре, материнской плате и др.
+Comment[zh]=收集有关 CPU 和主板等的信息
+Exec=/home/erystasius/Applications/CPU-X-v4.0.1-x86_64_47f869d8f21dc6528d2b5781e05a66bb.AppImage
+Icon=appimagekit_ecd2049af9bdc2be1f9b52207e653c57_cpu-x
+Type=Application
+Categories=GTK;System;
+Terminal=false
+Keywords=CPU;system;core;speed;clock;rate;Intel;AMD;motherboard;
+X-AppImage-Version=v4.0.1
+
+TryExec=/home/erystasius/Applications/CPU-X-v4.0.1-x86_64_47f869d8f21dc6528d2b5781e05a66bb.AppImage
+X-AppImage-Old-Icon=cpu-x
+X-AppImage-Old-Name=CPU-X
+X-AppImage-Identifier=ecd2049af9bdc2be1f9b52207e653c57
+Actions=Remove;Update;
+X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2020-12-16 18:35:16 UTC
+
+[Desktop Action Remove]
+Name=Remove AppImage from system
+Icon=AppImageLauncher
+Exec=/usr/lib/appimagelauncher/remove "/home/erystasius/Applications/CPU-X-v4.0.1-x86_64_47f869d8f21dc6528d2b5781e05a66bb.AppImage"
+Name[ast]=Desaniciar AppImage del sistema
+Name[cs]=Odebrat AppImage ze systému
+Name[de]=AppImage vom System entfernen
+Name[en]=Remove AppImage from system
+Name[es]=Eliminar Appimage del Sistema
+Name[fr]=Supprimer l'AppImage du système
+Name[it]=Rimuovi AppImage dal sistema
+Name[nl]=AppImage deïnstalleren
+Name[pl]=Usuń AppImage z systemu
+Name[pt]=Remover AppImage do sistema
+Name[pt_PT]=Remover AppImage do sistema
+Name[ru]=Удалить AppImage из системы
+Name[zh_Hans]=从系统中移除 AppImage
+
+[Desktop Action Update]
+Name=Update AppImage
+Icon=AppImageLauncher
+Exec=/usr/lib/appimagelauncher/update "/home/erystasius/Applications/CPU-X-v4.0.1-x86_64_47f869d8f21dc6528d2b5781e05a66bb.AppImage"
+Name[ast]=Anovar AppImage
+Name[cs]=Aktualizovat AppImage
+Name[de]=AppImage aktualisieren
+Name[en]=Update AppImage
+Name[es]=Actualizar Appimage
+Name[fr]=Mettre à jour l'AppImage
+Name[it]=Aggiorna AppImage
+Name[nl]=AppImage bijwerken
+Name[pl]=Uaktualnij AppImage
+Name[pt]=Actualizar AppImage
+Name[pt_PT]=Atualizar AppImage
+Name[ru]=Обновить AppImage
+Name[zh_Hans]=更新 AppImage

@@ -1,0 +1,44 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=NetEase Cloud Music (1.2.0.2.glibc2.17)
+Name[zh_CN]=网易云音乐 (1.2.0.2.glibc2.17)
+Name[zh_TW]=網易雲音樂 (1.2.0.2.glibc2.17)
+Comment=NetEase Cloud Music
+Comment[zh_CN]=网易云音乐
+Comment[zh_TW]=網易雲音樂
+Icon=appimagekit_e96a43c3002a844e8f4c7e9757402f71_netease-cloud-music
+Exec=/home/erystasius/Applications/NetEase_Cloud_Music-1.2.0.2-2.glibc2.17-x86_64_2888c7509d8659553ed330db682984a5.AppImage %U
+Categories=AudioVideo;Player;
+Terminal=false
+StartupNotify=true
+StartupWMClass=netease-cloud-music
+MimeType=audio/aac;audio/flac;audio/mp3;audio/mp4;audio/mpeg;audio/ogg;audio/x-ape;audio/x-flac;audio/x-mp3;audio/x-mpeg;audio/x-ms-wma;audio/x-vorbis;audio/x-vorbis+ogg;audio/x-wav;
+X-AppImage-Version=1.2.0.2.glibc2.17
+
+TryExec=/home/erystasius/Applications/NetEase_Cloud_Music-1.2.0.2-2.glibc2.17-x86_64_2888c7509d8659553ed330db682984a5.AppImage
+X-AppImage-Old-Icon=netease-cloud-music
+X-AppImage-Old-Name=NetEase Cloud Music
+X-AppImage-Old-Name[zh_CN]=网易云音乐
+X-AppImage-Old-Name[zh_TW]=網易雲音樂
+X-AppImage-Identifier=e96a43c3002a844e8f4c7e9757402f71
+Actions=Remove;
+X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2020-12-16 18:35:16 UTC
+
+[Desktop Action Remove]
+Name=Remove AppImage from system
+Icon=AppImageLauncher
+Exec=/usr/lib/appimagelauncher/remove "/home/erystasius/Applications/NetEase_Cloud_Music-1.2.0.2-2.glibc2.17-x86_64_2888c7509d8659553ed330db682984a5.AppImage"
+Name[ast]=Desaniciar AppImage del sistema
+Name[cs]=Odebrat AppImage ze systému
+Name[de]=AppImage vom System entfernen
+Name[en]=Remove AppImage from system
+Name[es]=Eliminar Appimage del Sistema
+Name[fr]=Supprimer l'AppImage du système
+Name[it]=Rimuovi AppImage dal sistema
+Name[nl]=AppImage deïnstalleren
+Name[pl]=Usuń AppImage z systemu
+Name[pt]=Remover AppImage do sistema
+Name[pt_PT]=Remover AppImage do sistema
+Name[ru]=Удалить AppImage из системы
+Name[zh_Hans]=从系统中移除 AppImage
