@@ -21,6 +21,8 @@ yay -S --needed --noconfirm \
 echo "Installing input packages"
 yay -S --needed --noconfirm \
     fcitx5-im \
+    fcitx5-mozc \
+    fcitx5-chinese-addons \
     fcitx5-material-color \
 
 echo "Installing gui packages"
