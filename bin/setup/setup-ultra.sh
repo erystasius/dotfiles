@@ -19,7 +19,7 @@ bspc monitor eDP1 -d I II III IV V VI VII VIII IX X
 
 # polybar 
 echo "Configuring polybar."
-systemctl --user start polybar@fhd
+systemctl --user restart polybar@fhd
 
 ## Wallpaper
 echo "Restoring wallpaper."
