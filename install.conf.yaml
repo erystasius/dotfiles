@@ -14,18 +14,18 @@
 
 - link:
     # ~
-    ~/.vim: config/vim
-    ~/.gitconfig: config/gitconfig
-    ~/.vimrc: config/vimrc
     ~/.shrc: config/shrc
-    ~/.zshrc: config/zshrc
-    ~/.inputrc: config/inputrc
-    ~/.ideavimrc: config/ideavimrc
-    ~/.gtkrc-2.0: config/gtkrc-2.0
     # 
-    ~/.xprofile: config/xorg/xprofile
+    ~/.vim: config/vim/vim.d
+    ~/.vimrc: config/vim/vimrc
     ~/.bashrc: config/bash/bashrc
     ~/.bash_profile: config/bash/bash_profile
+    ~/.zshrc: config/zsh/zshrc
+    ~/.xprofile: config/xorg/xprofile
+    ~/.inputrc: config/readline/inputrc
+    ~/.gtkrc-2.0: config/gtk-2.0/gtkrc-2.0
+    ~/.ideavimrc: config/ideavim/ideavimrc
+    ~/.gitconfig: config/git/gitconfig
     # ~/.config
     ~/.config/yay: config/yay
     ~/.config/htop: config/htop
@@ -45,8 +45,8 @@
     ~/.config/alacritty: config/alacritty
     ~/.config/fontconfig: config/fontconfig
     # ~/config to sort
-    ~/.config/redshift.conf: config/redshift.conf
-    ~/.config/libinput-gestures.conf: config/libinput-gestures.conf
+    ~/.config/redshift.conf: config/redshift/redshift.conf
+    ~/.config/libinput-gestures.conf: config/libinput-gestures/libinput-gestures.conf
     # shares: fonts, apps, icons
     ~/.local/share/applications: share/applications
     ~/.local/share/icons: share/icons
