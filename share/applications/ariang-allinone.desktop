@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=AriaNg All-In-One
+Exec=google-chrome-stable --app=file:///usr/share/ariang-allinone/index.html
+Icon=ariang-allinone

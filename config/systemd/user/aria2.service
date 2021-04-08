@@ -1,0 +1,5 @@
+[Unit]
+Description=aria2c Service
+
+[Service]
+ExecStart=/usr/bin/aria2c --conf-path=/home/erystasius/.config/aria2/daemon.conf

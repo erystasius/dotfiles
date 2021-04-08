@@ -4,6 +4,7 @@ Description=Sync to my favorite bspwm state.
 Wants=emacs.service
 Wants=picom.service
 Wants=sxhkd.service
+Wants=aria2.service
 Wants=wallpaper.service
 Wants=cursor-fix.service
 Wants=app-org.fcitx.Fcitx5-autostart.service
