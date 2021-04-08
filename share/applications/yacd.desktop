@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=yacd
-Exec=/usr/bin/chromium -app=https://yacd.haishan.me
+Exec=/usr/bin/chromium --app=https://yacd.haishan.me
 Icon=chrome-gfagdpainghoehmmhfbafcnclpjkknij-Default
 StartupWMClass=crx_gfagdpainghoehmmhfbafcnclpjkknij
