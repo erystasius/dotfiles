@@ -1,6 +1,7 @@
 #! /bin/sh
 
 # systemd
+systemctl --user import-environment
 systemctl --user start bspwm.target
 
 # monitor and bar

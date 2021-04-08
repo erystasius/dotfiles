@@ -1,0 +1,8 @@
+[Unit]
+Description=Print environment variables.
+
+[Service]
+Type=oneshot
+Environment="HHAHAHAH=asfdasfda"
+ExecStart=/usr/bin/env
+

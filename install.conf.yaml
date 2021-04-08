@@ -24,6 +24,8 @@
     ~/.inputrc: config/inputrc
     ~/.ideavimrc: config/ideavimrc
     ~/.gtkrc-2.0: config/gtkrc-2.0
+    # 
+    ~/.xprofile: config/xorg/xprofile
     # ~/.config
     ~/.config/yay: config/yay
     ~/.config/htop: config/htop
