@@ -61,4 +61,5 @@
   - touch ~/.config/aria2/aria2.session
   - sudo chsh --shell /usr/bin/fish erystasius
   - sudo cp config/smoothy.xkb /usr/share/X11/xkb/symbols/smoothy
+  - sudo timedatectl set-ntp true
 
