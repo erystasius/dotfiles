@@ -55,8 +55,10 @@
     ~/.local/bin: bin
 
 - shell:
-  - touch ~/.config/aria2/session.lock
+  - ln -s ~/Downloads ~/space/Downloads
+  - ln -s ~/Desktop ~/space/Desktop
   - sh -c "source ~/.shrc"
+  - touch ~/.config/aria2/session.lock
   - sudo chsh --shell /usr/bin/fish erystasius
   - sudo cp config/smoothy.xkb /usr/share/X11/xkb/symbols/smoothy
 
