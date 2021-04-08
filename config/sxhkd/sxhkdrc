@@ -22,8 +22,8 @@ super + a
 ###################
 ###   Scripts   ###
 ###################
-super + {u,i}
-    ~/.bin/{search.sh,wudao.sh}
+super + {t,u,i}
+    ~/.bin/{dot-edit.sh,search.sh,wudao.sh}
 
 ##################
 ###   Screen   ###

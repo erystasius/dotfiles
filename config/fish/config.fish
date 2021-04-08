@@ -50,6 +50,7 @@ abbr -a df "df -h"
 abbr -a du "du -h -d 1"
 # history
 abbr -a hi "history"
+abbr -a hf "history | fzf | xargs -I {} fish --command \"{}\""
 abbr -a hg "history | grep"
 # git & vim & emacs  
 abbr -a g "git"
@@ -84,6 +85,8 @@ abbr -a bdot "cd ~/dotfiles/bin"
 abbr -a sdot "cd ~/dotfiles/share"
 abbr -a cdot "cd ~/dotfiles/config"
 abbr -a edot "vim ~/dotfiles/install.conf.yaml"
+abbr -a fdot "vim (fd --base-directory ~/dotfiles/config -t f . | fzf | xargs -I {} echo $HOME/dotfiles/config/{})"
+
 abbr -a dot-install "sh ~/dotfiles/install"
 # process
 abbr -a pg "pgrep -f -a"
