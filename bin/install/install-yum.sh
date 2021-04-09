@@ -91,7 +91,7 @@ else
     echo "Package fzf is already installed."
 fi
 
-if [ -d ~/dotfiles ]; then
+if test ! -d ~/dotfiles; then
     echo "Cloning dotfiles repository."
     git clone https://github.com/erystasius/dotfiles.git ~/dotfiles
 else
