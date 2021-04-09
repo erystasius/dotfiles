@@ -1,27 +1,26 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo ">>>>>>> Add EPEL."
-yum install -y epel-release
-
 echo ">>>>>>> Add custom repos."
 cd /etc/yum.repos.d
 
-if [ -e carlwgeorge-ripgrep-epel-7.repo ]; then
+if test ! -e carlwgeorge-ripgrep-epel-7.repo; then
     yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlwgeorge/ripgrep/repo/epel-7/carlwgeorge-ripgrep-epel-7.repo
 fi
 
-if [ -e shells:fish:release:3.repo ]; then
+if test ! -e shells:fish:release:3.repo; then
     yum-config-manager --add-repo=https://download.opensuse.org/repositories/shells:fish:release:3/CentOS_7/shells:fish:release:3.repo
 fi
 
-if [ -e konimex-neofetch-epel-7.repo ]; then
+if test ! -e konimex-neofetch-epel-7.repo; then
     yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/konimex/neofetch/repo/epel-7/konimex-neofetch-epel-7.repo
 fi
 
+echo ">>>>>>> Add EPEL."
+sudo yum install -y epel-release
 
 echo ">>>>>>> Installing yum packages."
-yum install -y \
+sudo yum install -y \
     git \
     vim \
     zip \
