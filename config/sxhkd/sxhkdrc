@@ -23,7 +23,7 @@ super + a
 ###   Scripts   ###
 ###################
 super + {t,u,i}
-    ~/.bin/{dot-edit.sh,search.sh,wudao.sh}
+    ~/.local/bin/{dot-edit.sh,search.sh,wudao.sh}
 
 ##################
 ###   Screen   ###
