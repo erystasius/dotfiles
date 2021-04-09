@@ -1,0 +1,38 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+        force: true
+        glob: true
+
+- clean: 
+    ~/:
+        force: true
+    ~/.config:
+        force: true
+        recursive: true
+
+- link:
+    # ~
+    ~/.shrc: config/shrc
+    # 
+    ~/.vim: config/vim/vim.d
+    ~/.vimrc: config/vim/vimrc
+    ~/.bashrc: config/bash/bashrc
+    ~/.bash_profile: config/bash/bash_profile
+    ~/.zshrc: config/zsh/zshrc
+    ~/.inputrc: config/readline/inputrc
+    ~/.ideavimrc: config/ideavim/ideavimrc
+    ~/.gitconfig: config/git/gitconfig
+    # ~/.config
+    ~/.config/yay: config/yay
+    ~/.config/htop: config/htop
+    ~/.config/fish: config/fish
+    ~/.config/doom: config/doom
+    ~/.config/fontconfig: config/fontconfig
+    # bin: scripts
+    ~/.local/bin: bin
+
+- shell:
+  - sh -c "source ~/.shrc"
+
