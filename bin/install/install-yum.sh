@@ -55,7 +55,7 @@ if ! command -v fd; then
     echo "Installing fd release $fd_release"
     wget https://github.com/sharkdp/fd/releases/download/v8.2.1/$fd_release.tar.gz
     tar xzvf $fd_release.tar.gz
-    cp $fd_release/fd /usr/local/bin
+    sudo cp $fd_release/fd /usr/local/bin
 else
     echo "Package fd is already installed."
 fi
@@ -66,7 +66,7 @@ if ! command -v bat; then
     echo "Installing bat release $bat_release"
     wget https://github.com/sharkdp/bat/releases/download/v0.18.0/$bat_release.tar.gz
     tar xzvf $bat_release.tar.gz
-    cp $bat_release/bat /usr/local/bin
+    sudo cp $bat_release/bat /usr/local/bin
 else
     echo "Package bat is already installed."
 fi
@@ -76,7 +76,7 @@ if ! command -v exa; then
     echo "Installing exa release $exa_release"
     wget https://github.com/ogham/exa/releases/download/v0.10.0/$exa_release.zip
     unzip -o -d exa $exa_release.zip
-    cp exa/bin/exa /usr/local/bin
+    sudo cp exa/bin/exa /usr/local/bin
 else
     echo "Package exa is already installed."
 fi
@@ -86,7 +86,7 @@ if ! command -v fzf; then
     echo "Installing fzf release $fzf_release"
     wget https://github.com/junegunn/fzf/releases/download/0.27.0/$fzf_release.tar.gz
     tar xzvf $fzf_release.tar.gz
-    cp fzf /usr/local/bin
+    sudo cp fzf /usr/local/bin
 else
     echo "Package fzf is already installed."
 fi
