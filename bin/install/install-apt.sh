@@ -32,6 +32,9 @@ sudo apt -o Dpkg::options::="--force-overwrite" -y install \
     neofetch \
     net-tools \
 
+echo ">>>>>>> Configuring packages."
+sudo ln -s /usr/bin/batcat /usr/bin/bat
+
 echo ">>>>>>> Installing binary packages."
 cd /tmp
 
