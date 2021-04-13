@@ -3,6 +3,9 @@ set fish_greeting                      # Supresses fish's intro message
 
 ####### vi mode
 fish_vi_key_bindings
+set fish_cursor_default block
+set fish_cursor_insert line
+set fish_cursor_replace_one underscore
 bind -M insert -m default jj backward-char force-repaint 
 
 ######## Env
@@ -54,9 +57,10 @@ abbr -a hf "history | fzf | xargs -I {} fish --command \"{}\""
 abbr -a hg "history | grep"
 # git & vim & emacs  
 abbr -a g "git"
-abbr -a v "vim"
+abbr -a v "nvim"
+abbr -a sv "sudo nvim"
+abbr -a vim "nvim"
 abbr -a e "devour emacsclient --create-frame"
-abbr -a sv "sudo vim"
 abbr -a se "sudo devour emacsclient --create-frame"
 # docker
 abbr -a dk "sudo docker"

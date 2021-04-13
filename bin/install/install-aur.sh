@@ -11,3 +11,4 @@ yay -S --needed --noconfirm \
     google-chrome \
     oh-my-zsh-git \
     wudao-dict-git \
+    ariang-allinone \
