@@ -39,6 +39,7 @@
     ~/.config/fcitx5: config/fcitx5
     ~/.config/gtk-3.0: config/gtk-3.0
     ~/.config/systemd: config/systemd
+    ~/.config/pcmanfm: config/pcmanfm
     ~/.config/polybar: config/polybar
     ~/.config/zathura: config/zathura
     ~/.config/nitrogen: config/nitrogen
