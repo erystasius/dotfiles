@@ -26,6 +26,7 @@
     ~/.gitconfig: config/git/gitconfig
     # ~/.config
     ~/.config/yay: config/yay
+    ~/.config/nvim: config/nvim
     ~/.config/htop: config/htop
     ~/.config/fish: config/fish
     ~/.config/doom: config/doom

@@ -27,6 +27,7 @@ sudo apt -o Dpkg::options::="--force-overwrite" -y install \
     htop \
     tldr \
     unzip \
+    neovim \
     ripgrep \
     fd-find \
     neofetch \

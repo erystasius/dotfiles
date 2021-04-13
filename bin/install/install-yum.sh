@@ -42,6 +42,7 @@ sudo yum install -y \
     htop \
     tldr \
     unzip \
+    neovim \
     ripgrep \
     neofetch \
     net-tools \

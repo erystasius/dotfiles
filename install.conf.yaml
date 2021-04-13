@@ -57,8 +57,6 @@
     ~/.local/bin: bin
 
 - shell:
-  - ln -s ~/Downloads ~/space/Downloads
-  - ln -s ~/Desktop ~/space/Desktop
   - sh -c "source ~/.shrc"
   - touch ~/.config/aria2/aria2.session
   - sudo chsh --shell /usr/bin/fish erystasius
