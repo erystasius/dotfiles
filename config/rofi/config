@@ -6,4 +6,4 @@ rofi.kb-remove-to-eol:
 rofi.kb-row-up:         Up,Control+k
 rofi.kb-row-down:       Down,Control+j
 
-rofi.theme:             /usr/share/rofi/themes/Pop-Dark.rasi
+rofi.theme:             ~/.config/rofi/Pop-Dark-Modified.rasi
