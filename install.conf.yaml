@@ -38,6 +38,7 @@
     ~/.config/bspwm: config/bspwm
     ~/.config/sxhkd: config/sxhkd
     ~/.config/fcitx5: config/fcitx5
+    ~/.config/jgmenu: config/jgmenu
     ~/.config/gtk-3.0: config/gtk-3.0
     ~/.config/systemd: config/systemd
     ~/.config/pcmanfm: config/pcmanfm

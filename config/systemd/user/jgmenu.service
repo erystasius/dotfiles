@@ -1,0 +1,6 @@
+[Unit]
+Description=Start jgmenu daemon.
+Before=sxhkd.service
+
+[Service]
+ExecStart=/usr/bin/jgmenu_run

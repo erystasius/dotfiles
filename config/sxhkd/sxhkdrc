@@ -2,6 +2,10 @@
 ###   Bspwm hotkeys   ###
 #########################
 
+# pointer
+~button3
+    root-win-menu.sh
+
 # quit/restart/hotkey
 super + shift + {e,r,m}
     {bspc quit,bspc wm -r,pkill -USR1 -x sxhkd}
