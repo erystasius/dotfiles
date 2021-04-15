@@ -13,20 +13,17 @@
         recursive: true
 
 - link:
-    # ~
-    ~/.shrc: config/shrc
-    # 
+    # home
     ~/.vim: config/vim/vim.d
     ~/.vimrc: config/vim/vimrc
     ~/.bashrc: config/bash/bashrc
     ~/.bash_profile: config/bash/bash_profile
-    ~/.zshrc: config/zsh/zshrc
     ~/.xprofile: config/xorg/xprofile
     ~/.inputrc: config/readline/inputrc
     ~/.gtkrc-2.0: config/gtk-2.0/gtkrc-2.0
     ~/.ideavimrc: config/ideavim/ideavimrc
     ~/.gitconfig: config/git/gitconfig
-    # ~/.config
+    # xdg config home directory
     ~/.config/yay: config/yay
     ~/.config/nvim: config/nvim
     ~/.config/htop: config/htop
@@ -47,7 +44,7 @@
     ~/.config/nitrogen: config/nitrogen
     ~/.config/alacritty: config/alacritty
     ~/.config/fontconfig: config/fontconfig
-    # ~/config to sort
+    # xdg config home file
     ~/.config/redshift.conf: config/redshift/redshift.conf
     ~/.config/libinput-gestures.conf: config/libinput-gestures/libinput-gestures.conf
     # shares: fonts, apps, icons
@@ -58,7 +55,6 @@
     ~/.local/bin: bin
 
 - shell:
-  - sh -c "source ~/.shrc"
   - touch ~/.config/aria2/aria2.session
   - sudo chsh --shell /usr/bin/fish erystasius
   - sudo cp config/smoothy.xkb /usr/share/X11/xkb/symbols/smoothy

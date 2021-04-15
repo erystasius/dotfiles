@@ -1,6 +1,49 @@
+#!/bin/sh
+
+# Editing mode
 set editing-mode vi
 
-export TERM=xterm-256color
+# Prompt
 export PS1="\[$(tput bold)\][\[$(tput sgr0)\]\[\033[38;5;107m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\]] \[$(tput sgr0)\]\[\033[38;5;220m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;9m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;69m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\] \\$ \[$(tput sgr0)\]"
 
-source ~/.shrc
+# Environment
+export PATH="$HOME/.emacs.d/bin:$PATH"
+export TERM=xterm-256color
+export VISUAL=vim
+export EDITOR=vim
+
+# History
+HISTCONTROL=ignoredups:erasedups
+HISTSIZE=1000
+HISTFILESIZE=1000
+
+# Aliases
+alias ls="ls --color=always"
+alias la="ls -A"
+alias ll="ls -ahlF"
+alias lg="ll | grep"
+alias df="df -h"
+alias du="du -h -d 1"
+alias hg="history | grep"
+alias pg="pgrep -f -a"
+alias pk="pkill -f"
+alias kp="kill -9"
+alias grep="grep -i --color=auto"
+
+alias g="git"
+alias v="vim"
+alias o="xdg-open"
+alias e="emacsclient"
+alias z="zathura --fork"
+alias dk="sudo docker"
+alias dc="sudo docker-compose"
+alias gd="goldendict"
+alias sv="sudo vim"
+alias ec="emacsclient -n -c"
+alias hi="history"
+
+alias yay="yay --noconfirm"
+alias yaya="yay --aur"
+alias yayr="yay --repo"
+
+alias cdot="cd ~/dotfiles/config"
