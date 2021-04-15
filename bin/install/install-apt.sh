@@ -16,7 +16,6 @@ sudo apt -o Dpkg::options::="--force-overwrite" -y install \
     git \
     vim \
     zip \
-    zsh \
     bat \
     fzf \
     fish \

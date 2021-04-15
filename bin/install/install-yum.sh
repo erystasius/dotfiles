@@ -33,7 +33,6 @@ sudo yum install -y \
     git \
     vim \
     zip \
-    zsh \
     fish \
     wget \
     tree \

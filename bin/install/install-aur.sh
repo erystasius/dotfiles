@@ -9,6 +9,5 @@ echo "Installing aur packages"
 yay -S --needed --noconfirm \
     devour \
     google-chrome \
-    oh-my-zsh-git \
     wudao-dict-git \
     ariang-allinone \

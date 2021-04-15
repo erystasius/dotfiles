@@ -14,6 +14,7 @@ echo "Installing x packages"
 yay -S --needed --noconfirm \
     xtitle \
     xclip \
+    xorg-xprop \
     xorg-xkill \
     xorg-xinput \
     xorg-xsetroot \

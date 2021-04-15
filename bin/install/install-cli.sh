@@ -3,7 +3,6 @@ set -euo pipefail
 
 echo "Installing shells"
 yay -S --needed --noconfirm \
-    zsh \
     fish \
 
 echo "Installing editors"
