@@ -90,7 +90,10 @@ abbr -a sdot "cd ~/dotfiles/share"
 abbr -a cdot "cd ~/dotfiles/config"
 abbr -a edot "vim ~/dotfiles/install.conf.yaml"
 abbr -a fdot "vim (fd --base-directory ~/dotfiles/config -t f . | fzf | xargs -I {} echo $HOME/dotfiles/config/{})"
-
+abbr -a dot-edit "vim ~/dotfiles/install.conf.yaml"
+abbr -a dot-sync "git -C ~/dotfiles stash && git -C ~/dotfiles pull && git -C ~/dotfiles stash pop"
+abbr -a dot-find "vim (fd --base-directory ~/dotfiles/config -t f . | fzf | xargs -I {} echo $HOME/dotfiles/config/{})"
+abbr -a dot-status "git -C ~/dotfiles status"
 abbr -a dot-install "sh ~/dotfiles/install"
 # process
 abbr -a pg "pgrep -f -a"
