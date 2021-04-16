@@ -4,7 +4,7 @@
 
 # pointer
 ~button3
-    root-win-menu.sh
+    jgmenu.sh
 
 # quit/restart/hotkey
 super + shift + {e,r,m}
