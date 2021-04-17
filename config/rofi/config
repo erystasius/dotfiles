@@ -1,9 +1,0 @@
-rofi.combi-modi:        drun,window,ssh
-
-rofi.kb-accept-entry:   Return
-rofi.kb-remove-to-eol:   
-
-rofi.kb-row-up:         Up,Control+k
-rofi.kb-row-down:       Down,Control+j
-
-rofi.theme:             ~/.config/rofi/Pop-Dark-Modified.rasi

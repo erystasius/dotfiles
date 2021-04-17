@@ -1,0 +1,8 @@
+configuration {
+	combi-modi: "drun,window,ssh";
+	theme: "~/.config/rofi/Pop-Dark-Modified.rasi";
+	kb-remove-to-eol: "";
+	kb-accept-entry: "Return";
+	kb-row-up: "Up,Control+k";
+	kb-row-down: "Down,Control+j";
+}
