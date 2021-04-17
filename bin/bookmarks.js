@@ -2,8 +2,10 @@
 
 const fs = require('fs')
 const os = require('os')
-const py = require('pinyin')
-const execSync = require('child_process').execSync
+
+const { execSync } = require('child_process')
+const root = execSync("npm root -g").toString().trim()
+const py = require(`${root}/pinyin`)
 
 let text = fs.readFileSync(os.homedir() + '/.config/google-chrome/Default/Bookmarks', 'utf8')
 let json = JSON.parse(text)
