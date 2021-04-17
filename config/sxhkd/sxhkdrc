@@ -14,8 +14,8 @@ super + shift + {e,r,m}
 ###   Applications   ###
 ########################
 
-super + {Return,w,r,y}
-    {alacritty,google-chrome-stable,rofi -show-icons -show combi,pcmanfm}
+super + {Return,w,y}
+    {alacritty,google-chrome-stable,pcmanfm}
 
 super + e
     emacsclient -c
@@ -23,11 +23,14 @@ super + e
 super + a
     emacsclient -c --eval '(org-agenda-list)'
 
-###################
-###   Scripts   ###
-###################
-super + {t,u,i}
-    ~/.local/bin/{dot-edit.sh,search.sh,wudao.sh}
+################
+###   Rofi   ###
+################
+super + r
+    rofi -show-icons -show combi
+
+super + {u,i,c,b,m}
+    ~/.local/bin/rofi/{search.sh,wudao.sh,dotfiles.sh,bookmarks.js,documentation.sh}
 
 ##################
 ###   Screen   ###
