@@ -17,6 +17,9 @@ super + shift + {e,r,m}
 super + {Return,w,y}
     {alacritty,google-chrome-stable,pcmanfm}
 
+super + t
+      bspc rule -a \* -o state=floating && alacritty
+
 super + e
     emacsclient -c
 

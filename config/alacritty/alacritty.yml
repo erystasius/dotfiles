@@ -4,6 +4,11 @@ selection:
 mouse_bindings:
   - { mouse: Right, action: PasteSelection }
 
+window:
+  dimensions:
+    columns: 100
+    lines: 2
+
 # Base16 Decaf 256 - alacritty color config
 # Alex Mirrington (https://github.com/alexmirrington)
 colors:
