@@ -7,46 +7,44 @@ const { execSync } = require('child_process')
 const root = execSync("npm root -g").toString().trim()
 const py = require(`${root}/pinyin`)
 
-let text = fs.readFileSync(os.homedir() + '/.config/google-chrome/Default/Bookmarks', 'utf8')
-let json = JSON.parse(text)
+/**
+ * Main
+ */
 
-var bms = []
+let json = JSON.parse(fs.readFileSync(os.homedir() + '/.config/google-chrome/Default/Bookmarks', 'utf8'))
+let rootNode = json.roots.bookmark_bar
 
-function parseBookmarkNode(bm) {
-//    console.log('Parsing node, name [%s]', bm.name)
-    if (bm.type == 'url') {
-        parseBookmarkUrlNode(bm)
-    } else if (bm.type == 'folder') {
-        parseBookmarkFolderNode(bm)
-    }
-}
+let bookmarks = parseBookmarkNode(rootNode)
 
-function parseBookmarkUrlNode(bm) {
-//    console.log('Parsing url node, name [%s], url[%s]', bm.name, bm.url);
-    bms.push({
-        name: bm.name,
-        url: bm.url
-    })
-}
-
-function parseBookmarkFolderNode(bm) {
-//    console.log('Parsing folder node, name [%s], with [%s] children', bm.name, bm.children.length);
-    bm.children.forEach(child => parseBookmarkNode(child))
-}
-
-parseBookmarkNode(json.roots.bookmark_bar)
-
-var options = bms
-    .map(bm => bm.name)
-    .map(name => {
-        let pyString = py(name, {style: py.STYLE_NORMAL}).flatMap(w => w).join('')
-        return name.padEnd(150, ' ') + pyString
-    })
+let options = bookmarks
+    .map(bm => bm.name.padEnd(150, ' ') + bm.pinyin)
     .join('\n')
 
-var index = parseInt(execSync('rofi -dmenu -i -no-custom -format i', {input: options}))
+let index = parseInt(execSync('rofi -dmenu -i -no-custom -format i', {input: options}))
 
-execSync('google-chrome-stable ' + bms[index].url)
+execSync(`google-chrome-stable ${bookmarks[index].link}`)
 
 
+/**
+ * Functions
+ */
 
+
+function invisible(url) {
+    invisibleUrls = [ 'https://chrome.google.com/webstore' ]
+    return invisibleUrls.includes(url) || url.startsWith('chrome://')
+}
+
+function parseBookmarkNode(node) {
+    if (node.type == 'url' && invisible(node.url)) {
+        return []
+    } else if (node.type == 'url') {
+        return [{
+            name: node.name,
+            link: node.url,
+            pinyin: py(node.name, {style: py.STYLE_NORMAL}).flatMap(w => w).join('')
+        }]
+    } else if (node.type == 'folder') {
+        return node.children.flatMap(child => parseBookmarkNode(child))
+    }
+}

@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 cd ~/dotfiles/bin/rofi
 
-cat config/documentation.csv | awk -F , '{print $1}' | rofi -dmenu -no-custom | xargs -I {} rg {} config/documentation.csv | awk -F , '{print $2}' | xargs google-chrome-stable
+link=$(cat config/documentation.csv \
+    | cut -d , -f 1 \
+    | rofi -dmenu -no-custom \
+    | xargs -I {} rg {} config/documentation.csv \
+    | cut -d , -f 2)
+
+google-chrome-stable $link
+

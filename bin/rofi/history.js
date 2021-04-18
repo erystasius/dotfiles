@@ -19,7 +19,7 @@ let history = execSync(`sqlite3 /tmp/chrome-history.db "${sql}"`)
         pinyin: py(grouped[0], {style: py.STYLE_NORMAL}).flatMap(word => word).join('')
     }})
 
-var options = history.map(h => h.title.padEnd(150, ' ') + h.pinyin).join('\n')
+let options = history.map(h => h.title.padEnd(150, ' ') + h.pinyin).join('\n')
 
 let index = parseInt(execSync('rofi -dmenu -i -no-custom -format i', {input: options}))
 
