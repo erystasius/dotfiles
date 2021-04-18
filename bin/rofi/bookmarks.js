@@ -39,12 +39,12 @@ parseBookmarkNode(json.roots.bookmark_bar)
 var options = bms
     .map(bm => bm.name)
     .map(name => {
-        let pyString = py(name, {style: py.STYLE_NORMAL}).map(group => group[0]).join('')
+        let pyString = py(name, {style: py.STYLE_NORMAL}).flatMap(w => w).join('')
         return name.padEnd(150, ' ') + pyString
     })
     .join('\n')
 
-var index = parseInt(execSync('rofi -dmenu -i -no-custom -format i', {input: options}).toString())
+var index = parseInt(execSync('rofi -dmenu -i -no-custom -format i', {input: options}))
 
 execSync('google-chrome-stable ' + bms[index].url)
 
