@@ -31,7 +31,10 @@ execSync(`google-chrome-stable ${bookmarks[index].link}`)
 
 
 function invisible(url) {
-    invisibleUrls = [ 'https://chrome.google.com/webstore' ]
+    invisibleUrls = [ 
+        'https://chrome.google.com/webstore/',
+        'https://separator.mayastudios.com/'
+    ]
     return invisibleUrls.includes(url) || url.startsWith('chrome://')
 }
 
