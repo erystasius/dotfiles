@@ -22,6 +22,8 @@ declare -A options=(
     [wikipedia_zh]='$browser https://zh.wikipedia.org/wiki/Special:Search/$word'
     [ruanyifeng]='$browser https://duckduckgo.com/?q=site%3Aruanyifeng.com+$word'
     [amap]='$browser https://amap.com/search?query=$word'
+    [bthome]='$browser http://91btbtt.com/search-index-keyword-$word.htm'
+    [amazon_cn]='$browser https://www.amazon.cn/s?k=$word'
 )
 
 browser=google-chrome-stable
