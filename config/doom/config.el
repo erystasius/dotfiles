@@ -32,11 +32,15 @@
 
 (setq erystasius/org-agenda-directory "~/space/Org/0-agenda/plans")
 
+(setq org-agenda-show-future-repeats nil)
+
 (after! org
   (setq org-directory "~/space/Org/"                                  ;; directory for all org files.
         org-archive-location "~/space/Org/0-agenda/archive/%s_archive::"
+        org-deadline-warning-days 0                             ;; so that there will not be duplicate entries in today
         org-agenda-files `(,erystasius/org-agenda-directory)    ;; directory for org agenda files.
         org-agenda-start-with-follow-mode t                     ;; follow mode
+        org-agenda-show-future-repeats nil                      ;; only show nearest repeat event
         org-agenda-start-day "-7d"
         org-agenda-span 21
         org-agenda-use-time-grid t

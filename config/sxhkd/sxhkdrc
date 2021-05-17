@@ -33,7 +33,7 @@ super + r
     rofi -show-icons -show combi
 
 super + {u,i,c,b,n,m}
-    ~/.local/bin/rofi/{search.sh,wudao.sh,dotfiles.sh,bookmarks.js,history.js,documentation.sh}
+    ~/.local/bin/rofi/{search.sh,wudao.sh,dotfiles.sh,bookmarks.js,history.js,documentation.js}
 
 ##################
 ###   Screen   ###

@@ -2,7 +2,9 @@
 set -euo pipefail
 
 declare -A options=(
+    # terminal
     [wudao]='alacritty --hold -e wd $word'
+    # native site search
     [google]='$browser https://google.com/search?q=$word'
     [duckduckgo]='$browser https://duckduckgo.com?q=$word'
     [baidu]='$browser https://baidu.com/s?wd=$word'
@@ -20,10 +22,13 @@ declare -A options=(
     [forvo]='$browser https://zh.forvo.com/search/$word/'
     [wikipedia]='$browser https://en.wikipedia.org/wiki/Special:Search/$word'
     [wikipedia_zh]='$browser https://zh.wikipedia.org/wiki/Special:Search/$word'
-    [ruanyifeng]='$browser https://duckduckgo.com/?q=site%3Aruanyifeng.com+$word'
     [amap]='$browser https://amap.com/search?query=$word'
     [bthome]='$browser http://91btbtt.com/search-index-keyword-$word.htm'
     [amazon_cn]='$browser https://www.amazon.cn/s?k=$word'
+    [cyclone-confluence]='$browser https://cyclone-robotics.atlassian.net/wiki/search?text=$word'
+    # search engine site search
+    [ruanyifeng]='$browser https://duckduckgo.com/?q=site%3Aruanyifeng.com+$word'
+    [draveness]='$browser https://duckduckgo.com/?q=site%3Adraveness.me+$word'
 )
 
 browser=google-chrome-stable

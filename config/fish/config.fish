@@ -99,9 +99,21 @@ abbr -a dot-install "sh ~/dotfiles/install"
 abbr -a pg "pgrep -f -a"
 abbr -a pk "pkill -f"
 abbr -a kp "kill -9"
+# cal
+abbr -a cal "cal -3 --monday"
+abbr -a calw "cal -3 --monday --week"
+# date
+abbr -a date "date +\"W%V, %A    %F %T    %:z %Z    %s\""
+abbr -a dateu"date --utc +\"W%V, %A    %F %T    %:z %Z    %s\""
+abbr -a datei "date --iso-8601=s"
+abbr -a dateui "date --utc --iso-8601=s"
+abbr -a datex "date +%s"
 # net
 abbr -a ns "netstat -tulnp"
 abbr -a ng "netstat -tulnp | grep"
+# wc
+abbr -a wcl "wc --lines"
+abbr -a wcw "wc --words"
 # shorten
 abbr -a o "devour xdg-open"
 abbr -a gp "grep -i --color=auto"

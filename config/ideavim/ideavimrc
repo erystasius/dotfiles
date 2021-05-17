@@ -20,6 +20,8 @@ nmap L :action NextTab<cr>
 " Set space as leader key.
 let mapleader = " "
 
+map     <c-w>   :q<cr>
+
 " Misc
 nmap    <leader>me  :edit   ~/.ideavimrc<cr>
 nmap    <leader>mr  :source ~/.ideavimrc
@@ -39,6 +41,9 @@ nmap    <leader>xg  :action Generate<cr>
 nmap    <leader>xr  :action RenameElement<cr>
 nmap    <leader>xd  :action SafeDelete<cr>
 nmap    <leader>xi  :action Inline<cr>
+nmap    <leader>xs  :action ChangeSignature<cr>
+nmap    <leader>xt  :action ChangeTypeSignature<cr>
+
 "
 nmap    <leader>xm  :action ExtractMethod<cr>
 nmap    <leader>xv  :action IntroduceVariable<cr>

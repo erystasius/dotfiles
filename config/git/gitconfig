@@ -10,13 +10,18 @@
     cl = clone
     ci = commit
     st = status
-    br = branch
     rb = rebase
     rl = reflog
     cf = config
     rs = restore
     co = checkout	
     sm = submodule
+    # Branch commands
+    br = branch
+    brl = branch --list
+    bra = branch --all
+    brd = branch --delete
+    brdf = branch --delete --force
     # Stash commands
     shp = stash pop
     shli = stash list
