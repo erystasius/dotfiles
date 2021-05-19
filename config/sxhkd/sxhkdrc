@@ -1,4 +1,22 @@
 #########################
+
+#super + shift + u : { h, j, k, l }
+#    bspc node -z top_left { -20 0, 0 20, 0 -20, 20 0 }
+#super + shift + i : {h, j, k, l}
+#    bspc node -z bottom_right {-20 0, 0 20, 0 -20, 20 0}
+
+#super + shift + u : { j, k }
+#    bspc node -z bottom 0 {20,-20}
+#super + shift + i : { j, k }
+#    bspc node -z top 0 { 20, -20 }
+#super + shift + y : { h, l }
+#    bspc node -z left { 20, -20 } 0
+#super + shift + o : { h, l }
+#    bspc node -z right { 20, -20} 0
+
+#########################
+
+#########################
 ###   Bspwm hotkeys   ###
 #########################
 
@@ -7,8 +25,14 @@
     jgmenu.sh
 
 # quit/restart/hotkey
-super + shift + {e,r,m}
-    {bspc quit,bspc wm -r,pkill -USR1 -x sxhkd}
+super + shift + e
+    bspc quit
+
+super + shift + r
+    bspc wm -r
+
+super + shift + m
+    pkill -USR1 -x sxhkd
 
 ########################
 ###   Applications   ###
