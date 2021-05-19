@@ -33,7 +33,7 @@ super + r
     rofi -show-icons -show combi
 
 super + {u,i,c,b,n,m}
-    ~/.local/bin/rofi/{search.sh,wudao.sh,dotfiles.sh,bookmarks.js,history.js,documentation.js}
+    ~/.local/bin/rofi/{search.sh,wudao.sh,dotfiles.sh,bookmarks.js,history.js,documentation.sh}
 
 ##################
 ###   Screen   ###
@@ -71,8 +71,8 @@ super + q
 ####################
 
 # focus the next/previous desktop in the current monitor
-super + {c,v}
-    bspc desktop -f {prev,next}.local
+#super + {c,v}
+#    bspc desktop -f {prev,next}.local
 
 # focus to the given desktop
 super + {1-9,0}

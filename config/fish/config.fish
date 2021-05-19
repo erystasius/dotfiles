@@ -55,7 +55,7 @@ abbr -a du "du -h -d 1"
 abbr -a hi "history"
 abbr -a hf "history | fzf | xargs -I {} fish --command \"{}\""
 abbr -a hg "history | grep"
-# git & vim & emacs  
+# git & vim & emacs
 abbr -a g "git"
 abbr -a v "nvim"
 abbr -a sv "sudo nvim"
@@ -104,7 +104,7 @@ abbr -a cal "cal -3 --monday"
 abbr -a calw "cal -3 --monday --week"
 # date
 abbr -a date "date +\"W%V, %A    %F %T    %:z %Z    %s\""
-abbr -a dateu"date --utc +\"W%V, %A    %F %T    %:z %Z    %s\""
+abbr -a dateu "date --utc +\"W%V, %A    %F %T    %:z %Z    %s\""
 abbr -a datei "date --iso-8601=s"
 abbr -a dateui "date --utc --iso-8601=s"
 abbr -a datex "date +%s"
