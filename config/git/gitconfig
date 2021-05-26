@@ -16,6 +16,8 @@
     rs = restore
     co = checkout	
     sm = submodule
+    # Push
+    pub = push --set-upstream origin HEAD   # Publish curent branch
     # Branch commands
     br = branch
     brl = branch --list
