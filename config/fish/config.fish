@@ -118,6 +118,7 @@ abbr -a wcw "wc --words"
 abbr -a o "devour xdg-open"
 abbr -a gp "grep -i --color=auto"
 abbr -a rmd "rmdir"
+abbr -a rmf "rm -rf"
 abbr -a getip "curl ipinfo.io"
 abbr -a git-clone-doom "git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d"
 
