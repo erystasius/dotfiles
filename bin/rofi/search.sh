@@ -22,10 +22,11 @@ declare -A options=(
     [mankier]='$browser https://www.mankier.com/?q=$word'
     [youtube]='$browser https://youtube.com/results?search_query=$word'
     [bilibili]='$browser https://search.bilibili.com/all?keyword=$word'
-    [amazon_cn]='$browser https://www.amazon.cn/s?k=$word'
+    [amazon-cn]='$browser https://www.amazon.cn/s?k=$word'
     [wikipedia]='$browser https://en.wikipedia.org/wiki/Special:Search/$word'
+    [arch-wiki]='$browser https://wiki.archlinux.org/index.php?search=$word'
     [duckduckgo]='$browser https://duckduckgo.com?q=$word'
-    [wikipedia_zh]='$browser https://zh.wikipedia.org/wiki/Special:Search/$word'
+    [wikipedia-zh]='$browser https://zh.wikipedia.org/wiki/Special:Search/$word'
     [cyclone-confluence]='$browser https://cyclone-robotics.atlassian.net/wiki/search?text=$word'
     # search engine site search
     [draveness]='$browser https://duckduckgo.com/?q=site%3Adraveness.me+$word'

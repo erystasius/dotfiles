@@ -7,7 +7,7 @@ yay -S --needed --noconfirm \
 
 echo "Installing editors"
 yay -S --needed --noconfirm \
-    gvim \
+    neovim \
     emacs \
 
 echo "Installing cli packages"

@@ -35,7 +35,6 @@ yay -S --needed --noconfirm \
     redshift \
     nitrogen \
     viewnior \
-    chromium \
     alacritty \
     syncthing \
     file-roller \

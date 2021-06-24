@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd ~/dotfiles/config
+cd ~/dotfiles
 
-file=$(fd -t f . | rofi -dmenu -no-custom)
+file=$(fd --type file --exclude dotbot . | rofi -dmenu -no-custom)
 
 emacsclient -c $file
