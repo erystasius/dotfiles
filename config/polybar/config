@@ -43,8 +43,9 @@ pink   = #f97394
 
 [bar/uhd]
 inherit = section/base
-dpi = 192
-height = 50
+dpi = 144
+height = 35
+offset-y = 3
 tray-maxsize = 30
 
 [bar/fhd]
