@@ -18,6 +18,10 @@ case $1 in
         xinput set-prop 13 "libinput Tapping Enabled" 1
         xinput set-prop 13 "libinput Natural Scrolling Enabled" 1
 
+        # bspwm
+        echo "Configuring bspwm."
+        bspc config top_padding 40
+
         # polybar
         echo "Configuring polybar."
         systemctl --user restart polybar@uhd
@@ -27,6 +31,15 @@ case $1 in
     home)
         echo "Configuring for device '$1'";
         echo ''
+        
+        # Xorg
+        echo "Configuring Xorg. Setting DPI."
+        echo "*.dpi: 144" > /tmp/Xresource
+        xrdb -merge /tmp/Xresource
+
+        # bspwm
+        echo "Configuring bspwm."
+        bspc config top_padding 40
 
         # polybar
         echo "Configuring polybar."

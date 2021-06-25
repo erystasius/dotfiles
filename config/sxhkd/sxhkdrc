@@ -118,6 +118,17 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
     bspc node -v {-20 0,0 20,0 -20,20 0}
 
+#################
+###   Audio   ###
+#################
+
+{XF86AudioMute, XF86AudioLowerVolume, XF86AudioRaiseVolume}
+    pulseaudio-ctl {mute, down, up}
+
+#XF86AudioPrev
+#XF86AudioPlay
+#XF86AudioNext
+
 ###########################
 ###   Experienmenting   ###
 ###########################

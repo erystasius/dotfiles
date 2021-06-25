@@ -120,7 +120,9 @@ abbr -a gp "grep -i --color=auto"
 abbr -a rmd "rmdir"
 abbr -a rmf "rm -rf"
 abbr -a getip "curl ipinfo.io"
-abbr -a git-clone-doom "git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d"
+
+abbr -a ery-clone-doom "git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d"
+abbr -a ery-test-key "xev | awk -F '[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf \"%-3s %s\n\", \$5, \$8 }'"
 
 
 ####### Functions

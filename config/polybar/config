@@ -81,7 +81,7 @@ font-2 = feather:pixelsize=11;1
 
 modules-left = bspwm
 modules-center = week
-modules-right = filesystem cpu memory temperature battery date
+modules-right = audio-sink pulseaudio filesystem cpu memory temperature battery date
 
 tray-position = right
 tray-padding = 2
@@ -124,6 +124,24 @@ label-empty-padding = 2
 
 ; Separator in between workspaces
 ; label-separator = |
+;
+[module/audio-sink]
+type = custom/script
+interval = 1
+
+exec = pacmd list-sinks | grep -e 'index' -e 'device.description' | grep '* index' -A 1 | sed -n "2 p" | sed -r 's/^.*"(.*)".*$/\1/' | awk '{print $1}'
+
+format-prefix = "Sink: "
+format-underline = ${colors.cyan}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <label-volume>
+format-volume-prefix = "Volume: "
+format-volume-underline = ${colors.red}
+
+format-muted =
 
 [module/filesystem]
 type = internal/fs
@@ -204,6 +222,7 @@ color = ${colors.cyan}
 format-prefix = " "
 format-foreground = ${self.color}
 format-underline = ${self.color}
+
 
 ; Let vim know this is a "dotini" file
 ; vim:ft=dosini

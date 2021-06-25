@@ -37,7 +37,7 @@ browser=google-chrome-stable
 
 word=$(zenity --entry --text "Type the word you want to search:" --width 500)
 
-action=$(printf '%s\n' "${!options[@]}" | rofi -dmenu -p "Search \"$word\" on")
+action=$(printf '%s\n' "${!options[@]}" | rofi -dmenu -p "Search \"$word\" on" -no-custom)
 
 word=$(echo $word | sed "s/\s/%20/g")
 

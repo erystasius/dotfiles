@@ -8,9 +8,9 @@ Wants=aria2.service
 Wants=jgmenu.service
 Wants=wallpaper.service
 Wants=cursor-fix.service
-Wants=app-org.fcitx.Fcitx5-autostart.service
-Wants=app-nm\x2dapplet-autostart.service      
-Wants=app-pa\x2dapplet-autostart.service    
+Wants=app-nm\x2dapplet@autostart.service
+Wants=app-pa\x2dapplet@autostart.service
+Wants=app-org.fcitx.Fcitx5@autostart.service
 
 BindsTo=graphical-session.target
 
