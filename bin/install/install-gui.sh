@@ -30,6 +30,7 @@ echo "Installing gui packages"
 yay -S --needed --noconfirm \
     rofi \
     clash \
+    jgmenu \
     zenity \
     udiskie \
     redshift \
