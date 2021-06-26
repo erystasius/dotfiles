@@ -12,8 +12,9 @@ yay -S --needed --noconfirm \
 
 echo "Installing x packages"
 yay -S --needed --noconfirm \
-    xtitle \
     xclip \
+    xtitle \
+    xdotool \
     xorg-xprop \
     xorg-xkill \
     xorg-xinput \
