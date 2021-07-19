@@ -16,6 +16,7 @@ set -x VISUAL "emacsclient -c -a emacs"   # $VISUAL use Emacs in GUI mode
 set -x PATH $PATH ~/.emacs.d/bin
 set -x PATH $PATH ~/.local/bin/install
 set -x PATH $PATH ~/.local/bin/setup
+set -x _JAVA_OPTIONS "-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Djdk.gtk.version="
 
 ####### Less
 set -xU LESS_TERMCAP_md (printf "\e[01;31m")

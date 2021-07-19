@@ -57,9 +57,9 @@ yay -S --needed --noconfirm \
 
 echo "Install gui hardware apps"
 yay -S --needed --noconfirm \
-    blueman \
     gestures \
     pa-applet \
+    blueberry \
     pavucontrol \
     network-manager-applet \
 
