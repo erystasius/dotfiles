@@ -11,7 +11,7 @@ TryExec=/home/erystasius/Applications/jetbrains-toolbox_6dc202850633c31291d6270b
 X-AppImage-Old-Icon=jetbrains-toolbox
 X-AppImage-Identifier=0bcf10a146fc0fa8b0022ce2819d07e5
 Actions=Remove;
-X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2020-12-16 18:35:16 UTC
+X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2021-06-10 11:43:22 UTC
 
 [Desktop Action Remove]
 Name=Remove AppImage from system

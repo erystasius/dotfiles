@@ -14,7 +14,7 @@ X-AppImage-Old-Icon=nosqlbooster4mongo
 X-AppImage-Old-Name=NoSQLBooster for MongoDB
 X-AppImage-Identifier=76ea450f5a31a86bb3c95b0bc39b551b
 Actions=Remove;
-X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2020-12-16 18:35:16 UTC
+X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2021-06-10 11:43:22 UTC
 
 [Desktop Action Remove]
 Name=Remove AppImage from system

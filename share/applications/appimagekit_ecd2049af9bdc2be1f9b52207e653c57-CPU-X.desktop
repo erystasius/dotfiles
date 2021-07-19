@@ -19,7 +19,7 @@ X-AppImage-Old-Icon=cpu-x
 X-AppImage-Old-Name=CPU-X
 X-AppImage-Identifier=ecd2049af9bdc2be1f9b52207e653c57
 Actions=Remove;Update;
-X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2020-12-16 18:35:16 UTC
+X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2021-06-10 11:43:22 UTC
 
 [Desktop Action Remove]
 Name=Remove AppImage from system

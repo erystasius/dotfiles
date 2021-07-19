@@ -14,7 +14,7 @@ X-AppImage-Old-Icon=ieaseMusic
 X-AppImage-Old-Name=ieaseMusic
 X-AppImage-Identifier=f5632bf1c53edf9d3cbd0c8f82dca776
 Actions=Remove;
-X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2020-12-16 18:35:16 UTC
+X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2021-06-10 11:43:22 UTC
 
 [Desktop Action Remove]
 Name=Remove AppImage from system

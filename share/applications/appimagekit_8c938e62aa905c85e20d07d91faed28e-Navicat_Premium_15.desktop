@@ -12,7 +12,7 @@ TryExec=/home/erystasius/Applications/navicat15-premium-en.AppImage
 X-AppImage-Old-Icon=navicat-icon
 X-AppImage-Identifier=8c938e62aa905c85e20d07d91faed28e
 Actions=Remove;Update;
-X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2020-12-16 18:35:16 UTC
+X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2021-06-10 11:43:22 UTC
 
 [Desktop Action Remove]
 Name=Remove AppImage from system

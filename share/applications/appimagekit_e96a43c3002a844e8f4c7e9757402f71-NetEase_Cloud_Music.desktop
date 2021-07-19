@@ -23,7 +23,7 @@ X-AppImage-Old-Name[zh_CN]=网易云音乐
 X-AppImage-Old-Name[zh_TW]=網易雲音樂
 X-AppImage-Identifier=e96a43c3002a844e8f4c7e9757402f71
 Actions=Remove;
-X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2020-12-16 18:35:16 UTC
+X-AppImageLauncher-Version=2.2.0 (git commit 0f91801), built on 2021-06-10 11:43:22 UTC
 
 [Desktop Action Remove]
 Name=Remove AppImage from system
