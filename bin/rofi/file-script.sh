@@ -1,21 +1,30 @@
 #!/usr/bin/env bash
 
+dir=/home/erystasius/space/Org/unsorted
+
+function py() {
+    line=$1
+    hans=$(echo $line | rg -oP '[\p{Han}]')
+    #if [ -n "$hans" ]; then
+        pinyin=$(pinyin -h -s NORMAL $line | sed 's/\s//g')
+        echo -e "$line\0meta\x1f$pinyin"
+    #else 
+    #    echo -e $line
+    #fi
+}
+
+export -f py
 
 function list_options() {
-    dir=test
-    fd . $dir | while read line
-    do 
-        pinyin=$(pinyin --style NORMAL -h $line)
-        echo -en "$line\0meta\x1f$pinyin\n"
-    done
+    fd . $dir | parallel -k py {}
 }
 
-function do_actions() {
-    echo $1;
+function do_action() {
+    xdg-open $1
 }
 
-if [ $# -eq 0 ]; then
+if [ -z "$@" ]; then
     list_options    
 else
-    xdg-open $1
+    do_action $1
 fi

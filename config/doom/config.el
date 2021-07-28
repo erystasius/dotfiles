@@ -44,6 +44,7 @@
         org-agenda-start-day "-7d"
         org-agenda-span 21
         org-agenda-use-time-grid t
+        org-agenda-skip-function-global '(org-agenda-skip-entry-if 'todo 'done)
         org-agenda-time-grid '((daily today)
                               (900 1200 1500 1800 2100 2400)
                               "......" "----------------")
