@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Feishu Messenger
-Exec=/usr/bin/chromium --app=https://cyclone.feishu.cn/messenger/
+Exec=/usr/bin/google-chrome-stable --app=https://cyclone.feishu.cn/messenger/
 Icon=chrome-lpenonpoodhopphfieglcefikpoeiioh-Default
 StartupWMClass=crx_lpenonpoodhopphfieglcefikpoeiioh

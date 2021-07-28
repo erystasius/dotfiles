@@ -16,6 +16,7 @@ set -x VISUAL "emacsclient -c -a emacs"   # $VISUAL use Emacs in GUI mode
 set -x PATH $PATH ~/.emacs.d/bin
 set -x PATH $PATH ~/.local/bin/install
 set -x PATH $PATH ~/.local/bin/setup
+#set -x _JAVA_OPTIONS "-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Djdk.gtk.version="
 
 ####### Less
 set -xU LESS_TERMCAP_md (printf "\e[01;31m")
@@ -38,10 +39,11 @@ alias ushare='cd ~/.local/share'
 alias uconfig='cd ~/.config'
 # ls
 # -g --grid -l --long -x --across -F --classify
-abbr -a ls "exa -aGxF --color=always --group-directories-first"
-abbr -a la "exa -aGxF --color=always --group-directories-first"
-abbr -a ll "exa -algF --color=always --group-directories-first --time-style=long-iso --git"
-abbr -a lg "exa -algF --color=always --group-directories-first --time-style=long-iso --git | grep -i"
+alias lc "exa --color=never"
+alias ls "exa -aGxF --color=always --group-directories-first"
+alias la "exa -aGxF --color=always --group-directories-first"
+alias ll "exa -algF --color=always --group-directories-first --time-style=long-iso --git"
+alias lg "exa -algF --color=always --group-directories-first --time-style=long-iso --git | grep -i"
 # cat
 abbr -a cat "bat"
 # cp
