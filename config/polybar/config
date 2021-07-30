@@ -66,7 +66,7 @@ width = 100%
 padding-right = 2
 border-left-size = 10
 border-right-size = 10
-border-color = #0000000
+border-color = #000000
 
 underline-size = 2
 fixed-center = true
@@ -129,7 +129,7 @@ label-empty-padding = 2
 type = custom/script
 interval = 1
 
-exec = pacmd list-sinks | grep -e 'index' -e 'device.description' | grep '* index' -A 1 | sed -n "2 p" | sed -r 's/^.*"(.*)".*$/\1/' | awk '{print $1}'
+exec = pactl list sinks | sed -nE '/(Name|Description)/p' | grep $(pactl info | sed -n 's/Default Sink: //p') -A 1 | sed -n 's/.*Description: //p' | awk '{print $1}'
 
 format-prefix = "Sink: "
 format-underline = ${colors.cyan}
@@ -137,11 +137,15 @@ format-underline = ${colors.cyan}
 [module/pulseaudio]
 type = internal/pulseaudio
 
+format-muted = <label-muted>
+format-muted-prefix = "Muted: "
+format-muted-underline = ${colors.red}
+
+label-volume =  %percentage%%
+
 format-volume = <label-volume>
 format-volume-prefix = "Volume: "
 format-volume-underline = ${colors.red}
-
-format-muted =
 
 [module/filesystem]
 type = internal/fs
@@ -223,6 +227,5 @@ format-prefix = " "
 format-foreground = ${self.color}
 format-underline = ${self.color}
 
-
-; Let vim know this is a "dotini" file
+; Lef vim know this is a "dotini" file
 ; vim:ft=dosini

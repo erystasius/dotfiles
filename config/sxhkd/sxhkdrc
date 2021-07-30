@@ -122,6 +122,9 @@ super + {Left,Down,Up,Right}
 ###   Audio   ###
 #################
 
+super + v
+    rofi -show pa -modi "pa:~/.local/bin/rofi/pulseaudio.sh"
+
 {XF86AudioMute, XF86AudioLowerVolume, XF86AudioRaiseVolume}
     pulseaudio-ctl {mute, down, up}
 
