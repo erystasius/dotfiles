@@ -25,6 +25,9 @@
 margin-top = 5
 margin-bottom = 5
 
+[scripts]
+
+
 [colors]
 background = #00384157
 foreground = #e0e3e7
@@ -97,12 +100,6 @@ format-foreground = ${colors.foreground}
 
 locale = zh_CN.UTF-8
 
-[module/tabs]
-type = custom/script
-interval = 0
-exec = ~/dotfiles/tabs.sh '#eee' '#aaa'
-;format-background = #285577
-
 [module/bspwm]
 type = internal/bspwm
 
@@ -129,7 +126,7 @@ label-empty-padding = 2
 type = custom/script
 interval = 1
 
-exec = pactl list sinks | sed -nE '/(Name|Description)/p' | grep $(pactl info | sed -n 's/Default Sink: //p') -A 1 | sed -n 's/.*Description: //p' | awk '{print $1}'
+exec = ~/.local/bin/lib/pulseaudio.sh get-default-sink-desc | awk '{print $1}'
 
 format-prefix = "Sink: "
 format-underline = ${colors.cyan}

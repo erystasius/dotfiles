@@ -22,7 +22,7 @@
 
 # pointer
 ~button3
-    jgmenu.sh
+    ~/.local/bin/lib/jgmenu-conditional-run.sh
 
 # quit/restart/hotkey
 super + shift + e
