@@ -125,7 +125,9 @@
 ;;; Erystasius's personal config
 
 ;; Use "jj" to escape insert mode.
-(after! evil-escape (setq evil-escape-key-sequence "jj"))
+(after! evil-escape
+  (setq evil-escape-key-sequence "jj")
+  (setq evil-escape-delay 0.3))
 
 ;; Font
 ;; Preview by using:

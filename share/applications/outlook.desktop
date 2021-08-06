@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Outlook
-Exec=/usr/bin/chromium --app=https://outlook.live.com/
+Exec=/usr/bin/google-chrome-stable --app=https://outlook.live.com/
 Icon=chrome-eigpmdhekjlgjgcppnanaanbdmnlnagl-Default
 StartupWMClass=crx_eigpmdhekjlgjgcppnanaanbdmnlnagl
