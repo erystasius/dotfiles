@@ -56,8 +56,11 @@ super + a
 super + r
     rofi -show-icons -show combi
 
-super + {u,i,c,b,n,m}
-    ~/.local/bin/rofi/{search.sh,wudao.sh,dotfiles.sh,bookmarks.js,history.js,documentation.js}
+super + {u,b,n,m}
+    ~/.local/bin/rofi/dmenu-{search.sh,bookmarks.js,history.js,documentation.js}
+
+super + {i,c,v}
+    rofi -show {wudao,dotfiles,pulseaudio}
 
 ##################
 ###   Screen   ###
@@ -121,9 +124,6 @@ super + {Left,Down,Up,Right}
 #################
 ###   Audio   ###
 #################
-
-super + v
-    rofi -show pa -modi "pa:~/.local/bin/rofi/pulseaudio.sh"
 
 {XF86AudioMute, XF86AudioLowerVolume, XF86AudioRaiseVolume}
     pulseaudio-ctl {mute, down, up}

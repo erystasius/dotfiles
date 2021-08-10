@@ -1,4 +1,5 @@
 configuration {
+	modi: "combi,pulseaudio:~/.local/bin/rofi/modi-pulseaudio.sh,wudao:~/.local/bin/rofi/modi-wudao.sh,dotfiles:~/.local/bin/rofi/modi-dotfiles.sh";
 	combi-modi: "drun,window,ssh";
 	theme: "~/.config/rofi/Pop-Dark-Modified.rasi";
 	kb-remove-to-eol: "";
