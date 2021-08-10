@@ -35,6 +35,7 @@
     ~/.config/bspwm: config/bspwm
     ~/.config/sxhkd: config/sxhkd
     ~/.config/dunst: config/dunst
+    ~/.config/conky: config/conky
     ~/.config/fcitx5: config/fcitx5
     ~/.config/jgmenu: config/jgmenu
     ~/.config/gtk-3.0: config/gtk-3.0
