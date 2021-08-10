@@ -19,12 +19,11 @@ function get-default-sink-desc() {
     name-to-desc "$name"
 }
 
-if [ "$1" = "desc-to-name" ]; then
-    desc-to-name "$2" 
-elif [ "$1" = "name-to-desc" ]; then 
-    name-to-desc "$2"
-elif [ "$1" = "get-default-sink-desc" ]; then 
-    get-default-sink-desc
-else 
-    echo "Unrecognized command: $1"
-fi 
+case "$1" in
+    "desc-to-name")             desc-to-name "$2" ;;
+    "name-to-desc")             name-to-desc "$2" ;;
+    "get-default-sink-desc")    get-default-sink-desc ;;
+    *)                          
+        echo "Unrecognized command: $1" 
+        ;;
+esac 
