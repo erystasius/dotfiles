@@ -24,15 +24,9 @@
 ~button3
     ~/.local/bin/lib/jgmenu-conditional-run.sh
 
-# quit/restart/hotkey
-super + shift + e
-    bspc quit
-
-super + shift + r
-    bspc wm -r
-
-super + shift + m
-    pkill -USR1 -x sxhkd
+# powermenu
+super + shift + BackSpace
+    rofi -show power
 
 ########################
 ###   Applications   ###
