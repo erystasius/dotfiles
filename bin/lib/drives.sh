@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function get-connected-interface() {
-    nmcli device | grep -v disconnected | grep connected | grep -e ethernet -e wifi | awk '{print $1}'
+    nmcli device | grep connected | grep ethernet | awk '{print $1}'
 }
 
 function get-gateway() {
