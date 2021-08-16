@@ -26,7 +26,7 @@ function do-action() {
         "reboot")
             reboot
             ;;
-        "relaod-keymap")
+        "reload-keymap")
             systemctl --user restart sxhkd
             ;;
         "sleep")

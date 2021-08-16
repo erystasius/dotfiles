@@ -36,7 +36,7 @@ super + {Return,w,y}
     {alacritty,google-chrome-stable,pcmanfm}
 
 super + t
-      bspc rule -a \* -o state=floating && alacritty
+    conky
 
 super + e
     emacsclient -c
