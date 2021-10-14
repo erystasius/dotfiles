@@ -122,9 +122,12 @@ abbr -a gp "grep -i --color=auto"
 abbr -a rmd "rmdir"
 abbr -a rmf "rm -rf"
 abbr -a getip "curl ipinfo.io"
-
+# long
 abbr -a ery-clone-doom "git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d"
 abbr -a ery-test-key "xev | awk -F '[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf \"%-3s %s\n\", \$5, \$8 }'"
+# testing
+abbr -a no-color "sed 's/\x1B\[[0-9;]\{1,\}[A-Za-z]//g'"
+abbr -a gen-mv-script "ls | sed 's/\x1B\[[0-9;]\{1,\}[A-Za-z]//g' | xargs -I {} echo \"mv {} {}\" > batch-mv.sh && vim batch-mv.sh"
 
 
 ####### Functions
