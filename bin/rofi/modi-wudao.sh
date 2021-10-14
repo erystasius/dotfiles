@@ -6,7 +6,7 @@ function list-options() {
 }
 
 function do-action() {
-    alacritty --hold -e wd "$1"
+    coproc alacritty --hold -e wd "$1"
 }
 
 if [ -z "$@" ]; then
