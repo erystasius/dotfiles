@@ -56,13 +56,13 @@ inherit = section/base
 dpi = 96
 height = 25
 
-[bar/fhd-hdmi-1]
+[bar/home-2k]
 inherit = bar/fhd
 monitor = HDMI-0
 
-[bar/fhd-dvi-d-1]
+[bar/home-4k]
 inherit = bar/fhd
-monitor = DVI-D-0
+monitor = DP-0
 
 [section/base]
 width = 100%

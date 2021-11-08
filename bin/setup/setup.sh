@@ -40,26 +40,13 @@ case $1 in
         # bspwm
         echo "Configuring bspwm."
         bspc config top_padding 40
+        bspc monitor DP-0 -d I II III IV V
+        bspc monitor HDMI-0 -d VI VII VIII IX X
 
         # polybar
         echo "Configuring polybar."
-        systemctl --user restart polybar@uhd
-
-        ;;
-
-    work)
-        echo "Configuring for device '$1'";
-        echo ''
-
-        # bspwm
-        echo "Configuring bspwm."
-        bspc monitor HDMI-0 -d I II III IV V
-        bspc monitor DVI-D-0 -d VI VII VIII IX X
-
-        # polybar
-        echo "Configuring polybar."
-        systemctl --user restart polybar@fhd-hdmi-1
-        systemctl --user restart polybar@fhd-dvi-d-1
+        systemctl --user restart polybar@home-2k
+        systemctl --user restart polybar@home-4k
 
         ;;
 
