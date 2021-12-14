@@ -94,6 +94,10 @@
        "p" 'org-agenda
        "f" 'erystasius/counsel-org-agenda-files))
 
+(map! :leader
+      "+" 'cnfonts-increase-fontsize
+      "-" 'cnfonts-decrease-fontsize)
+
 ;; Projectile
 (setq erystasius/projectile-custom-search-path '("~/space/Org" "~/dotfiles"))
 

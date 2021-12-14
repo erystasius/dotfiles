@@ -13,6 +13,7 @@ set -x TERM "xterm-256color"              # Set terminal type
 set -x PAGER "less"                       # Set pager
 set -x EDITOR "emacsclient -t -a ''"      # $EDITOR use Emacs in terminal
 set -x VISUAL "emacsclient -c -a emacs"   # $VISUAL use Emacs in GUI mode
+set -x LEDGER_FILE "/home/erystasius/space/Org/1-schemes/finance/main.hledger"  # Hledger File
 set -x PATH $PATH ~/.emacs.d/bin
 set -x PATH $PATH ~/.local/bin/install
 set -x PATH $PATH ~/.local/bin/setup
@@ -122,6 +123,8 @@ abbr -a gp "grep -i --color=auto"
 abbr -a rmd "rmdir"
 abbr -a rmf "rm -rf"
 abbr -a getip "curl ipinfo.io"
+# Hledger
+abbr -a hl "hledger"
 # long
 abbr -a ery-clone-doom "git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d"
 abbr -a ery-test-key "xev | awk -F '[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf \"%-3s %s\n\", \$5, \$8 }'"

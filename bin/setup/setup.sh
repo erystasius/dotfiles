@@ -31,6 +31,16 @@ case $1 in
     home)
         echo "Configuring for device '$1'";
         echo ''
+
+        echo "Configuring Monitors."
+        echo ''
+        xrandr --output DP-0 --primary
+        xrandr --output HDMI-0 --left-of DP-0 --rotate right
+
+        echo "Reseting wallpaper."
+        echo ''
+        nitrogen --restore
+
         
         # Xorg
         echo "Configuring Xorg. Setting DPI."
@@ -39,7 +49,7 @@ case $1 in
 
         # bspwm
         echo "Configuring bspwm."
-        bspc config top_padding 40
+        bspc config top_padding 25
         bspc monitor DP-0 -d I II III IV V
         bspc monitor HDMI-0 -d VI VII VIII IX X
 
