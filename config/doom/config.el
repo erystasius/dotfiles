@@ -94,9 +94,15 @@
        "p" 'org-agenda
        "f" 'erystasius/counsel-org-agenda-files))
 
+(defun erystasius/cnfonts-reset ()
+  (interactive)
+  (cnfonts-increase-fontsize)
+  (cnfonts-decrease-fontsize))
+
 (map! :leader
       "+" 'cnfonts-increase-fontsize
-      "-" 'cnfonts-decrease-fontsize)
+      "-" 'cnfonts-decrease-fontsize
+      "=" 'erystasius/cnfonts-reset)
 
 ;; Projectile
 (setq erystasius/projectile-custom-search-path '("~/space/Org" "~/dotfiles"))
