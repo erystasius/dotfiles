@@ -44,6 +44,13 @@ blue   = #6c99bb
 purple = #d197d9
 pink   = #f97394
 
+[bar/yoga]
+inherit = section/base
+dpi = 192
+height = 50
+offset-y = 3
+tray-maxsize = 30
+
 [bar/uhd]
 inherit = section/base
 dpi = 144

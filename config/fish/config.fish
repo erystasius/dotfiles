@@ -131,7 +131,7 @@ abbr -a ery-test-key "xev | awk -F '[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { pr
 # testing
 abbr -a no-color "sed 's/\x1B\[[0-9;]\{1,\}[A-Za-z]//g'"
 abbr -a gen-mv-script "ls | sed 's/\x1B\[[0-9;]\{1,\}[A-Za-z]//g' | xargs -I {} echo \"mv {} {}\" > batch-mv.sh && vim batch-mv.sh"
-
+abbr -a ery-bwh-usage "curl 'https://justmysocks5.net/members/getbwcounter.php?service=1730&id=60f17077-00cb-44c3-855b-db4e624143cb' | jq .bw_counter_b | xargs -I {} expr {} / 1000000000 | xargs -I {} echo Used: {}GB"
 
 ####### Functions
 # Function for printing a column (splits input on whitespace)
